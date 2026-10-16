@@ -2,7 +2,7 @@
 
 A free, open-source font for exploring finance interfaces. Public beta v0.400.
 Four weights: Regular 400, Medium 500, Semibold 600 and Bold 700.
-2,852 encoded characters per weight; TTF, WOFF2 and individual SVG glyphs.
+2,852 encoded characters per weight. TTF and WOFF2 files are included; the build also generates individual SVG glyphs.
 
 Project: https://github.com/nevlin-ltd/nevlin-font
 Website: https://nevlin.com
@@ -59,7 +59,7 @@ python build.py
 
 The exact upstream input and its provenance are in InterVariable.ttf and upstream-provenance.json. Rebuilding
 generates the four TTFs, four WOFF2s and SVG glyphs. No Apple fonts are needed.
-See FONTLOG.txt, QA.json and the finance-examples.svg specimen.
+See FONTLOG.txt and QA.json for the earlier beta checks. New validation reports are separate from those checks.
 
 ## Google Fonts preparation
 
