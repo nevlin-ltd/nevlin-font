@@ -13,6 +13,7 @@ from fontTools.otlLib.builder import buildStatTable
 from fontTools import subset
 import glyphsLib
 import ufoLib2
+from repair_joins import repair_joins
 from fontTools.pens.recordingPen import DecomposingRecordingPen
 from fontTools.pens.ttGlyphPen import TTGlyphPen
 
@@ -75,6 +76,7 @@ def main():
     web = ROOT / 'fonts' / 'woff2'
     web.mkdir(parents=True, exist_ok=True)
     fonts = []
+    join_log = {}
     source_dir = ROOT / 'sources' if (ROOT / 'sources').exists() else ROOT
     glyphs_sources = sorted(source_dir.glob('*.glyphs'))
     if glyphs_sources:
@@ -165,6 +167,8 @@ def main():
         # Normalize the final retained contours after component/subset processing.
         for name in f.getGlyphOrder():f["glyf"][name]
         simplify_straight_segments(f)
+        join_log[path.stem] = repair_joins(f)
+        simplify_straight_segments(f)
         f['meta'] = newTable('meta')
         f['meta'].data = {'dlng': 'Latn', 'slng': 'Latn'}
         f['prep'] = newTable('prep')
@@ -191,6 +195,7 @@ def main():
         f.save(wpath)
         manifest.append({'file': str(wpath.relative_to(ROOT)), 'sha256': hashlib.sha256(wpath.read_bytes()).hexdigest()})
     (ROOT / 'qa').mkdir(exist_ok=True)
+    (ROOT / 'qa' / 'join-repairs.json').write_text(json.dumps(join_log, indent=2) + '\n')
     (ROOT / 'qa' / 'build-manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
 
 if __name__ == '__main__':

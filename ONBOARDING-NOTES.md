@@ -1,8 +1,10 @@
 # Outstanding external onboarding items
 
-## Vendor registration — draft, not sent
+## Vendor registration — sent, confirmation pending
 
-Microsoft says vendor registration is optional. The font currently uses NONE; no registered ID is claimed. Proposed ID NVLN was not found in the published registry on 16 October 2026, but availability must be confirmed by Microsoft.
+Microsoft says vendor registration is optional. Sent to mstwsite@microsoft.com on 16 October 2026 from the authorized connected account, with zhanat.salimova@nevlin.com as the contact and reply-to address. Registration has not been confirmed.
+
+The font currently uses NONE; no registered ID is claimed. Proposed ID NVLN was not found in the published registry on 16 October 2026, but availability must be confirmed by Microsoft.
 
 To: mstwsite@microsoft.com
 Subject: Font vendor registration request — Nevlin / NVLN
@@ -28,7 +30,7 @@ The review package declares latin, latin-ext and menu. Several required Latin Co
 
 ## Design eligibility and agreement
 
-The font remains substantially Inter-derived. Google must decide whether it qualifies as a new family. Technical checks do not settle originality. Copyright-holder CLA requirements and any exceptions need Google review. No onboarding issue, PR, email or agreement has been submitted in this work.
+The font remains substantially Inter-derived. Google must decide whether it qualifies as a new family. Technical checks do not settle originality. Copyright-holder CLA requirements and any exceptions need Google review. The Microsoft vendor request has been sent. No Google onboarding issue, PR or agreement has been submitted. Designer attribution remains unchanged; the older FontBakery lookup also cannot find the profile of the correctly credited Inter designer. Ask Google to confirm the current profile onboarding process.
 
 Current QA guidance: https://googlefonts.github.io/gf-guide/qa.html
 Onboarding: https://googlefonts.github.io/gf-guide/onboarding.html
