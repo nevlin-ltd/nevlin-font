@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni0308" format="2">
+  <unicode hex="0308"/>
+  <anchor x="0" y="0" name="_top"/>
+  <outline>
+    <contour>
+      <point x="-117.3239974975586" y="64.4000015258789" type="qcurve" smooth="yes"/>
+      <point x="-62.67599868774414" y="64.4000015258789" type="line" smooth="yes"/>
+      <point x="-39.400001525878906" y="64.4000015258789"/>
+      <point x="-39.400001525878906" y="87.6760025024414" type="qcurve" smooth="yes"/>
+      <point x="-39.400001525878906" y="142.32400512695312" type="line" smooth="yes"/>
+      <point x="-39.400001525878906" y="165.60000610351562"/>
+      <point x="-62.67599868774414" y="165.60000610351562" type="qcurve" smooth="yes"/>
+      <point x="-117.3239974975586" y="165.60000610351562" type="line" smooth="yes"/>
+      <point x="-140.60000610351562" y="165.60000610351562"/>
+      <point x="-140.60000610351562" y="142.32400512695312" type="qcurve" smooth="yes"/>
+      <point x="-140.60000610351562" y="87.6760025024414" type="line" smooth="yes"/>
+      <point x="-140.60000610351562" y="64.4000015258789"/>
+    </contour>
+    <contour>
+      <point x="62.67599868774414" y="64.4000015258789" type="qcurve" smooth="yes"/>
+      <point x="117.3239974975586" y="64.4000015258789" type="line" smooth="yes"/>
+      <point x="140.60000610351562" y="64.4000015258789"/>
+      <point x="140.60000610351562" y="87.6760025024414" type="qcurve" smooth="yes"/>
+      <point x="140.60000610351562" y="142.32400512695312" type="line" smooth="yes"/>
+      <point x="140.60000610351562" y="165.60000610351562"/>
+      <point x="117.3239974975586" y="165.60000610351562" type="qcurve" smooth="yes"/>
+      <point x="62.67599868774414" y="165.60000610351562" type="line" smooth="yes"/>
+      <point x="39.400001525878906" y="165.60000610351562"/>
+      <point x="39.400001525878906" y="142.32400512695312" type="qcurve" smooth="yes"/>
+      <point x="39.400001525878906" y="87.6760025024414" type="line" smooth="yes"/>
+      <point x="39.400001525878906" y="64.4000015258789"/>
+    </contour>
+  </outline>
+</glyph>

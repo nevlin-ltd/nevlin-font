@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Tcaron" format="2">
+  <advance width="570"/>
+  <unicode hex="0164"/>
+  <anchor x="285.0" y="760" name="top"/>
+  <anchor x="285.0" y="0" name="bottom"/>
+  <outline>
+    <contour>
+      <point x="40.0" y="646.0" type="line"/>
+      <point x="231.0" y="646.0" type="line"/>
+      <point x="231.0" y="0" type="line"/>
+      <point x="339.0" y="0" type="line"/>
+      <point x="339.0" y="646.0" type="line"/>
+      <point x="530.0" y="646.0" type="line"/>
+      <point x="530.0" y="754.0" type="line"/>
+      <point x="40.0" y="754.0" type="line"/>
+    </contour>
+    <contour>
+      <point x="145.17144775390625" y="898.7510375976562" type="line"/>
+      <point x="255.17144775390625" y="793.7510375976562" type="line" smooth="yes"/>
+      <point x="258.15753173828125" y="790.9006958007812"/>
+      <point x="265.1012268066406" y="786.4342041015625"/>
+      <point x="272.76513671875" y="783.3635864257812"/>
+      <point x="280.8719177246094" y="781.7999877929688"/>
+      <point x="289.1280822753906" y="781.7999877929688"/>
+      <point x="297.23486328125" y="783.3635864257812"/>
+      <point x="304.8987731933594" y="786.4342041015625"/>
+      <point x="311.84246826171875" y="790.9006958007812"/>
+      <point x="314.82855224609375" y="793.7510375976562" type="qcurve" smooth="yes"/>
+      <point x="424.82855224609375" y="898.7510375976562" type="line"/>
+      <point x="365.17144775390625" y="961.2489624023438" type="line"/>
+      <point x="285.0" y="884.7216796875" type="line"/>
+      <point x="204.82855224609375" y="961.2489624023438" type="line"/>
+    </contour>
+  </outline>
+</glyph>

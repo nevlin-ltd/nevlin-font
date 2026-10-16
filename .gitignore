@@ -7,3 +7,11 @@ source/
 validation.json
 glyph-manifest.json
 nevlin-ui-plus.css
+
+# Preserve the separate Sprout review candidate binaries and SVG exports.
+!/families/nevlin-sprout/fonts/
+!/families/nevlin-sprout/fonts/**
+!/families/nevlin-sprout/glyphs/
+!/families/nevlin-sprout/glyphs/**
+!/families/nevlin-sprout/sources/**/glyphs/
+!/families/nevlin-sprout/sources/**/glyphs/**

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="exclamdown" format="2">
+  <advance width="230"/>
+  <unicode hex="00A1"/>
+  <outline>
+    <contour>
+      <point x="147.0" y="0" type="line"/>
+      <point x="147.0" y="515.0" type="line"/>
+      <point x="83.0" y="515.0" type="line"/>
+      <point x="83.0" y="0" type="line"/>
+    </contour>
+    <contour>
+      <point x="138.3280029296875" y="718.2000122070312" type="qcurve" smooth="yes"/>
+      <point x="91.6719970703125" y="718.2000122070312" type="line" smooth="yes"/>
+      <point x="71.80000305175781" y="718.2000122070312"/>
+      <point x="71.80000305175781" y="698.3280029296875" type="qcurve" smooth="yes"/>
+      <point x="71.80000305175781" y="651.6719970703125" type="line" smooth="yes"/>
+      <point x="71.80000305175781" y="631.7999877929688"/>
+      <point x="91.6719970703125" y="631.7999877929688" type="qcurve" smooth="yes"/>
+      <point x="138.3280029296875" y="631.7999877929688" type="line" smooth="yes"/>
+      <point x="158.1999969482422" y="631.7999877929688"/>
+      <point x="158.1999969482422" y="651.6719970703125" type="qcurve" smooth="yes"/>
+      <point x="158.1999969482422" y="698.3280029296875" type="line" smooth="yes"/>
+      <point x="158.1999969482422" y="718.2000122070312"/>
+    </contour>
+  </outline>
+</glyph>

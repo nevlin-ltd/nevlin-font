@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni02BB" format="2">
+  <advance width="210"/>
+  <unicode hex="02BB"/>
+  <anchor x="105.0" y="560" name="top"/>
+  <anchor x="105.0" y="0" name="bottom"/>
+  <outline>
+    <contour>
+      <point x="117.71590423583984" y="540.0747680664062" type="line"/>
+      <point x="167.71591186523438" y="730.0747680664062" type="line"/>
+      <point x="92.28409576416016" y="749.9252319335938" type="line"/>
+      <point x="42.284088134765625" y="559.9252319335938" type="line"/>
+    </contour>
+  </outline>
+</glyph>

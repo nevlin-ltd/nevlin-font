@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="colon" format="2">
+  <advance width="230"/>
+  <unicode hex="003A"/>
+  <outline>
+    <contour>
+      <point x="91.6719970703125" y="336.79998779296875" type="qcurve" smooth="yes"/>
+      <point x="138.3280029296875" y="336.79998779296875" type="line" smooth="yes"/>
+      <point x="158.1999969482422" y="336.79998779296875"/>
+      <point x="158.1999969482422" y="356.6719970703125" type="qcurve" smooth="yes"/>
+      <point x="158.1999969482422" y="403.3280029296875" type="line" smooth="yes"/>
+      <point x="158.1999969482422" y="423.20001220703125"/>
+      <point x="138.3280029296875" y="423.20001220703125" type="qcurve" smooth="yes"/>
+      <point x="91.6719970703125" y="423.20001220703125" type="line" smooth="yes"/>
+      <point x="71.80000305175781" y="423.20001220703125"/>
+      <point x="71.80000305175781" y="403.3280029296875" type="qcurve" smooth="yes"/>
+      <point x="71.80000305175781" y="356.6719970703125" type="line" smooth="yes"/>
+      <point x="71.80000305175781" y="336.79998779296875"/>
+    </contour>
+    <contour>
+      <point x="91.6719970703125" y="-18.200000762939453" type="qcurve" smooth="yes"/>
+      <point x="138.3280029296875" y="-18.200000762939453" type="line" smooth="yes"/>
+      <point x="158.1999969482422" y="-18.200000762939453"/>
+      <point x="158.1999969482422" y="1.6720000505447388" type="qcurve" smooth="yes"/>
+      <point x="158.1999969482422" y="48.327999114990234" type="line" smooth="yes"/>
+      <point x="158.1999969482422" y="68.19999694824219"/>
+      <point x="138.3280029296875" y="68.19999694824219" type="qcurve" smooth="yes"/>
+      <point x="91.6719970703125" y="68.19999694824219" type="line" smooth="yes"/>
+      <point x="71.80000305175781" y="68.19999694824219"/>
+      <point x="71.80000305175781" y="48.327999114990234" type="qcurve" smooth="yes"/>
+      <point x="71.80000305175781" y="1.6720000505447388" type="line" smooth="yes"/>
+      <point x="71.80000305175781" y="-18.200000762939453"/>
+    </contour>
+  </outline>
+</glyph>

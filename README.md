@@ -2,6 +2,10 @@
 
 An Inter-derived, SIL OFL-licensed font project by Nevlin. **Core Latin development candidate 1.000**, not a Google Fonts-approved release.
 
+## New original family: Nevlin Sprout
+
+[Nevlin Sprout](families/nevlin-sprout) is a separate original geometric family for financial-learning interfaces. Its 1.000 RC1 package includes four weights, editable UFOs, drawing sources, build instructions, specimens and full QA evidence. It is not derived from the Inter-based family below. Google Fonts design eligibility and eight external warnings remain under review.
+
 ## Current candidate
 
 374 encoded characters across Regular 400, Medium 500, SemiBold 600 and Bold 700. The installed family name is **Nevlin Font**.

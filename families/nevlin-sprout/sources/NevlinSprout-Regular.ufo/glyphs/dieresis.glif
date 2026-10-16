@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dieresis" format="2">
+  <advance width="350"/>
+  <unicode hex="00A8"/>
+  <outline>
+    <contour>
+      <point x="65.99199676513672" y="639.7999877929688" type="qcurve" smooth="yes"/>
+      <point x="104.00800323486328" y="639.7999877929688" type="line" smooth="yes"/>
+      <point x="120.19999694824219" y="639.7999877929688"/>
+      <point x="120.19999694824219" y="655.9920043945312" type="qcurve" smooth="yes"/>
+      <point x="120.19999694824219" y="694.0079956054688" type="line" smooth="yes"/>
+      <point x="120.19999694824219" y="710.2000122070312"/>
+      <point x="104.00800323486328" y="710.2000122070312" type="qcurve" smooth="yes"/>
+      <point x="65.99199676513672" y="710.2000122070312" type="line" smooth="yes"/>
+      <point x="49.80000305175781" y="710.2000122070312"/>
+      <point x="49.80000305175781" y="694.0079956054688" type="qcurve" smooth="yes"/>
+      <point x="49.80000305175781" y="655.9920043945312" type="line" smooth="yes"/>
+      <point x="49.80000305175781" y="639.7999877929688"/>
+    </contour>
+    <contour>
+      <point x="245.99200439453125" y="639.7999877929688" type="qcurve" smooth="yes"/>
+      <point x="284.00799560546875" y="639.7999877929688" type="line" smooth="yes"/>
+      <point x="300.20001220703125" y="639.7999877929688"/>
+      <point x="300.20001220703125" y="655.9920043945312" type="qcurve" smooth="yes"/>
+      <point x="300.20001220703125" y="694.0079956054688" type="line" smooth="yes"/>
+      <point x="300.20001220703125" y="710.2000122070312"/>
+      <point x="284.00799560546875" y="710.2000122070312" type="qcurve" smooth="yes"/>
+      <point x="245.99200439453125" y="710.2000122070312" type="line" smooth="yes"/>
+      <point x="229.8000030517578" y="710.2000122070312"/>
+      <point x="229.8000030517578" y="694.0079956054688" type="qcurve" smooth="yes"/>
+      <point x="229.8000030517578" y="655.9920043945312" type="line" smooth="yes"/>
+      <point x="229.8000030517578" y="639.7999877929688"/>
+    </contour>
+  </outline>
+</glyph>
