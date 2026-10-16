@@ -8,9 +8,9 @@ Prepared:
 - Original 16 warnings resolved; no failures in the full Google profile.
 
 Still required or awaiting assessment:
-1. Publish this new family and sources in a separate directory of the public
-   Nevlin repository, preserving the existing family. The repository URL in
-   the candidate metadata is the intended host, not proof of an upload.
+1. Completed: the new family and sources are public at
+   https://github.com/nevlin-ltd/nevlin-font/tree/main/families/nevlin-sprout.
+   The earlier family is preserved.
 2. Run the prepared build/check workflow in that public repository, adapting
    its working directory if nested. Local repeatability is already checked.
 3. Confirm the family name. Google's naming rules restrict copyright-holder
@@ -24,10 +24,12 @@ Still required or awaiting assessment:
 6. Obtain independent type-design and native-language review, particularly
    accents, joined forms, spacing/kerning and small-size readability. Run the
    candidate on Windows, Android, iOS and live Figma text.
-7. Request Google's design/eligibility assessment with transparent AI-assistance
-   disclosure and link the separate, earlier Inter-derived family inquiry.
+7. Submitted: Google design/eligibility review request #11129 includes
+   AI-assistance disclosure and links the earlier Inter-derived family inquiry.
+   Await assessment: https://github.com/google/fonts/issues/11129
 
-No new GitHub issue, pull request, repository upload or submission was made.
+The candidate is uploaded and review issue #11129 is open. No pull request
+or catalog publication has occurred.
 The previous issue https://github.com/google/fonts/issues/11128 is unchanged.
 
 References:
