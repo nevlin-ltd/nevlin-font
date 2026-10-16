@@ -4,14 +4,14 @@ An Inter-derived, SIL OFL-licensed font project by Nevlin. **Core Latin developm
 
 ## Current candidate
 
-321 encoded characters across Regular 400, Medium 500, SemiBold 600 and Bold 700. The installed family name is **Nevlin Font**.
+374 encoded characters across Regular 400, Medium 500, SemiBold 600 and Bold 700. The installed family name is **Nevlin Font**.
 
 - Download [the complete editable source and font package](NevlinFont-core-latin-candidate.zip).
 - Individual desktop files: [Regular](NevlinFont-Regular.ttf), [Medium](NevlinFont-Medium.ttf), [SemiBold](NevlinFont-SemiBold.ttf), [Bold](NevlinFont-Bold.ttf). Matching WOFF2 files are included for websites.
 - View the [alphabet proof](core-character-proof.svg).
 - Read [validation and remaining warnings](CORE-VALIDATION.md).
 
-Full Google Fonts profile: **595 PASS, 0 FAIL, 0 ERROR, 22 WARN**. Warnings have not been suppressed. Outline review, optional language coverage, catalog subsets and designer/vendor profiles remain under review. Google admission and originality review are separate from these checks.
+FontBakery Google Fonts profile: **611 PASS, 0 FAIL, 0 ERROR, 14 WARN**. Warnings have not been suppressed. Fontspector 1.9.0 also reports zero failures and errors, with 10 warnings. Tight-join review, catalog subsets and designer/vendor profiles remain unresolved. Read [external onboarding notes](ONBOARDING-NOTES.md). Google admission and originality review are separate from these checks.
 
 ## Editable sources and build
 
@@ -46,3 +46,5 @@ Website: https://nevlin.com
 Contact: zhanat.salimova@nevlin.com
 
 No Google Fonts submission or acceptance is claimed. This separate font project does not restore the canceled Nevlin website font page.
+
+Current Google guidance uses Fontspector. Install the [official checker](https://github.com/fonttools/fontspector/blob/main/INSTALLATION.md) and run `fontspector -p googlefonts googlefonts/nevlinfont/*.ttf`. Both full reports are published in this repository.
