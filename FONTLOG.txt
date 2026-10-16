@@ -1,0 +1,7 @@
+Nevlin UI Plus — 2026-10-15 — v0.400 beta
+Based on Inter 4.001;git-9221beed3, SIL OFL 1.1.
+Custom a/e/g/r/t/1/4/7 drawings and figure variants, dots, Q tail, tenge bars.
+Weight axis inputs: 435/535/635/735; output labels: 400/500/600/700.
+Fixed optical size: 28. Custom stem increment: 10 units.
+This launch packaging does not change the selected v0.400 font binaries.
+Earlier internal versions remain separate. Public beta is not production-certified.

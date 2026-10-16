@@ -1,0 +1,77 @@
+{
+  "date": "2026-10-15",
+  "status": "beta",
+  "automated_font_checks": [
+    {
+      "file": "NevlinUIPlus-Bold.ttf",
+      "encoded_characters": 2852,
+      "weight": 700,
+      "tabular_figures_equal_width": true,
+      "sha256": "8a02645da89897d251863867a7d0e9c0cfd1ccbf7ca1471f3e33cdfc5b51bdef",
+      "unchanged_from_chosen_font": true
+    },
+    {
+      "file": "NevlinUIPlus-Bold.woff2",
+      "encoded_characters": 2852,
+      "weight": 700,
+      "tabular_figures_equal_width": true,
+      "sha256": "1e0b12336cbe71418fa69323fca5b7467597d147220ae114f7ee68f1988f7279",
+      "unchanged_from_chosen_font": true
+    },
+    {
+      "file": "NevlinUIPlus-Medium.ttf",
+      "encoded_characters": 2852,
+      "weight": 500,
+      "tabular_figures_equal_width": true,
+      "sha256": "64208294eac42a027917e79763cc20f488e3aa9655898760b9b0f3eb773f6a33",
+      "unchanged_from_chosen_font": true
+    },
+    {
+      "file": "NevlinUIPlus-Medium.woff2",
+      "encoded_characters": 2852,
+      "weight": 500,
+      "tabular_figures_equal_width": true,
+      "sha256": "90086b393594c6869508b686417585a4be998cb17e3d37f80702286643e8b60e",
+      "unchanged_from_chosen_font": true
+    },
+    {
+      "file": "NevlinUIPlus-Regular.ttf",
+      "encoded_characters": 2852,
+      "weight": 400,
+      "tabular_figures_equal_width": true,
+      "sha256": "0b747d8931ea3494fca511474422c8311f280d77beeb9386b40111f7c8444e01",
+      "unchanged_from_chosen_font": true
+    },
+    {
+      "file": "NevlinUIPlus-Regular.woff2",
+      "encoded_characters": 2852,
+      "weight": 400,
+      "tabular_figures_equal_width": true,
+      "sha256": "d678536702a7fd617b4cb7ae04ca89906b1a562d5a1ba50f4c73fe3a59fc5cfb",
+      "unchanged_from_chosen_font": true
+    },
+    {
+      "file": "NevlinUIPlus-Semibold.ttf",
+      "encoded_characters": 2852,
+      "weight": 600,
+      "tabular_figures_equal_width": true,
+      "sha256": "1930c817a7e95a03fc6de75fa8560b47c0bf534030e5a85de2b70bd12afc0168",
+      "unchanged_from_chosen_font": true
+    },
+    {
+      "file": "NevlinUIPlus-Semibold.woff2",
+      "encoded_characters": 2852,
+      "weight": 600,
+      "tabular_figures_equal_width": true,
+      "sha256": "73da8cdfaf8af16069ce62be11cbea9de8534d84b5b78b2e96864bee641b258b",
+      "unchanged_from_chosen_font": true
+    }
+  ],
+  "pending": [
+    "Human designer reviews",
+    "Windows and Android rendering",
+    "Optical spacing and kerning review",
+    "Hinting and composite mark placement review",
+    "Contour overlap cleanup before stable release"
+  ]
+}
