@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.DS_Store
+fonts/
+glyphs/
+source/
+validation.json
+glyph-manifest.json
+nevlin-ui-plus.css

@@ -1,0 +1,27 @@
+{
+  "source": "https://github.com/rsms/inter",
+  "font_url": "https://raw.githubusercontent.com/rsms/inter/master/docs/font-files/InterVariable.ttf",
+  "version": "4.001;git-9221beed3",
+  "sha256": "4989b125924991b90d05b2d16e0e388c48f7d5bb8b30539bbf9c755278d0ccaf",
+  "license": "SIL Open Font License 1.1",
+  "optical_size": 28,
+  "upstream_weight_offset": 35,
+  "custom_stem_increment": 10,
+  "customized_glyphs": [
+    "period",
+    "uni0307",
+    "Q",
+    "uni20B8"
+  ],
+  "redrawn_base_glyphs": [
+    "a",
+    "e",
+    "g",
+    "r",
+    "t",
+    "one",
+    "four",
+    "seven"
+  ],
+  "derived_glyphs": "Composite glyphs using period and uni0307 inherit the customized dots."
+}
