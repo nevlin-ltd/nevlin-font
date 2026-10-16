@@ -8,6 +8,8 @@ Four static upright weights: Regular 400, Medium 500, SemiBold 600 and Bold 700.
 The earlier 0.100 prototype is preserved locally; this directory contains 1.001 RC2.
 The existing Inter-derived Nevlin Font and its Google issue are unchanged.
 
+**Resubmitted using the official New Font template:** [Add Nevlin Sprout #11130](https://github.com/google/fonts/issues/11130). Four verified checklist items are checked; naming, agreements and other pending requirements are disclosed.
+
 ## Latin Core correction in 1.001
 
 The previous codepoint-only check missed unencoded Latin Core requirements.
