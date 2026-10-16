@@ -12,7 +12,7 @@ fontbakery version: 1.1.0
 
 
 
-<details><summary>[4] NevlinFont-Bold.ttf</summary>
+<details><summary>[3] NevlinFont-Bold.ttf</summary>
 <div>
 <details>
     <summary>⚠️ <b>WARN</b> METADATA.pb: Designers are listed correctly on the Google Fonts catalog? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#googlefonts-metadata-designer-profiles">googlefonts/metadata/designer_profiles</a></summary>
@@ -82,14 +82,14 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
-<li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh</li>
-<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: coptic, tai-le, malayalam, hebrew, old-permic, syriac, canadian-aboriginal, tifinagh, math, duployan, todhri</li>
+<li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, cherokee, coptic, math</li>
+<li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: tifinagh, malayalam, math, canadian-aboriginal, syriac, todhri, coptic, tai-le, old-permic, duployan, hebrew</li>
 <li>U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan</li>
-<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
+<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
 <li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
 <li>U+0326 COMBINING COMMA BELOW: try adding math
 7 more.</li>
@@ -97,58 +97,6 @@ definitions.</p>
 <p>Use -F or --full-lists to disable shortening of long lists.</p>
 <p>Or you can add the above codepoints to one of the subsets supported by the font: <code>latin</code>, <code>latin-ext</code>, <code>menu</code></p>
  [code: unreachable-subsetting]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>⚠️ <b>WARN</b> Do outlines contain any jaggy segments? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#outline-jaggy-segments">outline_jaggy_segments</a></summary>
-    <div>
-
-
-> 
-> This check heuristically detects outline segments which form a particularly
-> small angle, indicative of an outline error. This may cause false positives
-> in cases such as extreme ink traps, so should be regarded as advisory and
-> backed up by manual inspection.
-> 
-
-
-
-
-> Original proposal: https://github.com/fonttools/fontbakery/issues/3064
-
-
-
-
-
-* ⚠️ **WARN** <p>The following glyphs have jaggy segments:</p>
-<pre><code>* M (U+004D): B&lt;&lt;1437.0,1129.0&gt;-&lt;1437.0,1142.0&gt;-&lt;1438.0,1155.0&gt;&gt;/L&lt;&lt;1438.0,1155.0&gt;--&lt;1428.0,1121.0&gt;&gt; = 11.990834979039256
-
-* M.squared: B&lt;&lt;1922.0,1129.0&gt;-&lt;1922.0,1142.0&gt;-&lt;1923.0,1155.0&gt;&gt;/L&lt;&lt;1923.0,1155.0&gt;--&lt;1913.0,1121.0&gt;&gt; = 11.990834979039256
-
-* g (U+0067): B&lt;&lt;807.0,976.5&gt;-&lt;851.0,931.0&gt;-&lt;855.0,865.0&gt;&gt;/L&lt;&lt;855.0,865.0&gt;--&lt;855.0,1049.0&gt;&gt; = 3.468229258917096
-
-* g.subs: B&lt;&lt;539.0,227.0&gt;-&lt;567.0,201.0&gt;-&lt;570.0,164.0&gt;&gt;/L&lt;&lt;570.0,164.0&gt;--&lt;570.0,268.0&gt;&gt; = 4.635463426902618
-
-* g.sups: B&lt;&lt;539.0,1427.0&gt;-&lt;567.0,1401.0&gt;-&lt;570.0,1364.0&gt;&gt;/L&lt;&lt;570.0,1364.0&gt;--&lt;570.0,1468.0&gt;&gt; = 4.635463426902618
-
-* gbar (U+01E5): B&lt;&lt;807.0,976.5&gt;-&lt;851.0,931.0&gt;-&lt;855.0,865.0&gt;&gt;/L&lt;&lt;855.0,865.0&gt;--&lt;855.0,1049.0&gt;&gt; = 3.468229258917096
-
-* gbreve (U+011F): B&lt;&lt;807.0,976.5&gt;-&lt;851.0,931.0&gt;-&lt;855.0,865.0&gt;&gt;/L&lt;&lt;855.0,865.0&gt;--&lt;855.0,1049.0&gt;&gt; = 3.468229258917096
-
-* gcaron (U+01E7): B&lt;&lt;807.0,976.5&gt;-&lt;851.0,931.0&gt;-&lt;855.0,865.0&gt;&gt;/L&lt;&lt;855.0,865.0&gt;--&lt;855.0,1049.0&gt;&gt; = 3.468229258917096
-
-* gcircumflex: B&lt;&lt;807.0,976.5&gt;-&lt;851.0,931.0&gt;-&lt;855.0,865.0&gt;&gt;/L&lt;&lt;855.0,865.0&gt;--&lt;855.0,1049.0&gt;&gt; = 3.468229258917096
-
-* gdotaccent (U+0121): B&lt;&lt;807.0,976.5&gt;-&lt;851.0,931.0&gt;-&lt;855.0,865.0&gt;&gt;/L&lt;&lt;855.0,865.0&gt;--&lt;855.0,1049.0&gt;&gt; = 3.468229258917096
-
-* 18 more.
-</code></pre>
-<p>Use -F or --full-lists to disable shortening of long lists.</p>
- [code: found-jaggy-segments]
 
 
 
@@ -270,14 +218,14 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
-<li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh</li>
-<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: coptic, tai-le, malayalam, hebrew, old-permic, syriac, canadian-aboriginal, tifinagh, math, duployan, todhri</li>
+<li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, cherokee, coptic, math</li>
+<li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: tifinagh, malayalam, math, canadian-aboriginal, syriac, todhri, coptic, tai-le, old-permic, duployan, hebrew</li>
 <li>U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan</li>
-<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
+<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
 <li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
 <li>U+0326 COMBINING COMMA BELOW: try adding math
 7 more.</li>
@@ -406,14 +354,14 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
-<li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh</li>
-<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: coptic, tai-le, malayalam, hebrew, old-permic, syriac, canadian-aboriginal, tifinagh, math, duployan, todhri</li>
+<li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, cherokee, coptic, math</li>
+<li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: tifinagh, malayalam, math, canadian-aboriginal, syriac, todhri, coptic, tai-le, old-permic, duployan, hebrew</li>
 <li>U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan</li>
-<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
+<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
 <li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
 <li>U+0326 COMBINING COMMA BELOW: try adding math
 7 more.</li>
@@ -472,7 +420,7 @@ definitions.</p>
 </div>
 </details>
 
-<details><summary>[4] NevlinFont-SemiBold.ttf</summary>
+<details><summary>[3] NevlinFont-SemiBold.ttf</summary>
 <div>
 <details>
     <summary>⚠️ <b>WARN</b> METADATA.pb: Designers are listed correctly on the Google Fonts catalog? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/googlefonts.html#googlefonts-metadata-designer-profiles">googlefonts/metadata/designer_profiles</a></summary>
@@ -542,14 +490,14 @@ be served. You can solve this by either manually adding additional
 subset declarations to METADATA.pb, or by editing the glyphset
 definitions.</p>
 <ul>
-<li>U+02D8 BREVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal</li>
-<li>U+02DB OGONEK: try adding one of: yi, canadian-aboriginal</li>
-<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh</li>
-<li>U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh</li>
-<li>U+0307 COMBINING DOT ABOVE: try adding one of: coptic, tai-le, malayalam, hebrew, old-permic, syriac, canadian-aboriginal, tifinagh, math, duployan, todhri</li>
+<li>U+02D8 BREVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi</li>
+<li>U+02DB OGONEK: try adding one of: canadian-aboriginal, yi</li>
+<li>U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, cherokee, coptic, math</li>
+<li>U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic</li>
+<li>U+0307 COMBINING DOT ABOVE: try adding one of: tifinagh, malayalam, math, canadian-aboriginal, syriac, todhri, coptic, tai-le, old-permic, duployan, hebrew</li>
 <li>U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan</li>
-<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee</li>
+<li>U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage</li>
 <li>U+030C COMBINING CARON: try adding one of: cherokee, tai-le</li>
 <li>U+0326 COMBINING COMMA BELOW: try adding math
 7 more.</li>
@@ -557,55 +505,6 @@ definitions.</p>
 <p>Use -F or --full-lists to disable shortening of long lists.</p>
 <p>Or you can add the above codepoints to one of the subsets supported by the font: <code>latin</code>, <code>latin-ext</code>, <code>menu</code></p>
  [code: unreachable-subsetting]
-
-
-
-</div>
-</details>
-
-<details>
-    <summary>⚠️ <b>WARN</b> Do outlines contain any jaggy segments? <a href="https://fontbakery.readthedocs.io/en/stable/fontbakery/checks/universal.html#outline-jaggy-segments">outline_jaggy_segments</a></summary>
-    <div>
-
-
-> 
-> This check heuristically detects outline segments which form a particularly
-> small angle, indicative of an outline error. This may cause false positives
-> in cases such as extreme ink traps, so should be regarded as advisory and
-> backed up by manual inspection.
-> 
-
-
-
-
-> Original proposal: https://github.com/fonttools/fontbakery/issues/3064
-
-
-
-
-
-* ⚠️ **WARN** <p>The following glyphs have jaggy segments:</p>
-<pre><code>* r (U+0072): L&lt;&lt;349.0,1070.0&gt;--&lt;349.0,851.0&gt;&gt;/B&lt;&lt;349.0,851.0&gt;-&lt;360.0,942.0&gt;-&lt;410.0,998.0&gt;&gt; = 6.892423122485113
-
-* r.subs: L&lt;&lt;252.0,267.0&gt;--&lt;252.0,145.0&gt;&gt;/B&lt;&lt;252.0,145.0&gt;-&lt;260.0,196.0&gt;-&lt;294.5,227.0&gt;&gt; = 8.914926957147863
-
-* r.sups: L&lt;&lt;252.0,1462.0&gt;--&lt;252.0,1341.0&gt;&gt;/B&lt;&lt;252.0,1341.0&gt;-&lt;260.0,1391.0&gt;-&lt;294.5,1422.0&gt;&gt; = 9.090276920822312
-
-* racute (U+0155): L&lt;&lt;349.0,1070.0&gt;--&lt;349.0,851.0&gt;&gt;/B&lt;&lt;349.0,851.0&gt;-&lt;360.0,942.0&gt;-&lt;410.0,998.0&gt;&gt; = 6.892423122485113
-
-* rcaron (U+0159): L&lt;&lt;349.0,1070.0&gt;--&lt;349.0,851.0&gt;&gt;/B&lt;&lt;349.0,851.0&gt;-&lt;360.0,942.0&gt;-&lt;410.0,998.0&gt;&gt; = 6.892423122485113
-
-* uni0157 (U+0157): L&lt;&lt;349.0,1070.0&gt;--&lt;349.0,851.0&gt;&gt;/B&lt;&lt;349.0,851.0&gt;-&lt;360.0,942.0&gt;-&lt;410.0,998.0&gt;&gt; = 6.892423122485113
-
-* uni0157.ss03: L&lt;&lt;349.0,1070.0&gt;--&lt;349.0,851.0&gt;&gt;/B&lt;&lt;349.0,851.0&gt;-&lt;360.0,942.0&gt;-&lt;410.0,998.0&gt;&gt; = 6.892423122485113
-
-* uni0157.ss07: L&lt;&lt;349.0,1070.0&gt;--&lt;349.0,851.0&gt;&gt;/B&lt;&lt;349.0,851.0&gt;-&lt;360.0,942.0&gt;-&lt;410.0,998.0&gt;&gt; = 6.892423122485113
-
-* uni1E59.ss07: L&lt;&lt;349.0,1070.0&gt;--&lt;349.0,851.0&gt;&gt;/B&lt;&lt;349.0,851.0&gt;-&lt;360.0,942.0&gt;-&lt;410.0,998.0&gt;&gt; = 6.892423122485113
-
-* uni1E59: L&lt;&lt;349.0,1070.0&gt;--&lt;349.0,851.0&gt;&gt;/B&lt;&lt;349.0,851.0&gt;-&lt;360.0,942.0&gt;-&lt;410.0,998.0&gt;&gt; = 6.892423122485113
-</code></pre>
- [code: found-jaggy-segments]
 
 
 
@@ -664,8 +563,8 @@ definitions.</p>
 
 | 💥 ERROR | ☠ FATAL | 🔥 FAIL | ⚠️ WARN | ⏩ SKIP | ℹ️ INFO | ✅ PASS | 🔎 DEBUG | 
 | ---|---|---|---|---|---|---|---|
-| 0 | 0 | 0 | 14 | 239 | 29 | 611 | 0 | 
-| 0% | 0% | 0% | 2% | 27% | 3% | 68% | 0% | 
+| 0 | 0 | 0 | 12 | 239 | 29 | 613 | 0 | 
+| 0% | 0% | 0% | 1% | 27% | 3% | 69% | 0% | 
 
 
 

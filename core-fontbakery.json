@@ -2,9 +2,9 @@
     "result": {
         "(not finished)": 0,
         "INFO": 29,
-        "PASS": 611,
+        "PASS": 613,
         "SKIP": 239,
-        "WARN": 14
+        "WARN": 12
     },
     "sections": [
         {
@@ -8968,7 +8968,7 @@
                         {
                             "message": {
                                 "code": "size-impact",
-                                "message": "Hinting filesize impact:\n\n |               | output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-Bold.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 135.9kb |\n | Hinted Size   | 135.9kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
+                                "message": "Hinting filesize impact:\n\n |               | output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-Bold.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 136.4kb |\n | Hinted Size   | 136.4kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
                             },
                             "status": "INFO"
                         }
@@ -9064,7 +9064,7 @@
                         {
                             "message": {
                                 "code": "size-impact",
-                                "message": "Hinting filesize impact:\n\n |               | output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-SemiBold.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 135.4kb |\n | Hinted Size   | 135.4kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
+                                "message": "Hinting filesize impact:\n\n |               | output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-SemiBold.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 135.5kb |\n | Hinted Size   | 135.5kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
                             },
                             "status": "INFO"
                         }
@@ -19488,7 +19488,7 @@
                         {
                             "message": {
                                 "code": "unreachable-subsetting",
-                                "message": "The following codepoints supported by the font are not covered by\n    any subsets defined in the font's metadata file, and will never\n    be served. You can solve this by either manually adding additional\n    subset declarations to METADATA.pb, or by editing the glyphset\n    definitions.\n\n * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal\n * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal\n * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal\n * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh\n * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh\n * U+0307 COMBINING DOT ABOVE: try adding one of: coptic, tai-le, malayalam, hebrew, old-permic, syriac, canadian-aboriginal, tifinagh, math, duployan, todhri\n * U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan\n * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee\n * U+030C COMBINING CARON: try adding one of: cherokee, tai-le\n * U+0326 COMBINING COMMA BELOW: try adding math\n7 more.\n\nUse -F or --full-lists to disable shortening of long lists.\n\nOr you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext`, `menu`"
+                                "message": "The following codepoints supported by the font are not covered by\n    any subsets defined in the font's metadata file, and will never\n    be served. You can solve this by either manually adding additional\n    subset declarations to METADATA.pb, or by editing the glyphset\n    definitions.\n\n * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi\n * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi\n * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi\n * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, cherokee, coptic, math\n * U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic\n * U+0307 COMBINING DOT ABOVE: try adding one of: tifinagh, malayalam, math, canadian-aboriginal, syriac, todhri, coptic, tai-le, old-permic, duployan, hebrew\n * U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan\n * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage\n * U+030C COMBINING CARON: try adding one of: cherokee, tai-le\n * U+0326 COMBINING COMMA BELOW: try adding math\n7 more.\n\nUse -F or --full-lists to disable shortening of long lists.\n\nOr you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext`, `menu`"
                             },
                             "status": "WARN"
                         }
@@ -19521,7 +19521,7 @@
                         {
                             "message": {
                                 "code": "unreachable-subsetting",
-                                "message": "The following codepoints supported by the font are not covered by\n    any subsets defined in the font's metadata file, and will never\n    be served. You can solve this by either manually adding additional\n    subset declarations to METADATA.pb, or by editing the glyphset\n    definitions.\n\n * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal\n * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal\n * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal\n * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh\n * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh\n * U+0307 COMBINING DOT ABOVE: try adding one of: coptic, tai-le, malayalam, hebrew, old-permic, syriac, canadian-aboriginal, tifinagh, math, duployan, todhri\n * U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan\n * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee\n * U+030C COMBINING CARON: try adding one of: cherokee, tai-le\n * U+0326 COMBINING COMMA BELOW: try adding math\n7 more.\n\nUse -F or --full-lists to disable shortening of long lists.\n\nOr you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext`, `menu`"
+                                "message": "The following codepoints supported by the font are not covered by\n    any subsets defined in the font's metadata file, and will never\n    be served. You can solve this by either manually adding additional\n    subset declarations to METADATA.pb, or by editing the glyphset\n    definitions.\n\n * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi\n * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi\n * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi\n * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, cherokee, coptic, math\n * U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic\n * U+0307 COMBINING DOT ABOVE: try adding one of: tifinagh, malayalam, math, canadian-aboriginal, syriac, todhri, coptic, tai-le, old-permic, duployan, hebrew\n * U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan\n * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage\n * U+030C COMBINING CARON: try adding one of: cherokee, tai-le\n * U+0326 COMBINING COMMA BELOW: try adding math\n7 more.\n\nUse -F or --full-lists to disable shortening of long lists.\n\nOr you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext`, `menu`"
                             },
                             "status": "WARN"
                         }
@@ -19554,7 +19554,7 @@
                         {
                             "message": {
                                 "code": "unreachable-subsetting",
-                                "message": "The following codepoints supported by the font are not covered by\n    any subsets defined in the font's metadata file, and will never\n    be served. You can solve this by either manually adding additional\n    subset declarations to METADATA.pb, or by editing the glyphset\n    definitions.\n\n * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal\n * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal\n * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal\n * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh\n * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh\n * U+0307 COMBINING DOT ABOVE: try adding one of: coptic, tai-le, malayalam, hebrew, old-permic, syriac, canadian-aboriginal, tifinagh, math, duployan, todhri\n * U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan\n * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee\n * U+030C COMBINING CARON: try adding one of: cherokee, tai-le\n * U+0326 COMBINING COMMA BELOW: try adding math\n7 more.\n\nUse -F or --full-lists to disable shortening of long lists.\n\nOr you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext`, `menu`"
+                                "message": "The following codepoints supported by the font are not covered by\n    any subsets defined in the font's metadata file, and will never\n    be served. You can solve this by either manually adding additional\n    subset declarations to METADATA.pb, or by editing the glyphset\n    definitions.\n\n * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi\n * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi\n * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi\n * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, cherokee, coptic, math\n * U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic\n * U+0307 COMBINING DOT ABOVE: try adding one of: tifinagh, malayalam, math, canadian-aboriginal, syriac, todhri, coptic, tai-le, old-permic, duployan, hebrew\n * U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan\n * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage\n * U+030C COMBINING CARON: try adding one of: cherokee, tai-le\n * U+0326 COMBINING COMMA BELOW: try adding math\n7 more.\n\nUse -F or --full-lists to disable shortening of long lists.\n\nOr you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext`, `menu`"
                             },
                             "status": "WARN"
                         }
@@ -19587,7 +19587,7 @@
                         {
                             "message": {
                                 "code": "unreachable-subsetting",
-                                "message": "The following codepoints supported by the font are not covered by\n    any subsets defined in the font's metadata file, and will never\n    be served. You can solve this by either manually adding additional\n    subset declarations to METADATA.pb, or by editing the glyphset\n    definitions.\n\n * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal\n * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal\n * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal\n * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh\n * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh\n * U+0307 COMBINING DOT ABOVE: try adding one of: coptic, tai-le, malayalam, hebrew, old-permic, syriac, canadian-aboriginal, tifinagh, math, duployan, todhri\n * U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan\n * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee\n * U+030C COMBINING CARON: try adding one of: cherokee, tai-le\n * U+0326 COMBINING COMMA BELOW: try adding math\n7 more.\n\nUse -F or --full-lists to disable shortening of long lists.\n\nOr you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext`, `menu`"
+                                "message": "The following codepoints supported by the font are not covered by\n    any subsets defined in the font's metadata file, and will never\n    be served. You can solve this by either manually adding additional\n    subset declarations to METADATA.pb, or by editing the glyphset\n    definitions.\n\n * U+02D8 BREVE: try adding one of: canadian-aboriginal, yi\n * U+02D9 DOT ABOVE: try adding one of: canadian-aboriginal, yi\n * U+02DB OGONEK: try adding one of: canadian-aboriginal, yi\n * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: tifinagh, cherokee, coptic, math\n * U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic\n * U+0307 COMBINING DOT ABOVE: try adding one of: tifinagh, malayalam, math, canadian-aboriginal, syriac, todhri, coptic, tai-le, old-permic, duployan, hebrew\n * U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan\n * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage\n * U+030C COMBINING CARON: try adding one of: cherokee, tai-le\n * U+0326 COMBINING COMMA BELOW: try adding math\n7 more.\n\nUse -F or --full-lists to disable shortening of long lists.\n\nOr you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext`, `menu`"
                             },
                             "status": "WARN"
                         }
@@ -24986,10 +24986,10 @@
                     "logs": [
                         {
                             "message": {
-                                "code": "found-jaggy-segments",
-                                "message": "The following glyphs have jaggy segments:\n\n\t* M (U+004D): B<<1437.0,1129.0>-<1437.0,1142.0>-<1438.0,1155.0>>/L<<1438.0,1155.0>--<1428.0,1121.0>> = 11.990834979039256\n\n\t* M.squared: B<<1922.0,1129.0>-<1922.0,1142.0>-<1923.0,1155.0>>/L<<1923.0,1155.0>--<1913.0,1121.0>> = 11.990834979039256\n\n\t* g (U+0067): B<<807.0,976.5>-<851.0,931.0>-<855.0,865.0>>/L<<855.0,865.0>--<855.0,1049.0>> = 3.468229258917096\n\n\t* g.subs: B<<539.0,227.0>-<567.0,201.0>-<570.0,164.0>>/L<<570.0,164.0>--<570.0,268.0>> = 4.635463426902618\n\n\t* g.sups: B<<539.0,1427.0>-<567.0,1401.0>-<570.0,1364.0>>/L<<570.0,1364.0>--<570.0,1468.0>> = 4.635463426902618\n\n\t* gbar (U+01E5): B<<807.0,976.5>-<851.0,931.0>-<855.0,865.0>>/L<<855.0,865.0>--<855.0,1049.0>> = 3.468229258917096\n\n\t* gbreve (U+011F): B<<807.0,976.5>-<851.0,931.0>-<855.0,865.0>>/L<<855.0,865.0>--<855.0,1049.0>> = 3.468229258917096\n\n\t* gcaron (U+01E7): B<<807.0,976.5>-<851.0,931.0>-<855.0,865.0>>/L<<855.0,865.0>--<855.0,1049.0>> = 3.468229258917096\n\n\t* gcircumflex: B<<807.0,976.5>-<851.0,931.0>-<855.0,865.0>>/L<<855.0,865.0>--<855.0,1049.0>> = 3.468229258917096\n\n\t* gdotaccent (U+0121): B<<807.0,976.5>-<851.0,931.0>-<855.0,865.0>>/L<<855.0,865.0>--<855.0,1049.0>> = 3.468229258917096\n\n\t* 18 more.\n\nUse -F or --full-lists to disable shortening of long lists."
+                                "code": null,
+                                "message": "No jaggy segments found."
                             },
-                            "status": "WARN"
+                            "status": "PASS"
                         }
                     ],
                     "module": "outline_jaggy_segments",
@@ -24997,7 +24997,7 @@
                         "https://github.com/fonttools/fontbakery/issues/3064"
                     ],
                     "rationale": "\n        This check heuristically detects outline segments which form a particularly\n        small angle, indicative of an outline error. This may cause false positives\n        in cases such as extreme ink traps, so should be regarded as advisory and\n        backed up by manual inspection.\n    ",
-                    "result": "WARN",
+                    "result": "PASS",
                     "severity": null
                 },
                 {
@@ -25082,10 +25082,10 @@
                     "logs": [
                         {
                             "message": {
-                                "code": "found-jaggy-segments",
-                                "message": "The following glyphs have jaggy segments:\n\n\t* r (U+0072): L<<349.0,1070.0>--<349.0,851.0>>/B<<349.0,851.0>-<360.0,942.0>-<410.0,998.0>> = 6.892423122485113\n\n\t* r.subs: L<<252.0,267.0>--<252.0,145.0>>/B<<252.0,145.0>-<260.0,196.0>-<294.5,227.0>> = 8.914926957147863\n\n\t* r.sups: L<<252.0,1462.0>--<252.0,1341.0>>/B<<252.0,1341.0>-<260.0,1391.0>-<294.5,1422.0>> = 9.090276920822312\n\n\t* racute (U+0155): L<<349.0,1070.0>--<349.0,851.0>>/B<<349.0,851.0>-<360.0,942.0>-<410.0,998.0>> = 6.892423122485113\n\n\t* rcaron (U+0159): L<<349.0,1070.0>--<349.0,851.0>>/B<<349.0,851.0>-<360.0,942.0>-<410.0,998.0>> = 6.892423122485113\n\n\t* uni0157 (U+0157): L<<349.0,1070.0>--<349.0,851.0>>/B<<349.0,851.0>-<360.0,942.0>-<410.0,998.0>> = 6.892423122485113\n\n\t* uni0157.ss03: L<<349.0,1070.0>--<349.0,851.0>>/B<<349.0,851.0>-<360.0,942.0>-<410.0,998.0>> = 6.892423122485113\n\n\t* uni0157.ss07: L<<349.0,1070.0>--<349.0,851.0>>/B<<349.0,851.0>-<360.0,942.0>-<410.0,998.0>> = 6.892423122485113\n\n\t* uni1E59.ss07: L<<349.0,1070.0>--<349.0,851.0>>/B<<349.0,851.0>-<360.0,942.0>-<410.0,998.0>> = 6.892423122485113\n\n\t* uni1E59: L<<349.0,1070.0>--<349.0,851.0>>/B<<349.0,851.0>-<360.0,942.0>-<410.0,998.0>> = 6.892423122485113"
+                                "code": null,
+                                "message": "No jaggy segments found."
                             },
-                            "status": "WARN"
+                            "status": "PASS"
                         }
                     ],
                     "module": "outline_jaggy_segments",
@@ -25093,7 +25093,7 @@
                         "https://github.com/fonttools/fontbakery/issues/3064"
                     ],
                     "rationale": "\n        This check heuristically detects outline segments which form a particularly\n        small angle, indicative of an outline error. This may cause false positives\n        in cases such as extreme ink traps, so should be regarded as advisory and\n        backed up by manual inspection.\n    ",
-                    "result": "WARN",
+                    "result": "PASS",
                     "severity": null
                 },
                 {
@@ -25359,8 +25359,7 @@
                 null
             ],
             "result": {
-                "PASS": 22,
-                "WARN": 2
+                "PASS": 24
             }
         },
         {

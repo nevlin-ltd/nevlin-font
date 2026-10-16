@@ -11,11 +11,11 @@ An Inter-derived, SIL OFL-licensed font project by Nevlin. **Core Latin developm
 - View the [alphabet proof](core-character-proof.svg).
 - Read [validation and remaining warnings](CORE-VALIDATION.md).
 
-FontBakery Google Fonts profile: **611 PASS, 0 FAIL, 0 ERROR, 14 WARN**. Warnings have not been suppressed. Fontspector 1.9.0 also reports zero failures and errors, with 10 warnings. Tight-join review, catalog subsets and designer/vendor profiles remain unresolved. Read [external onboarding notes](ONBOARDING-NOTES.md). Google admission and originality review are separate from these checks.
+FontBakery Google Fonts profile: **613 PASS, 0 FAIL, 0 ERROR, 12 WARN**. Warnings have not been suppressed. Fontspector 1.9.0 also reports zero failures and errors, with 8 warnings. Outline warnings are repaired; catalog subsets and designer/vendor profiles remain unresolved. Microsoft vendor registration is requested and pending. Read [external onboarding notes](ONBOARDING-NOTES.md). Google admission and originality review are separate from these checks.
 
 ## Editable sources and build
 
-The four `NevlinFont-*.glyphs` files are editable text sources. The source archive also includes UFO 3 files. The sources retain the full design inventory; `repertoire.json` selects the core distribution. The build compiles with Fontmake and adds the documented i/j/į accent rules, exposed in generated UFO features. No binary font is a build input.
+The four `NevlinFont-*.glyphs` files are editable text sources. The source archive also includes UFO 3 files. The sources retain the full design inventory; `repertoire.json` selects the core distribution. The build compiles with Fontmake and adds the documented i/j/į accent rules, exposed in generated UFO features. The `repair_joins.py` source helper trims needle-like junctions after overlap removal and logs each repair. No binary font is a build input.
 
 Use Python 3.12:
 
@@ -48,3 +48,5 @@ Contact: zhanat.salimova@nevlin.com
 No Google Fonts submission or acceptance is claimed. This separate font project does not restore the canceled Nevlin website font page.
 
 Current Google guidance uses Fontspector. Install the [official checker](https://github.com/fonttools/fontspector/blob/main/INSTALLATION.md) and run `fontspector -p googlefonts googlefonts/nevlinfont/*.ttf`. Both full reports are published in this repository.
+
+A [Google review request](GOOGLE-FONTS-REVIEW-DRAFT.md) is prepared but not submitted. Remaining warnings need external review, not fabricated registry entries or reduced required coverage.

@@ -1,0 +1,52 @@
+{
+  "NevlinFont-Bold": [
+    {
+      "glyph": "M",
+      "junctions": 1
+    },
+    {
+      "glyph": "g",
+      "junctions": 1
+    },
+    {
+      "glyph": "gbar",
+      "junctions": 1
+    },
+    {
+      "glyph": "r",
+      "junctions": 1
+    },
+    {
+      "glyph": "g.sups",
+      "junctions": 1
+    },
+    {
+      "glyph": "r.sups",
+      "junctions": 1
+    },
+    {
+      "glyph": "g.subs",
+      "junctions": 1
+    },
+    {
+      "glyph": "r.subs",
+      "junctions": 1
+    }
+  ],
+  "NevlinFont-Medium": [],
+  "NevlinFont-Regular": [],
+  "NevlinFont-SemiBold": [
+    {
+      "glyph": "r",
+      "junctions": 1
+    },
+    {
+      "glyph": "r.sups",
+      "junctions": 1
+    },
+    {
+      "glyph": "r.subs",
+      "junctions": 1
+    }
+  ]
+}
