@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="idotaccent" format="2">
+  <advance width="230"/>
+  <anchor x="115.0" y="560" name="top"/>
+  <anchor x="115.0" y="0" name="bottom"/>
+  <outline>
+    <contour>
+      <point x="83.0" y="500.0" type="line"/>
+      <point x="83.0" y="0" type="line"/>
+      <point x="147.0" y="0" type="line"/>
+      <point x="147.0" y="500.0" type="line"/>
+    </contour>
+    <contour>
+      <point x="91.6719970703125" y="626.7999877929688" type="qcurve" smooth="yes"/>
+      <point x="138.3280029296875" y="626.7999877929688" type="line" smooth="yes"/>
+      <point x="158.1999969482422" y="626.7999877929688"/>
+      <point x="158.1999969482422" y="646.6719970703125" type="qcurve" smooth="yes"/>
+      <point x="158.1999969482422" y="693.3280029296875" type="line" smooth="yes"/>
+      <point x="158.1999969482422" y="713.2000122070312"/>
+      <point x="138.3280029296875" y="713.2000122070312" type="qcurve" smooth="yes"/>
+      <point x="91.6719970703125" y="713.2000122070312" type="line" smooth="yes"/>
+      <point x="71.80000305175781" y="713.2000122070312"/>
+      <point x="71.80000305175781" y="693.3280029296875" type="qcurve" smooth="yes"/>
+      <point x="71.80000305175781" y="646.6719970703125" type="line" smooth="yes"/>
+      <point x="71.80000305175781" y="626.7999877929688"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,15 +1,15 @@
 {
   "same_environment_repeat_build_identical": true,
   "matches_tested_final_binaries": true,
-  "scope": "all eight TTF/WOFF2 files; same Python environment, not an independent clean-machine test",
+  "scope": "all eight 1.001 TTF/WOFF2 files; same Python environment, not an independent clean-machine test",
   "hashes": {
-    "NevlinSprout-Bold.ttf": "831e036e7eb1e7f84151485f01bece4c5984bdff73d6768ed797105236b6a9e5",
-    "NevlinSprout-Bold.woff2": "a18f84903e2f251a9c827cfa1d40dfe9c7402074f66c5cc13676c14e9e345c25",
-    "NevlinSprout-Medium.ttf": "5a339ba7f52fd67783442cb1d8d5dc1389627eb3710a8ede5d59f8450b486637",
-    "NevlinSprout-Medium.woff2": "ae3e64835f2ec2e9ad00bbb7e852120bee513563a59d53847240ac4281f99197",
-    "NevlinSprout-Regular.ttf": "e8e526605e09fd6be3e6bdc1cc1ae300123e35ca7e409f1b6699da6e63470b5e",
-    "NevlinSprout-Regular.woff2": "d401e6900f056fef19df60c97e4cb0a9e4d17ae41b3f869700aa945d8d261262",
-    "NevlinSprout-SemiBold.ttf": "4f2e46e97ed72ce551dc67f290fef30a5a6d22381b26651acc8003f006d2f851",
-    "NevlinSprout-SemiBold.woff2": "5cdc2fce940a6ad01ddfa746f9ff6b9dd65c055b3ab83ca04820bb2a5fee1de2"
+    "NevlinSprout-SemiBold.woff2": "6a52303c68bb1358a1e383a970291254a53832ab769b2acc2d3d344a310e2e0d",
+    "NevlinSprout-Medium.woff2": "a00e082dbf88777224811a336e14e951c9c84b7c5b2933f2d6b9099ade25ceed",
+    "NevlinSprout-Regular.ttf": "236685ce9cdf8b8f3bbe2e592da018a7848090529172ad98a9aaa012542bc2f0",
+    "NevlinSprout-Bold.woff2": "310581c7410a4606957ceb69a1d77c26e85320a5c9ea0ec61b808e73da028e78",
+    "NevlinSprout-Regular.woff2": "bff9f43179f10460682e4c1acd80dcafaeba7b62da5f31fcbe158bfc2187d664",
+    "NevlinSprout-SemiBold.ttf": "3811cd5e0093feaee7753a917c9c5c88ac6da92a50340a174e1b627d3b2906cc",
+    "NevlinSprout-Bold.ttf": "61a60be72fcfa6abcce985832ef4005e6d8f07e0f6178449a957b54ef9efebe9",
+    "NevlinSprout-Medium.ttf": "a386a8991ea5a341f0d3b6cb5e8fc2444a700e59a31217f72d9de85851e72d1e"
   }
 }

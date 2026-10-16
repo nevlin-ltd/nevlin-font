@@ -6,6 +6,6 @@
   <anchor x="347.5" y="0" name="bottom"/>
   <outline>
     <component base="d"/>
-    <component base="caron.side" xOffset="570" yOffset="555"/>
+    <component base="caroncomb.alt" xOffset="570" yOffset="555"/>
   </outline>
 </glyph>

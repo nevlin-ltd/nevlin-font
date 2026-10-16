@@ -4,7 +4,7 @@ An Inter-derived, SIL OFL-licensed font project by Nevlin. **Core Latin developm
 
 ## New original family: Nevlin Sprout
 
-[Nevlin Sprout](families/nevlin-sprout) is a separate original geometric family for financial-learning interfaces. Its 1.000 RC1 package includes four weights, editable UFOs, drawing sources, build instructions, specimens and full QA evidence. It is not derived from the Inter-based family below. [Google Fonts review request #11129](https://github.com/google/fonts/issues/11129) covers its design eligibility and eight remaining warnings.
+[Nevlin Sprout](families/nevlin-sprout) is a separate original geometric family for financial-learning interfaces. Its 1.001 RC2 package includes four weights, editable UFOs, drawing sources, build instructions, specimens and full QA evidence. It is not derived from the Inter-based family below. [The initial Google review #11129](https://github.com/google/fonts/issues/11129) identified incomplete Latin Core validation. RC2 corrects the missing unencoded forms and tests all 324 official glyph requirements. Eight vendor/subset warnings remain disclosed.
 
 ## Current candidate
 

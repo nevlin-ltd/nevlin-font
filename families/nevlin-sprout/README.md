@@ -1,12 +1,21 @@
-# Nevlin Sprout — 1.000 RC1 review candidate
+# Nevlin Sprout — 1.001 RC2 review candidate
 
 Original geometric sans-serif family for Nevlin's financial-learning product.
 Four static upright weights: Regular 400, Medium 500, SemiBold 600 and Bold 700.
-389 encoded characters, 404 glyphs per weight; full GF Latin Core coverage.
+389 encoded characters, 407 glyphs per weight; full GF Latin Core coverage.
 
-**Public review candidate. [Google Fonts review request #11129](https://github.com/google/fonts/issues/11129) is open; this is not catalog acceptance.**
-The earlier 0.100 prototype is preserved locally; this directory contains 1.000 RC1.
+**Public review candidate. [Previous Google Fonts review request #11129](https://github.com/google/fonts/issues/11129) was closed with a request to fix Latin Core and use the official template. This revision addresses those points; it is not catalog acceptance.**
+The earlier 0.100 prototype is preserved locally; this directory contains 1.001 RC2.
 The existing Inter-derived Nevlin Font and its Google issue are unchanged.
+
+## Latin Core correction in 1.001
+
+The previous codepoint-only check missed unencoded Latin Core requirements.
+Added Catalan middle-dot variants with contextual `locl` substitutions and
+localized dotted `i`; renamed the existing side caron to `caroncomb.alt`.
+All 324 entries in the pinned official glyph-name list are now mapped and
+verified in all four weights. See [coverage evidence](qa/latin-core-coverage.json)
+and [rendered localization proof](qa/latin-core-localization.png).
 
 ## What changed
 
@@ -28,8 +37,8 @@ Fontspector 1.9.0:
 
 | Profile | PASS | WARN | FAIL / ERROR / FATAL |
 |---|---:|---:|---:|
-| Universal, offline | 291 | 0 | 0 |
-| Google Fonts, network enabled | 407 | 8 | 0 |
+| Universal, network enabled | 299 | 0 | 0 |
+| Google Fonts, network enabled | 411 | 8 | 0 |
 
 The eight Google warnings are four vendor-ID warnings and four serving-subset
 warnings. They are **not suppressed or waived**. See QA.md and ONBOARDING.md.
