@@ -1,0 +1,30 @@
+[
+  {
+    "style": "Regular",
+    "input": "NevlinUIPlus-Regular.ttf",
+    "sha256": "0b747d8931ea3494fca511474422c8311f280d77beeb9386b40111f7c8444e01",
+    "glyphs": 2937,
+    "characters": 2852
+  },
+  {
+    "style": "Medium",
+    "input": "NevlinUIPlus-Medium.ttf",
+    "sha256": "64208294eac42a027917e79763cc20f488e3aa9655898760b9b0f3eb773f6a33",
+    "glyphs": 2937,
+    "characters": 2852
+  },
+  {
+    "style": "Semibold",
+    "input": "NevlinUIPlus-Semibold.ttf",
+    "sha256": "1930c817a7e95a03fc6de75fa8560b47c0bf534030e5a85de2b70bd12afc0168",
+    "glyphs": 2937,
+    "characters": 2852
+  },
+  {
+    "style": "Bold",
+    "input": "NevlinUIPlus-Bold.ttf",
+    "sha256": "8a02645da89897d251863867a7d0e9c0cfd1ccbf7ca1471f3e33cdfc5b51bdef",
+    "glyphs": 2937,
+    "characters": 2852
+  }
+]
