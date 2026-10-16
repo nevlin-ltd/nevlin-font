@@ -1,0 +1,31 @@
+DRAFT — NOT SENT
+Nevlin Sprout: request for disposition of two remaining warning categories
+
+This is the new original Nevlin Sprout candidate, separate from the Inter-derived
+Nevlin Font in google/fonts#11128. Please do not treat this as a claim that design
+eligibility, naming, contributor agreements or visual review are complete.
+
+Fontspector 1.9.0 Google profile, network enabled: 407 PASS, 8 WARN,
+0 FAIL/ERROR/FATAL across four static weights. No checks are excluded or downgraded.
+The exact messages and tested font hashes are in remaining-warning-audit.json.
+
+1. Vendor ID (four warnings)
+The candidate currently uses NONE. Nevlin has requested NVLN registration from
+Microsoft; registration is not yet confirmed here. Would you accept this warning
+pending registration, or should onboarding wait for confirmation? We will rebuild
+with the confirmed identifier and rerun the checks once registration is verified.
+
+2. Serving subsets (four warnings)
+Metadata declares latin, latin-ext and menu. These 18 supported codepoints are
+outside the corresponding ranges used by the check:
+U+02D8 U+02D9 U+02DB U+0302 U+0306 U+0307 U+030A U+030B U+030C
+U+0326 U+0327 U+1EBC U+1EBD U+2190 U+2192 U+2264 U+2265 U+25CC.
+
+Which supported configuration should serve these characters for this Latin
+family? In particular, should marks and E-with-tilde be covered by an update to
+Latin serving definitions, and should the arrows, inequalities and dotted circle
+use a separate symbols range? We have not added unrelated script declarations,
+deleted these characters, or patched the installed checker to obtain a pass.
+
+Before sending: publish the new family sources and provide its exact commit,
+QA report, metadata and specimen URLs. This draft has not been submitted.

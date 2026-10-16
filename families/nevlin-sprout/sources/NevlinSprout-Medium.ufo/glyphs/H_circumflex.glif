@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Hcircumflex" format="2">
+  <advance width="650"/>
+  <unicode hex="0124"/>
+  <anchor x="325.0" y="760" name="top"/>
+  <anchor x="325.0" y="0" name="bottom"/>
+  <outline>
+    <contour>
+      <point x="46.0" y="700.0" type="line"/>
+      <point x="46.0" y="0" type="line"/>
+      <point x="124.0" y="0" type="line"/>
+      <point x="124.0" y="311.0" type="line"/>
+      <point x="526.0" y="311.0" type="line"/>
+      <point x="526.0" y="0" type="line"/>
+      <point x="604.0" y="0" type="line"/>
+      <point x="604.0" y="700.0" type="line"/>
+      <point x="526.0" y="700.0" type="line"/>
+      <point x="526.0" y="389.0" type="line"/>
+      <point x="124.0" y="389.0" type="line"/>
+      <point x="124.0" y="700.0" type="line"/>
+    </contour>
+    <contour>
+      <point x="236.5428466796875" y="802.4312744140625" type="line"/>
+      <point x="325.0" y="886.86767578125" type="line"/>
+      <point x="413.4571533203125" y="802.4312744140625" type="line"/>
+      <point x="456.5428466796875" y="847.5687255859375" type="line"/>
+      <point x="346.5428466796875" y="952.5687255859375" type="line" smooth="yes"/>
+      <point x="344.38623046875" y="954.6272583007812"/>
+      <point x="339.371337890625" y="957.85302734375"/>
+      <point x="333.8362731933594" y="960.0707397460938"/>
+      <point x="327.98138427734375" y="961.199951171875"/>
+      <point x="322.01861572265625" y="961.199951171875"/>
+      <point x="316.1637268066406" y="960.0707397460938"/>
+      <point x="310.628662109375" y="957.85302734375"/>
+      <point x="305.61376953125" y="954.6272583007812"/>
+      <point x="303.4571533203125" y="952.5687255859375" type="qcurve" smooth="yes"/>
+      <point x="193.4571533203125" y="847.5687255859375" type="line"/>
+    </contour>
+  </outline>
+</glyph>

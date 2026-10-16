@@ -1,0 +1,99 @@
+{
+  "status": "unresolved; external disposition required",
+  "source_report": "qa/googlefonts.json",
+  "source_report_sha256": "0f2108b261ee3d2ae102b3ff7b2f715dfb596e8f20de3310de94028d72cf11ba",
+  "font_sha256": {
+    "NevlinSprout-Bold.ttf": "831e036e7eb1e7f84151485f01bece4c5984bdff73d6768ed797105236b6a9e5",
+    "NevlinSprout-Medium.ttf": "5a339ba7f52fd67783442cb1d8d5dc1389627eb3710a8ede5d59f8450b486637",
+    "NevlinSprout-Regular.ttf": "e8e526605e09fd6be3e6bdc1cc1ae300123e35ca7e409f1b6699da6e63470b5e",
+    "NevlinSprout-SemiBold.ttf": "4f2e46e97ed72ce551dc67f290fef30a5a6d22381b26651acc8003f006d2f851"
+  },
+  "counts": {
+    "googlefonts/vendor_id": 4,
+    "googlefonts/metadata/unreachable_subsetting": 4
+  },
+  "warnings": [
+    {
+      "target": "output/nevlin-sprout-googlefonts/googlefonts/nevlinsprout/NevlinSprout-SemiBold.ttf",
+      "check_id": "googlefonts/vendor_id",
+      "message": {
+        "message": "OS/2 VendorID value 'NONE' is not yet recognized.\nIf you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx\n",
+        "severity": "WARN",
+        "code": "unknown"
+      }
+    },
+    {
+      "target": "output/nevlin-sprout-googlefonts/googlefonts/nevlinsprout/NevlinSprout-Regular.ttf",
+      "check_id": "googlefonts/vendor_id",
+      "message": {
+        "message": "OS/2 VendorID value 'NONE' is not yet recognized.\nIf you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx\n",
+        "severity": "WARN",
+        "code": "unknown"
+      }
+    },
+    {
+      "target": "output/nevlin-sprout-googlefonts/googlefonts/nevlinsprout/NevlinSprout-Bold.ttf",
+      "check_id": "googlefonts/vendor_id",
+      "message": {
+        "message": "OS/2 VendorID value 'NONE' is not yet recognized.\nIf you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx\n",
+        "severity": "WARN",
+        "code": "unknown"
+      }
+    },
+    {
+      "target": "output/nevlin-sprout-googlefonts/googlefonts/nevlinsprout/NevlinSprout-Medium.ttf",
+      "check_id": "googlefonts/vendor_id",
+      "message": {
+        "message": "OS/2 VendorID value 'NONE' is not yet recognized.\nIf you registered it recently, then it's safe to ignore this warning message. Otherwise, you should set it to your own unique 4 character code, and register it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx\n",
+        "severity": "WARN",
+        "code": "unknown"
+      }
+    },
+    {
+      "target": "output/nevlin-sprout-googlefonts/googlefonts/nevlinsprout",
+      "check_id": "googlefonts/metadata/unreachable_subsetting",
+      "message": {
+        "message": "output/nevlin-sprout-googlefonts/googlefonts/nevlinsprout/NevlinSprout-Bold.ttf: The following codepoints supported by the font are not covered by any subsets defined in the font's metadata file, and will never be served. You can solve this by either manually adding additional subset declarations to METADATA.pb, or by editing the glyphset definitions.\n\n* U+02D8 BREVE: try adding one of: yi, canadian-aboriginal\n* U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal\n* U+02DB OGONEK: try adding one of: yi, canadian-aboriginal\n* U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, tifinagh, cherokee, math\n* U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh\n* U+0307 COMBINING DOT ABOVE: try adding one of: hebrew, old-permic, math, malayalam, tai-le, canadian-aboriginal, coptic, syriac, tifinagh, todhri, duployan\n* U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac\n* U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee\n* U+030C COMBINING CARON: try adding one of: cherokee, tai-le\n* U+0326 COMBINING COMMA BELOW: try adding math\n* U+0327 COMBINING CEDILLA: try adding math\n* U+1EBC LATIN CAPITAL LETTER E WITH TILDE: try adding vietnamese\n* U+1EBD LATIN SMALL LETTER E WITH TILDE: try adding vietnamese\n* U+2190 LEFTWARDS ARROW: try adding one of: symbols, math\n* U+2192 RIGHTWARDS ARROW: try adding one of: math, symbols\n* U+2264 LESS-THAN OR EQUAL TO: try adding math\n* U+2265 GREATER-THAN OR EQUAL TO: try adding math\n* U+25CC DOTTED CIRCLE: try adding one of: duployan, mahajani, buginese, saurashtra, takri, gunjala-gondi, lao, tifinagh, javanese, tai-le, balinese, caucasian-albanian, osage, tai-tham, adlam, symbols, sogdian, khudawadi, batak, dogra, kayah-li, grantha, mende-kikakui, miao, psalter-pahlavi, brahmi, sharada, hanifi-rohingya, gujarati, syriac, kannada, marchen, kaithi, bassa-vah, buhid, meetei-mayek, phags-pa, devanagari, tirhuta, newa, old-permic, music, armenian, bengali, hanunoo, canadian-aboriginal, myanmar, elbasan, khojki, limbu, thaana, mandaic, gurmukhi, chakma, cham, kharoshthi, nko, oriya, sinhala, manichaean, khmer, syloti-nagri, tai-viet, wancho, zanabazar-square, tamil, telugu, tagalog, modi, tagbanwa, coptic, thai, warang-citi, new-tai-lue, malayalam, ahom, mongolian, pahawh-hmong, lepcha, siddham, hebrew, soyombo, rejang, sundanese, tibetan, yi, bhaiksuki, masaram-gondi, math\n\nOr you can add the above codepoints to one of the subsets supported by the font: latin-ext, latin",
+        "severity": "WARN",
+        "code": "unreachable-subsetting"
+      }
+    },
+    {
+      "target": "output/nevlin-sprout-googlefonts/googlefonts/nevlinsprout",
+      "check_id": "googlefonts/metadata/unreachable_subsetting",
+      "message": {
+        "message": "output/nevlin-sprout-googlefonts/googlefonts/nevlinsprout/NevlinSprout-Medium.ttf: The following codepoints supported by the font are not covered by any subsets defined in the font's metadata file, and will never be served. You can solve this by either manually adding additional subset declarations to METADATA.pb, or by editing the glyphset definitions.\n\n* U+02D8 BREVE: try adding one of: yi, canadian-aboriginal\n* U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal\n* U+02DB OGONEK: try adding one of: yi, canadian-aboriginal\n* U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, tifinagh, cherokee, math\n* U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh\n* U+0307 COMBINING DOT ABOVE: try adding one of: hebrew, old-permic, math, malayalam, tai-le, canadian-aboriginal, coptic, syriac, tifinagh, todhri, duployan\n* U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac\n* U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee\n* U+030C COMBINING CARON: try adding one of: cherokee, tai-le\n* U+0326 COMBINING COMMA BELOW: try adding math\n* U+0327 COMBINING CEDILLA: try adding math\n* U+1EBC LATIN CAPITAL LETTER E WITH TILDE: try adding vietnamese\n* U+1EBD LATIN SMALL LETTER E WITH TILDE: try adding vietnamese\n* U+2190 LEFTWARDS ARROW: try adding one of: symbols, math\n* U+2192 RIGHTWARDS ARROW: try adding one of: math, symbols\n* U+2264 LESS-THAN OR EQUAL TO: try adding math\n* U+2265 GREATER-THAN OR EQUAL TO: try adding math\n* U+25CC DOTTED CIRCLE: try adding one of: duployan, mahajani, buginese, saurashtra, takri, gunjala-gondi, lao, tifinagh, javanese, tai-le, balinese, caucasian-albanian, osage, tai-tham, adlam, symbols, sogdian, khudawadi, batak, dogra, kayah-li, grantha, mende-kikakui, miao, psalter-pahlavi, brahmi, sharada, hanifi-rohingya, gujarati, syriac, kannada, marchen, kaithi, bassa-vah, buhid, meetei-mayek, phags-pa, devanagari, tirhuta, newa, old-permic, music, armenian, bengali, hanunoo, canadian-aboriginal, myanmar, elbasan, khojki, limbu, thaana, mandaic, gurmukhi, chakma, cham, kharoshthi, nko, oriya, sinhala, manichaean, khmer, syloti-nagri, tai-viet, wancho, zanabazar-square, tamil, telugu, tagalog, modi, tagbanwa, coptic, thai, warang-citi, new-tai-lue, malayalam, ahom, mongolian, pahawh-hmong, lepcha, siddham, hebrew, soyombo, rejang, sundanese, tibetan, yi, bhaiksuki, masaram-gondi, math\n\nOr you can add the above codepoints to one of the subsets supported by the font: latin-ext, latin",
+        "severity": "WARN",
+        "code": "unreachable-subsetting"
+      }
+    },
+    {
+      "target": "output/nevlin-sprout-googlefonts/googlefonts/nevlinsprout",
+      "check_id": "googlefonts/metadata/unreachable_subsetting",
+      "message": {
+        "message": "output/nevlin-sprout-googlefonts/googlefonts/nevlinsprout/NevlinSprout-Regular.ttf: The following codepoints supported by the font are not covered by any subsets defined in the font's metadata file, and will never be served. You can solve this by either manually adding additional subset declarations to METADATA.pb, or by editing the glyphset definitions.\n\n* U+02D8 BREVE: try adding one of: yi, canadian-aboriginal\n* U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal\n* U+02DB OGONEK: try adding one of: yi, canadian-aboriginal\n* U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, tifinagh, cherokee, math\n* U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh\n* U+0307 COMBINING DOT ABOVE: try adding one of: hebrew, old-permic, math, malayalam, tai-le, canadian-aboriginal, coptic, syriac, tifinagh, todhri, duployan\n* U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac\n* U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee\n* U+030C COMBINING CARON: try adding one of: cherokee, tai-le\n* U+0326 COMBINING COMMA BELOW: try adding math\n* U+0327 COMBINING CEDILLA: try adding math\n* U+1EBC LATIN CAPITAL LETTER E WITH TILDE: try adding vietnamese\n* U+1EBD LATIN SMALL LETTER E WITH TILDE: try adding vietnamese\n* U+2190 LEFTWARDS ARROW: try adding one of: symbols, math\n* U+2192 RIGHTWARDS ARROW: try adding one of: math, symbols\n* U+2264 LESS-THAN OR EQUAL TO: try adding math\n* U+2265 GREATER-THAN OR EQUAL TO: try adding math\n* U+25CC DOTTED CIRCLE: try adding one of: duployan, mahajani, buginese, saurashtra, takri, gunjala-gondi, lao, tifinagh, javanese, tai-le, balinese, caucasian-albanian, osage, tai-tham, adlam, symbols, sogdian, khudawadi, batak, dogra, kayah-li, grantha, mende-kikakui, miao, psalter-pahlavi, brahmi, sharada, hanifi-rohingya, gujarati, syriac, kannada, marchen, kaithi, bassa-vah, buhid, meetei-mayek, phags-pa, devanagari, tirhuta, newa, old-permic, music, armenian, bengali, hanunoo, canadian-aboriginal, myanmar, elbasan, khojki, limbu, thaana, mandaic, gurmukhi, chakma, cham, kharoshthi, nko, oriya, sinhala, manichaean, khmer, syloti-nagri, tai-viet, wancho, zanabazar-square, tamil, telugu, tagalog, modi, tagbanwa, coptic, thai, warang-citi, new-tai-lue, malayalam, ahom, mongolian, pahawh-hmong, lepcha, siddham, hebrew, soyombo, rejang, sundanese, tibetan, yi, bhaiksuki, masaram-gondi, math\n\nOr you can add the above codepoints to one of the subsets supported by the font: latin-ext, latin",
+        "severity": "WARN",
+        "code": "unreachable-subsetting"
+      }
+    },
+    {
+      "target": "output/nevlin-sprout-googlefonts/googlefonts/nevlinsprout",
+      "check_id": "googlefonts/metadata/unreachable_subsetting",
+      "message": {
+        "message": "output/nevlin-sprout-googlefonts/googlefonts/nevlinsprout/NevlinSprout-SemiBold.ttf: The following codepoints supported by the font are not covered by any subsets defined in the font's metadata file, and will never be served. You can solve this by either manually adding additional subset declarations to METADATA.pb, or by editing the glyphset definitions.\n\n* U+02D8 BREVE: try adding one of: yi, canadian-aboriginal\n* U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal\n* U+02DB OGONEK: try adding one of: yi, canadian-aboriginal\n* U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, tifinagh, cherokee, math\n* U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh\n* U+0307 COMBINING DOT ABOVE: try adding one of: hebrew, old-permic, math, malayalam, tai-le, canadian-aboriginal, coptic, syriac, tifinagh, todhri, duployan\n* U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac\n* U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee\n* U+030C COMBINING CARON: try adding one of: cherokee, tai-le\n* U+0326 COMBINING COMMA BELOW: try adding math\n* U+0327 COMBINING CEDILLA: try adding math\n* U+1EBC LATIN CAPITAL LETTER E WITH TILDE: try adding vietnamese\n* U+1EBD LATIN SMALL LETTER E WITH TILDE: try adding vietnamese\n* U+2190 LEFTWARDS ARROW: try adding one of: symbols, math\n* U+2192 RIGHTWARDS ARROW: try adding one of: math, symbols\n* U+2264 LESS-THAN OR EQUAL TO: try adding math\n* U+2265 GREATER-THAN OR EQUAL TO: try adding math\n* U+25CC DOTTED CIRCLE: try adding one of: duployan, mahajani, buginese, saurashtra, takri, gunjala-gondi, lao, tifinagh, javanese, tai-le, balinese, caucasian-albanian, osage, tai-tham, adlam, symbols, sogdian, khudawadi, batak, dogra, kayah-li, grantha, mende-kikakui, miao, psalter-pahlavi, brahmi, sharada, hanifi-rohingya, gujarati, syriac, kannada, marchen, kaithi, bassa-vah, buhid, meetei-mayek, phags-pa, devanagari, tirhuta, newa, old-permic, music, armenian, bengali, hanunoo, canadian-aboriginal, myanmar, elbasan, khojki, limbu, thaana, mandaic, gurmukhi, chakma, cham, kharoshthi, nko, oriya, sinhala, manichaean, khmer, syloti-nagri, tai-viet, wancho, zanabazar-square, tamil, telugu, tagalog, modi, tagbanwa, coptic, thai, warang-citi, new-tai-lue, malayalam, ahom, mongolian, pahawh-hmong, lepcha, siddham, hebrew, soyombo, rejang, sundanese, tibetan, yi, bhaiksuki, masaram-gondi, math\n\nOr you can add the above codepoints to one of the subsets supported by the font: latin-ext, latin",
+        "severity": "WARN",
+        "code": "unreachable-subsetting"
+      }
+    }
+  ],
+  "resolution_requirements": {
+    "googlefonts/vendor_id": "Confirm Nevlin vendor registration, then update source vendor ID, rebuild and rerun QA. A registry-cache lag may require evidence for reviewers.",
+    "googlefonts/metadata/unreachable_subsetting": "Obtain Google guidance on serving the 18 retained codepoints. Do not claim unrelated scripts or delete required marks to clear the check."
+  },
+  "registration_verification": {
+    "public_registry": "NVLN/Nevlin not found during this review",
+    "mailbox": "Current lookup unavailable: rate-limit/permission error. No conclusion about replies."
+  },
+  "check_exclusions_added": false,
+  "severity_overrides_added": false
+}

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="dieresis" format="2">
+  <advance width="350"/>
+  <unicode hex="00A8"/>
+  <outline>
+    <contour>
+      <point x="57.676002502441406" y="624.4000244140625" type="qcurve" smooth="yes"/>
+      <point x="112.32400512695312" y="624.4000244140625" type="line" smooth="yes"/>
+      <point x="135.60000610351562" y="624.4000244140625"/>
+      <point x="135.60000610351562" y="647.676025390625" type="qcurve" smooth="yes"/>
+      <point x="135.60000610351562" y="702.323974609375" type="line" smooth="yes"/>
+      <point x="135.60000610351562" y="725.5999755859375"/>
+      <point x="112.32400512695312" y="725.5999755859375" type="qcurve" smooth="yes"/>
+      <point x="57.676002502441406" y="725.5999755859375" type="line" smooth="yes"/>
+      <point x="34.399993896484375" y="725.5999755859375"/>
+      <point x="34.399993896484375" y="702.323974609375" type="qcurve" smooth="yes"/>
+      <point x="34.399993896484375" y="647.676025390625" type="line" smooth="yes"/>
+      <point x="34.399993896484375" y="624.4000244140625"/>
+    </contour>
+    <contour>
+      <point x="237.67599487304688" y="624.4000244140625" type="qcurve" smooth="yes"/>
+      <point x="292.3240051269531" y="624.4000244140625" type="line" smooth="yes"/>
+      <point x="315.6000061035156" y="624.4000244140625"/>
+      <point x="315.6000061035156" y="647.676025390625" type="qcurve" smooth="yes"/>
+      <point x="315.6000061035156" y="702.323974609375" type="line" smooth="yes"/>
+      <point x="315.6000061035156" y="725.5999755859375"/>
+      <point x="292.3240051269531" y="725.5999755859375" type="qcurve" smooth="yes"/>
+      <point x="237.67599487304688" y="725.5999755859375" type="line" smooth="yes"/>
+      <point x="214.39999389648438" y="725.5999755859375"/>
+      <point x="214.39999389648438" y="702.323974609375" type="qcurve" smooth="yes"/>
+      <point x="214.39999389648438" y="647.676025390625" type="line" smooth="yes"/>
+      <point x="214.39999389648438" y="624.4000244140625"/>
+    </contour>
+  </outline>
+</glyph>

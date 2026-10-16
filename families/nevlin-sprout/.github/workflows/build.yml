@@ -1,0 +1,21 @@
+name: Build and validate font sources
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install -r environment-lock.txt
+      - run: python build.py
+      - run: python check.py
+      - run: python prepare_submission.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nevlinsprout-review-candidate
+          path: |
+            fonts/
+            googlefonts/
+            structural-checks.json

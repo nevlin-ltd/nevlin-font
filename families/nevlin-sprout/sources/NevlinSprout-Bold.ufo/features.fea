@@ -1,0 +1,18 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+feature zero { sub zero by zero.slash; sub zero.tab by zero.slash.tab; } zero;
+feature tnum {
+ sub zero by zero.tab;
+ sub one by one.tab;
+ sub two by two.tab;
+ sub three by three.tab;
+ sub four by four.tab;
+ sub five by five.tab;
+ sub six by six.tab;
+ sub seven by seven.tab;
+ sub eight by eight.tab;
+ sub nine by nine.tab;
+ sub zero.slash by zero.slash.tab;
+} tnum;
+@SproutAbove = [gravecomb acutecomb uni0302 tildecomb uni0304 uni0306 uni0307 uni0308 uni030A uni030B uni030C];
+feature ccmp { lookup SproutSoftDots { lookupflag UseMarkFilteringSet @SproutAbove; sub i' @SproutAbove by dotlessi; sub j' @SproutAbove by uni0237; sub iogonek' @SproutAbove by iogonek.dotless; } SproutSoftDots; } ccmp;

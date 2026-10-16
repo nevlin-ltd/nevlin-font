@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>ascender</key>
+    <integer>1000</integer>
+    <key>capHeight</key>
+    <real>754.0</real>
+    <key>copyright</key>
+    <string>Copyright 2026 The Nevlin Sprout Project Authors (https://github.com/nevlin-ltd/nevlin-font)</string>
+    <key>descender</key>
+    <integer>-300</integer>
+    <key>familyName</key>
+    <string>Nevlin Sprout</string>
+    <key>openTypeHheaAscender</key>
+    <integer>1000</integer>
+    <key>openTypeHheaDescender</key>
+    <integer>-300</integer>
+    <key>openTypeHheaLineGap</key>
+    <integer>0</integer>
+    <key>openTypeNameDescription</key>
+    <string>Original geometric learning-interface typeface. Unreleased review candidate.</string>
+    <key>openTypeNameDesigner</key>
+    <string>Nevlin Sprout Project Authors</string>
+    <key>openTypeNameLicense</key>
+    <string>Licensed under the SIL Open Font License, Version 1.1.</string>
+    <key>openTypeNameLicenseURL</key>
+    <string>https://openfontlicense.org</string>
+    <key>openTypeOS2Selection</key>
+    <array>
+      <integer>7</integer>
+      <integer>8</integer>
+    </array>
+    <key>openTypeOS2Type</key>
+    <array/>
+    <key>openTypeOS2TypoAscender</key>
+    <integer>1000</integer>
+    <key>openTypeOS2TypoDescender</key>
+    <integer>-300</integer>
+    <key>openTypeOS2TypoLineGap</key>
+    <integer>0</integer>
+    <key>openTypeOS2VendorID</key>
+    <string>NONE</string>
+    <key>openTypeOS2WeightClass</key>
+    <integer>700</integer>
+    <key>openTypeOS2WidthClass</key>
+    <integer>5</integer>
+    <key>openTypeOS2WinAscent</key>
+    <integer>1050</integer>
+    <key>openTypeOS2WinDescent</key>
+    <integer>350</integer>
+    <key>styleName</key>
+    <string>Bold</string>
+    <key>unitsPerEm</key>
+    <integer>1000</integer>
+    <key>versionMajor</key>
+    <integer>1</integer>
+    <key>versionMinor</key>
+    <integer>0</integer>
+    <key>xHeight</key>
+    <real>554.0</real>
+  </dict>
+</plist>

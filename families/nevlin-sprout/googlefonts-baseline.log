@@ -1,0 +1,1289 @@
+Running 682 checks on 4 files in 1 family
+Testing: output/nevlin-sprout-googlefonts/fonts
+  Section: Licensing Checks
+
+>> googlefonts/font_copyright
+[1mFAIL[0m: [bad-notice-format]: NevlinSprout-Bold.ttf: Name Table entry: Copyright 
+notices should match a pattern similar to:
+
+"Copyright 2020 The Familyname Project Authors (git url)"
+
+But instead we have got:
+
+"copyright 2026 the nevlin sprout project authors"
+
+[1mFAIL[0m: [bad-notice-format]: NevlinSprout-Medium.ttf: Name Table entry: Copyright 
+notices should match a pattern similar to:
+
+"Copyright 2020 The Familyname Project Authors (git url)"
+
+But instead we have got:
+
+"copyright 2026 the nevlin sprout project authors"
+
+[1mFAIL[0m: [bad-notice-format]: NevlinSprout-Regular.ttf: Name Table entry: Copyright
+notices should match a pattern similar to:
+
+"Copyright 2020 The Familyname Project Authors (git url)"
+
+But instead we have got:
+
+"copyright 2026 the nevlin sprout project authors"
+
+[1mFAIL[0m: [bad-notice-format]: NevlinSprout-SemiBold.ttf: Name Table entry: 
+Copyright notices should match a pattern similar to:
+
+"Copyright 2020 The Familyname Project Authors (git url)"
+
+But instead we have got:
+
+"copyright 2026 the nevlin sprout project authors"
+
+  Section: Font File Checks
+
+>> googlefonts/glyph_coverage
+[1mFAIL[0m: [missing-codepoints]: 
+output/nevlin-sprout-googlefonts/fonts/NevlinSprout-Bold.ttf missing required 
+codepoints:
+
+[m•[m 0x00A1: INVERTED EXCLAMATION MARK
+[m•[m 0x00A2: CENT SIGN
+[m•[m 0x00A7: SECTION SIGN
+[m•[m 0x00A8: DIAERESIS
+[m•[m 0x00A9: COPYRIGHT SIGN
+[m•[m 0x00AA: FEMININE ORDINAL INDICATOR
+[m•[m 0x00AB: LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
+[m•[m 0x00AE: REGISTERED SIGN
+[m•[m 0x00AF: MACRON
+... and 42 others
+
+[1mFAIL[0m: [missing-codepoints]: 
+output/nevlin-sprout-googlefonts/fonts/NevlinSprout-Medium.ttf missing required 
+codepoints:
+
+[m•[m 0x00A1: INVERTED EXCLAMATION MARK
+[m•[m 0x00A2: CENT SIGN
+[m•[m 0x00A7: SECTION SIGN
+[m•[m 0x00A8: DIAERESIS
+[m•[m 0x00A9: COPYRIGHT SIGN
+[m•[m 0x00AA: FEMININE ORDINAL INDICATOR
+[m•[m 0x00AB: LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
+[m•[m 0x00AE: REGISTERED SIGN
+[m•[m 0x00AF: MACRON
+... and 42 others
+
+[1mFAIL[0m: [missing-codepoints]: 
+output/nevlin-sprout-googlefonts/fonts/NevlinSprout-Regular.ttf missing required
+codepoints:
+
+[m•[m 0x00A1: INVERTED EXCLAMATION MARK
+[m•[m 0x00A2: CENT SIGN
+[m•[m 0x00A7: SECTION SIGN
+[m•[m 0x00A8: DIAERESIS
+[m•[m 0x00A9: COPYRIGHT SIGN
+[m•[m 0x00AA: FEMININE ORDINAL INDICATOR
+[m•[m 0x00AB: LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
+[m•[m 0x00AE: REGISTERED SIGN
+[m•[m 0x00AF: MACRON
+... and 42 others
+
+[1mFAIL[0m: [missing-codepoints]: 
+output/nevlin-sprout-googlefonts/fonts/NevlinSprout-SemiBold.ttf missing 
+required codepoints:
+
+[m•[m 0x00A1: INVERTED EXCLAMATION MARK
+[m•[m 0x00A2: CENT SIGN
+[m•[m 0x00A7: SECTION SIGN
+[m•[m 0x00A8: DIAERESIS
+[m•[m 0x00A9: COPYRIGHT SIGN
+[m•[m 0x00AA: FEMININE ORDINAL INDICATOR
+[m•[m 0x00AB: LEFT-POINTING DOUBLE ANGLE QUOTATION MARK
+[m•[m 0x00AE: REGISTERED SIGN
+[m•[m 0x00AF: MACRON
+... and 42 others
+
+  Section: Metadata Checks
+
+>> googlefonts/metadata/unreachable_subsetting
+[1mWARN[0m: [unreachable-subsetting]: 
+output/nevlin-sprout-googlefonts/fonts/NevlinSprout-Bold.ttf: The following 
+codepoints supported by the font are not covered by any subsets defined in the 
+font's metadata file, and will never be served. You can solve this by either 
+manually adding additional subset declarations to METADATA.pb, or by editing the
+glyphset definitions.
+
+[m•[m U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, math, 
+  tifinagh, coptic
+[m•[m U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+[m•[m U+0307 COMBINING DOT ABOVE: try adding one of: hebrew, malayalam, math, 
+  old-permic, canadian-aboriginal, coptic, syriac, tifinagh, duployan, todhri, 
+  tai-le
+[m•[m U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan
+[m•[m U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
+[m•[m U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+[m•[m U+0327 COMBINING CEDILLA: try adding math
+[m•[m U+2190 LEFTWARDS ARROW: try adding one of: math, symbols
+[m•[m U+2192 RIGHTWARDS ARROW: try adding one of: math, symbols
+... and 2 others
+
+Or you can add the above codepoints to one of the subsets supported by the font:
+latin-ext, latin
+
+[1mWARN[0m: [unreachable-subsetting]: 
+output/nevlin-sprout-googlefonts/fonts/NevlinSprout-Medium.ttf: The following 
+codepoints supported by the font are not covered by any subsets defined in the 
+font's metadata file, and will never be served. You can solve this by either 
+manually adding additional subset declarations to METADATA.pb, or by editing the
+glyphset definitions.
+
+[m•[m U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, math, 
+  tifinagh, coptic
+[m•[m U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+[m•[m U+0307 COMBINING DOT ABOVE: try adding one of: hebrew, malayalam, math, 
+  old-permic, canadian-aboriginal, coptic, syriac, tifinagh, duployan, todhri, 
+  tai-le
+[m•[m U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan
+[m•[m U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
+[m•[m U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+[m•[m U+0327 COMBINING CEDILLA: try adding math
+[m•[m U+2190 LEFTWARDS ARROW: try adding one of: math, symbols
+[m•[m U+2192 RIGHTWARDS ARROW: try adding one of: math, symbols
+... and 2 others
+
+Or you can add the above codepoints to one of the subsets supported by the font:
+latin-ext, latin
+
+[1mWARN[0m: [unreachable-subsetting]: 
+output/nevlin-sprout-googlefonts/fonts/NevlinSprout-Regular.ttf: The following 
+codepoints supported by the font are not covered by any subsets defined in the 
+font's metadata file, and will never be served. You can solve this by either 
+manually adding additional subset declarations to METADATA.pb, or by editing the
+glyphset definitions.
+
+[m•[m U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, math, 
+  tifinagh, coptic
+[m•[m U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+[m•[m U+0307 COMBINING DOT ABOVE: try adding one of: hebrew, malayalam, math, 
+  old-permic, canadian-aboriginal, coptic, syriac, tifinagh, duployan, todhri, 
+  tai-le
+[m•[m U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan
+[m•[m U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
+[m•[m U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+[m•[m U+0327 COMBINING CEDILLA: try adding math
+[m•[m U+2190 LEFTWARDS ARROW: try adding one of: math, symbols
+[m•[m U+2192 RIGHTWARDS ARROW: try adding one of: math, symbols
+... and 2 others
+
+Or you can add the above codepoints to one of the subsets supported by the font:
+latin-ext, latin
+
+[1mWARN[0m: [unreachable-subsetting]: 
+output/nevlin-sprout-googlefonts/fonts/NevlinSprout-SemiBold.ttf: The following 
+codepoints supported by the font are not covered by any subsets defined in the 
+font's metadata file, and will never be served. You can solve this by either 
+manually adding additional subset declarations to METADATA.pb, or by editing the
+glyphset definitions.
+
+[m•[m U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, math, 
+  tifinagh, coptic
+[m•[m U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
+[m•[m U+0307 COMBINING DOT ABOVE: try adding one of: hebrew, malayalam, math, 
+  old-permic, canadian-aboriginal, coptic, syriac, tifinagh, duployan, todhri, 
+  tai-le
+[m•[m U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan
+[m•[m U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage
+[m•[m U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+[m•[m U+0327 COMBINING CEDILLA: try adding math
+[m•[m U+2190 LEFTWARDS ARROW: try adding one of: math, symbols
+[m•[m U+2192 RIGHTWARDS ARROW: try adding one of: math, symbols
+... and 2 others
+
+Or you can add the above codepoints to one of the subsets supported by the font:
+latin-ext, latin
+
+Testing: output/nevlin-sprout-googlefonts/fonts/NevlinSprout-Bold.ttf
+  Section: Universal Profile Checks
+
+>> alt_caron
+[1mWARN[0m: [decomposed-outline]: Lcaron is decomposed and therefore could not be 
+checked. Please check manually.
+
+[1mWARN[0m: [decomposed-outline]: dcaron is decomposed and therefore could not be 
+checked. Please check manually.
+
+[1mWARN[0m: [decomposed-outline]: lcaron is decomposed and therefore could not be 
+checked. Please check manually.
+
+[1mWARN[0m: [decomposed-outline]: tcaron is decomposed and therefore could not be 
+checked. Please check manually.
+
+  Section: Glyphset Checks
+
+>> googlefonts/glyphsets/shape_languages
+[1mFAIL[0m: [failed-language-shaping]: Failed language shaping:
+
+[m│[m                     Message                     [m│[m         Languages          [m│[m
+[m├[m[m─────────────────────────────────────────────────[m[m┼[m[m────────────────────────────[m[m┤[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m de_Latn (German)         [m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: ẞ                                      [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m tr_Latn (Turkish)        [m│[m
+[m│[mThe following mark characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: ̦                                       [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m mt_Latn (Maltese)        [m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: Ħ, ħ, GĦ, għ                           [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m ro_Latn (Romanian)       [m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: Ș, ț, Ț, ș                             [m│[m                            [m│[m
+[m│[mThe following mark characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: ̦                                       [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m sr_Latn (Serbian (Latin))[m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: Đ, đ                                   [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m cy_Latn (Welsh)          [m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: ẅ, Ỳ, ẁ, Ẅ, Ẃ, ẃ, Ẁ, ỳ                 [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m hr_Latn (Croatian)       [m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: đ, Đ                                   [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m is_Latn (Icelandic)      [m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: þ, ð, Þ, Ð                             [m│[m                            [m│[m
+
+[1mWARN[0m: [warning-language-shaping]: Warning language shaping:
+
+[m│[m                         Message                          [m│[m     Languages     [m│[m
+[m├[m[m──────────────────────────────────────────────────────────[m[m┼[m[m───────────────────[m[m┤[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m en_Latn         [m│[m
+[m│[m                                                          [m│[m   (English)       [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ʻ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m ca_Latn         [m│[m
+[m│[m                                                          [m│[m   (Catalan)       [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ŀ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ŀ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: º                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m de_Latn (German)[m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ſ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m fr_Latn (French)[m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ẞ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǔ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ſ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǔ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m lt_Latn         [m│[m
+[m│[m                                                          [m│[m   (Lithuanian)    [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ẽ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ẽ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m fi_Latn         [m│[m
+[m│[m                                                          [m│[m   (Finnish)       [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ð                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Đ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǧ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǥ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ȟ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ħ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǩ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ŋ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ș                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ẞ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ț                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ŧ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ʒ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǯ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Þ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ð                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: đ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǧ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǥ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ȟ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ħ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǩ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ŋ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ș                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ț                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ŧ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ʒ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǯ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: þ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m es_Latn         [m│[m
+[m│[m                                                          [m│[m   (Spanish)       [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m [m•[m pt_Latn         [m│[m
+[m│[mfont: ª                                                   [m│[m   (Portuguese)    [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: º                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m it_Latn         [m│[m
+[m│[m                                                          [m│[m   (Italian)       [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ª                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ẞ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: º                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m pl_Latn (Polish)[m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m [m•[m tr_Latn         [m│[m
+[m│[mfont: ẞ                                                   [m│[m   (Turkish)       [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m da_Latn (Danish)[m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǿ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǿ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m nb_Latn         [m│[m
+[m│[m                                                          [m│[m   (Norwegian      [m│[m
+[m│[m                                                          [m│[m   Bokmål)         [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǎ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Đ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ŋ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ŧ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǎ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: đ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ŋ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ŧ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m nl_Latn (Dutch) [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ĳ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ĳ                                                   [m│[m                   [m│[m
+
+>> googlefonts/separator_glyphs
+[1mWARN[0m: [missing-separator-glyphs]: Missing separator glyph U+2028
+
+[1mWARN[0m: [missing-separator-glyphs]: Missing separator glyph U+2029
+
+  Section: Outline Checks
+
+>> outline_jaggy_segments
+[1mWARN[0m: [found-jaggy-segments]: The following glyphs have jaggy segments:
+
+[m•[m ae (U+00E6): Line(Line { p0: (524.0, 340.0), p1: (524.0, 319.0) 
+  })/Quad(QuadBez { p0: (524.0, 319.0), p1: (527.0, 349.0), p2: (532.0, 374.0) 
+  }) = 5.710593137499568 degrees
+[m•[m ae (U+00E6): Quad(QuadBez { p0: (533.0, 125.0), p1: (527.0, 151.0), p2: 
+  (524.0, 183.0) })/Line(Line { p0: (524.0, 183.0), p1: (524.0, 0.0) }) = 
+  5.355825042855143 degrees
+[m•[m oe (U+0153): Quad(QuadBez { p0: (543.0, 125.0), p1: (543.0, 126.0), p2: 
+  (543.0, 127.0) })/Quad(QuadBez { p0: (543.0, 127.0), p1: (541.0, 114.0), p2: 
+  (538.0, 103.0) }) = 8.746162262555211 degrees
+[m•[m uni0163 (U+0163): Quad(QuadBez { p0: (239.0, -40.0), p1: (208.0, -40.0), p2: 
+  (183.0, -31.0) })/Line(Line { p0: (183.0, -31.0), p1: (230.0, -59.0) }) = 
+  10.985270171801544 degrees
+
+  Section: Shaping Checks
+
+>> dotted_circle
+[1mWARN[0m: [missing-dotted-circle]: No dotted circle glyph present
+
+>> soft_dotted
+[1mWARN[0m: [soft-dotted]: The dot of soft dotted characters used in orthographies 
+_must_ disappear in the following strings:
+
+[m•[m į̄
+[m•[m į̀
+[m•[m į́
+[m•[m į̌
+[m•[m į̃
+[m•[m į̂
+[m•[m j̄
+[m•[m j̀
+[m•[m j́
+... and 4 othersThe dot of soft dotted characters _should_ disappear in other 
+cases, for example:
+
+[m•[m į̊
+[m•[m į̋
+[m•[m į̇
+[m•[m į̆
+[m•[m į̈
+[m•[m j̊
+[m•[m j̋
+[m•[m j̇
+[m•[m j̆
+... and 3 others
+
+  Section: Font File Checks
+
+>> googlefonts/gasp
+[1mFAIL[0m: [lacks-gasp]: Font is missing the 'gasp' table. Try exporting the font 
+with autohinting enabled.
+If you are dealing with an unhinted font, it can be fixed by running the fonts 
+through the command 'gftools fix-nonhinting'
+GFTools is available at https://pypi.org/project/gftools/
+
+>> googlefonts/meta/script_lang_tags
+[1mWARN[0m: [lacks-meta-table]: This font file does not have a 'meta' table.
+
+>> googlefonts/name/version_format
+[1mFAIL[0m: [bad-version-strings]: The NameID.VERSION_STRING (nameID=5) value must 
+follow the pattern "Version X.Y" with X.Y greater than or equal to 1.000.
+
+The "Version" prefix is a recommendation given by the OpenType spec.
+
+Current version string is: "Version 0.100"
+
+>> googlefonts/vendor_id
+[1mWARN[0m: [unknown]: OS/2 VendorID value 'NONE' is not yet recognized.
+If you registered it recently, then it's safe to ignore this warning message. 
+Otherwise, you should set it to your own unique 4 character code, and register 
+it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+
+Testing: output/nevlin-sprout-googlefonts/fonts/NevlinSprout-Medium.ttf
+  Section: Glyphset Checks
+
+>> googlefonts/glyphsets/shape_languages
+[1mFAIL[0m: [failed-language-shaping]: Failed language shaping:
+
+[m│[m                     Message                     [m│[m         Languages          [m│[m
+[m├[m[m─────────────────────────────────────────────────[m[m┼[m[m────────────────────────────[m[m┤[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m tr_Latn (Turkish)        [m│[m
+[m│[mThe following mark characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: ̦                                       [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m cy_Latn (Welsh)          [m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: ẁ, ẅ, ỳ, Ẅ, ẃ, Ỳ, Ẃ, Ẁ                 [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m hr_Latn (Croatian)       [m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: đ, Đ                                   [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m is_Latn (Icelandic)      [m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: ð, Ð, þ, Þ                             [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m de_Latn (German)         [m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: ẞ                                      [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m mt_Latn (Maltese)        [m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: GĦ, għ, Ħ, ħ                           [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m sr_Latn (Serbian (Latin))[m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: Đ, đ                                   [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m ro_Latn (Romanian)       [m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: ț, Ț, ș, Ș                             [m│[m                            [m│[m
+[m│[mThe following mark characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: ̦                                       [m│[m                            [m│[m
+
+[1mWARN[0m: [warning-language-shaping]: Warning language shaping:
+
+[m│[m                         Message                          [m│[m     Languages     [m│[m
+[m├[m[m──────────────────────────────────────────────────────────[m[m┼[m[m───────────────────[m[m┤[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m it_Latn         [m│[m
+[m│[m                                                          [m│[m   (Italian)       [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ª                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ẞ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: º                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m nl_Latn (Dutch) [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ĳ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ĳ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m da_Latn (Danish)[m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǿ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǿ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m pl_Latn (Polish)[m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m [m•[m tr_Latn         [m│[m
+[m│[mfont: ẞ                                                   [m│[m   (Turkish)       [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m de_Latn (German)[m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ſ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m es_Latn         [m│[m
+[m│[m                                                          [m│[m   (Spanish)       [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m [m•[m pt_Latn         [m│[m
+[m│[mfont: ª                                                   [m│[m   (Portuguese)    [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: º                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m ca_Latn         [m│[m
+[m│[m                                                          [m│[m   (Catalan)       [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ŀ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ŀ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: º                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m lt_Latn         [m│[m
+[m│[m                                                          [m│[m   (Lithuanian)    [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ẽ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ẽ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m fi_Latn         [m│[m
+[m│[m                                                          [m│[m   (Finnish)       [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ð                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Đ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǧ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǥ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ȟ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ħ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǩ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ŋ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ș                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ẞ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ț                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ŧ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ʒ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǯ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Þ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ð                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: đ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǧ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǥ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ȟ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ħ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǩ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ŋ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ș                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ț                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ŧ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ʒ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǯ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: þ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m fr_Latn (French)[m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ẞ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǔ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ſ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǔ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m nb_Latn         [m│[m
+[m│[m                                                          [m│[m   (Norwegian      [m│[m
+[m│[m                                                          [m│[m   Bokmål)         [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǎ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Đ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ŋ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ŧ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǎ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: đ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ŋ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ŧ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m en_Latn         [m│[m
+[m│[m                                                          [m│[m   (English)       [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ʻ                                                   [m│[m                   [m│[m
+
+>> googlefonts/separator_glyphs
+[1mWARN[0m: [missing-separator-glyphs]: Missing separator glyph U+2028
+
+[1mWARN[0m: [missing-separator-glyphs]: Missing separator glyph U+2029
+
+  Section: Outline Checks
+
+>> outline_alignment_miss
+[1mWARN[0m: [found-misalignments]: The following glyphs have on-curve points which 
+have potentially incorrect y coordinates:
+
+[m•[m - A (U+0041): X=297,Y=731.5 (should be at cap-height 732?)
+[m•[m - AE (U+00C6): X=297,Y=731.5 (should be at cap-height 732?)
+[m•[m - Aacute (U+00C1): X=297,Y=731.5 (should be at cap-height 732?)
+[m•[m - Abreve (U+0102): X=297,Y=731.5 (should be at cap-height 732?)
+[m•[m - Acircumflex (U+00C2): X=297,Y=731.5 (should be at cap-height 732?)
+[m•[m - Adieresis (U+00C4): X=297,Y=731.5 (should be at cap-height 732?)
+[m•[m - Agrave (U+00C0): X=297,Y=731.5 (should be at cap-height 732?)
+[m•[m - Amacron (U+0100): X=297,Y=731.5 (should be at cap-height 732?)
+[m•[m - Aogonek (U+0104): X=297,Y=731.5 (should be at cap-height 732?)
+... and 40 others
+
+  Section: Universal Profile Checks
+
+>> alt_caron
+[1mWARN[0m: [decomposed-outline]: Lcaron is decomposed and therefore could not be 
+checked. Please check manually.
+
+[1mWARN[0m: [decomposed-outline]: dcaron is decomposed and therefore could not be 
+checked. Please check manually.
+
+[1mWARN[0m: [decomposed-outline]: lcaron is decomposed and therefore could not be 
+checked. Please check manually.
+
+[1mWARN[0m: [decomposed-outline]: tcaron is decomposed and therefore could not be 
+checked. Please check manually.
+
+  Section: Font File Checks
+
+>> googlefonts/gasp
+[1mFAIL[0m: [lacks-gasp]: Font is missing the 'gasp' table. Try exporting the font 
+with autohinting enabled.
+If you are dealing with an unhinted font, it can be fixed by running the fonts 
+through the command 'gftools fix-nonhinting'
+GFTools is available at https://pypi.org/project/gftools/
+
+>> googlefonts/meta/script_lang_tags
+[1mWARN[0m: [lacks-meta-table]: This font file does not have a 'meta' table.
+
+>> googlefonts/name/version_format
+[1mFAIL[0m: [bad-version-strings]: The NameID.VERSION_STRING (nameID=5) value must 
+follow the pattern "Version X.Y" with X.Y greater than or equal to 1.000.
+
+The "Version" prefix is a recommendation given by the OpenType spec.
+
+Current version string is: "Version 0.100"
+
+>> googlefonts/vendor_id
+[1mWARN[0m: [unknown]: OS/2 VendorID value 'NONE' is not yet recognized.
+If you registered it recently, then it's safe to ignore this warning message. 
+Otherwise, you should set it to your own unique 4 character code, and register 
+it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+
+  Section: Shaping Checks
+
+>> dotted_circle
+[1mWARN[0m: [missing-dotted-circle]: No dotted circle glyph present
+
+>> soft_dotted
+[1mWARN[0m: [soft-dotted]: The dot of soft dotted characters used in orthographies 
+_must_ disappear in the following strings:
+
+[m•[m i̋
+[m•[m i̊
+[m•[m į́
+[m•[m į̂
+[m•[m į̃
+[m•[m į̄
+[m•[m į̀
+[m•[m į̌
+[m•[m j́
+... and 4 othersThe dot of soft dotted characters _should_ disappear in other 
+cases, for example:
+
+[m•[m i̇
+[m•[m ǐ
+[m•[m į̆
+[m•[m į̋
+[m•[m į̇
+[m•[m į̈
+[m•[m į̊
+[m•[m j̆
+[m•[m j̋
+... and 3 others
+
+Testing: output/nevlin-sprout-googlefonts/fonts/NevlinSprout-Regular.ttf
+  Section: Font File Checks
+
+>> googlefonts/gasp
+[1mFAIL[0m: [lacks-gasp]: Font is missing the 'gasp' table. Try exporting the font 
+with autohinting enabled.
+If you are dealing with an unhinted font, it can be fixed by running the fonts 
+through the command 'gftools fix-nonhinting'
+GFTools is available at https://pypi.org/project/gftools/
+
+>> googlefonts/meta/script_lang_tags
+[1mWARN[0m: [lacks-meta-table]: This font file does not have a 'meta' table.
+
+>> googlefonts/name/version_format
+[1mFAIL[0m: [bad-version-strings]: The NameID.VERSION_STRING (nameID=5) value must 
+follow the pattern "Version X.Y" with X.Y greater than or equal to 1.000.
+
+The "Version" prefix is a recommendation given by the OpenType spec.
+
+Current version string is: "Version 0.100"
+
+>> googlefonts/vendor_id
+[1mWARN[0m: [unknown]: OS/2 VendorID value 'NONE' is not yet recognized.
+If you registered it recently, then it's safe to ignore this warning message. 
+Otherwise, you should set it to your own unique 4 character code, and register 
+it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+
+  Section: Glyphset Checks
+
+>> googlefonts/glyphsets/shape_languages
+[1mFAIL[0m: [failed-language-shaping]: Failed language shaping:
+
+[m│[m                     Message                     [m│[m         Languages          [m│[m
+[m├[m[m─────────────────────────────────────────────────[m[m┼[m[m────────────────────────────[m[m┤[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m ro_Latn (Romanian)       [m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: ș, Ș, Ț, ț                             [m│[m                            [m│[m
+[m│[mThe following mark characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: ̦                                       [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m de_Latn (German)         [m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: ẞ                                      [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m tr_Latn (Turkish)        [m│[m
+[m│[mThe following mark characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: ̦                                       [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m cy_Latn (Welsh)          [m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: Ẁ, ỳ, Ẅ, ẃ, Ỳ, ẁ, ẅ, Ẃ                 [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m hr_Latn (Croatian)       [m│[m
+[m│[mThe following base characters are missing from   [m│[m [m•[m sr_Latn (Serbian (Latin))[m│[m
+[m│[mthe font: Đ, đ                                   [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m is_Latn (Icelandic)      [m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: Ð, þ, ð, Þ                             [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m mt_Latn (Maltese)        [m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: ħ, GĦ, Ħ, għ                           [m│[m                            [m│[m
+
+[1mWARN[0m: [warning-language-shaping]: Warning language shaping:
+
+[m│[m                         Message                          [m│[m     Languages     [m│[m
+[m├[m[m──────────────────────────────────────────────────────────[m[m┼[m[m───────────────────[m[m┤[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m ca_Latn         [m│[m
+[m│[m                                                          [m│[m   (Catalan)       [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ŀ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ŀ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: º                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m en_Latn         [m│[m
+[m│[m                                                          [m│[m   (English)       [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ʻ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m de_Latn (German)[m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ſ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m es_Latn         [m│[m
+[m│[m                                                          [m│[m   (Spanish)       [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m [m•[m pt_Latn         [m│[m
+[m│[mfont: ª                                                   [m│[m   (Portuguese)    [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: º                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m nb_Latn         [m│[m
+[m│[m                                                          [m│[m   (Norwegian      [m│[m
+[m│[m                                                          [m│[m   Bokmål)         [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǎ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Đ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ŋ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ŧ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǎ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: đ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ŋ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ŧ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m pl_Latn (Polish)[m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m [m•[m tr_Latn         [m│[m
+[m│[mfont: ẞ                                                   [m│[m   (Turkish)       [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m fi_Latn         [m│[m
+[m│[m                                                          [m│[m   (Finnish)       [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ð                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Đ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǧ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǥ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ȟ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ħ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǩ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ŋ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ș                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ẞ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ț                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ŧ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ʒ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǯ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Þ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ð                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: đ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǧ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǥ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ȟ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ħ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǩ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ŋ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ș                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ț                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ŧ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ʒ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǯ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: þ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m da_Latn (Danish)[m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǿ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǿ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m lt_Latn         [m│[m
+[m│[m                                                          [m│[m   (Lithuanian)    [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ẽ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ẽ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m nl_Latn (Dutch) [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ĳ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ĳ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m fr_Latn (French)[m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ẞ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǔ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ſ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǔ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m it_Latn         [m│[m
+[m│[m                                                          [m│[m   (Italian)       [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ª                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ẞ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: º                                                   [m│[m                   [m│[m
+
+>> googlefonts/separator_glyphs
+[1mWARN[0m: [missing-separator-glyphs]: Missing separator glyph U+2028
+
+[1mWARN[0m: [missing-separator-glyphs]: Missing separator glyph U+2029
+
+  Section: Repository Checks
+
+>> googlefonts/repo/dirname_matches_nameid_1
+[1mFAIL[0m: [mismatch]: Family name on the name table ('Nevlin Sprout') does not match
+directory name in the repo structure ('fonts'). Expected 'nevlinsprout'.
+
+  Section: Universal Profile Checks
+
+>> alt_caron
+[1mWARN[0m: [decomposed-outline]: Lcaron is decomposed and therefore could not be 
+checked. Please check manually.
+
+[1mWARN[0m: [decomposed-outline]: dcaron is decomposed and therefore could not be 
+checked. Please check manually.
+
+[1mWARN[0m: [decomposed-outline]: lcaron is decomposed and therefore could not be 
+checked. Please check manually.
+
+[1mWARN[0m: [decomposed-outline]: tcaron is decomposed and therefore could not be 
+checked. Please check manually.
+
+  Section: Shaping Checks
+
+>> dotted_circle
+[1mWARN[0m: [missing-dotted-circle]: No dotted circle glyph present
+
+>> soft_dotted
+[1mWARN[0m: [soft-dotted]: The dot of soft dotted characters used in orthographies 
+_must_ disappear in the following strings:
+
+[m•[m j̃
+[m•[m j̄
+[m•[m j́
+[m•[m j̀
+[m•[m j̈
+[m•[m į̃
+[m•[m į̌
+[m•[m į̄
+[m•[m į́
+... and 4 othersThe dot of soft dotted characters _should_ disappear in other 
+cases, for example:
+
+[m•[m j̆
+[m•[m ǰ
+[m•[m j̋
+[m•[m j̇
+[m•[m j̊
+[m•[m į̆
+[m•[m į̋
+[m•[m į̇
+[m•[m į̈
+... and 3 others
+
+Testing: output/nevlin-sprout-googlefonts/fonts/NevlinSprout-SemiBold.ttf
+  Section: Universal Profile Checks
+
+>> alt_caron
+[1mWARN[0m: [decomposed-outline]: Lcaron is decomposed and therefore could not be 
+checked. Please check manually.
+
+[1mWARN[0m: [decomposed-outline]: dcaron is decomposed and therefore could not be 
+checked. Please check manually.
+
+[1mWARN[0m: [decomposed-outline]: lcaron is decomposed and therefore could not be 
+checked. Please check manually.
+
+[1mWARN[0m: [decomposed-outline]: tcaron is decomposed and therefore could not be 
+checked. Please check manually.
+
+  Section: Shaping Checks
+
+>> dotted_circle
+[1mWARN[0m: [missing-dotted-circle]: No dotted circle glyph present
+
+>> soft_dotted
+[1mWARN[0m: [soft-dotted]: The dot of soft dotted characters used in orthographies 
+_must_ disappear in the following strings:
+
+[m•[m i̊
+[m•[m i̋
+[m•[m į̂
+[m•[m į̌
+[m•[m į̃
+[m•[m į̄
+[m•[m į̀
+[m•[m į́
+[m•[m j̈
+... and 4 othersThe dot of soft dotted characters _should_ disappear in other 
+cases, for example:
+
+[m•[m ǐ
+[m•[m i̇
+[m•[m į̈
+[m•[m į̇
+[m•[m į̆
+[m•[m į̊
+[m•[m į̋
+[m•[m ǰ
+[m•[m j̇
+... and 3 others
+
+  Section: Outline Checks
+
+>> outline_alignment_miss
+[1mWARN[0m: [found-misalignments]: The following glyphs have on-curve points which 
+have potentially incorrect y coordinates:
+
+[m•[m - A (U+0041): X=286,Y=731 (should be at cap-height 732?)
+[m•[m - AE (U+00C6): X=286,Y=731 (should be at cap-height 732?)
+[m•[m - Aacute (U+00C1): X=286,Y=731 (should be at cap-height 732?)
+[m•[m - Abreve (U+0102): X=286,Y=731 (should be at cap-height 732?)
+[m•[m - Acircumflex (U+00C2): X=286,Y=731 (should be at cap-height 732?)
+[m•[m - Adieresis (U+00C4): X=286,Y=731 (should be at cap-height 732?)
+[m•[m - Agrave (U+00C0): X=286,Y=731 (should be at cap-height 732?)
+[m•[m - Amacron (U+0100): X=286,Y=731 (should be at cap-height 732?)
+[m•[m - Aogonek (U+0104): X=286,Y=731 (should be at cap-height 732?)
+... and 36 others
+
+>> outline_jaggy_segments
+[1mWARN[0m: [found-jaggy-segments]: The following glyphs have jaggy segments:
+
+[m•[m oe (U+0153): Quad(QuadBez { p0: (530.0, 395.0), p1: (540.0, 357.0), p2: 
+  (541.0, 305.0) })/Quad(QuadBez { p0: (541.0, 305.0), p1: (544.0, 343.0), p2: 
+  (550.0, 373.0) }) = 5.615694573207621 degrees
+[m•[m oe (U+0153): Quad(QuadBez { p0: (551.0, 126.0), p1: (544.0, 158.0), p2: 
+  (541.0, 197.0) })/Quad(QuadBez { p0: (541.0, 197.0), p1: (540.0, 143.0), p2: 
+  (530.0, 105.0) }) = 5.459617045259749 degrees
+
+  Section: Font File Checks
+
+>> googlefonts/gasp
+[1mFAIL[0m: [lacks-gasp]: Font is missing the 'gasp' table. Try exporting the font 
+with autohinting enabled.
+If you are dealing with an unhinted font, it can be fixed by running the fonts 
+through the command 'gftools fix-nonhinting'
+GFTools is available at https://pypi.org/project/gftools/
+
+>> googlefonts/meta/script_lang_tags
+[1mWARN[0m: [lacks-meta-table]: This font file does not have a 'meta' table.
+
+>> googlefonts/name/version_format
+[1mFAIL[0m: [bad-version-strings]: The NameID.VERSION_STRING (nameID=5) value must 
+follow the pattern "Version X.Y" with X.Y greater than or equal to 1.000.
+
+The "Version" prefix is a recommendation given by the OpenType spec.
+
+Current version string is: "Version 0.100"
+
+>> googlefonts/vendor_id
+[1mWARN[0m: [unknown]: OS/2 VendorID value 'NONE' is not yet recognized.
+If you registered it recently, then it's safe to ignore this warning message. 
+Otherwise, you should set it to your own unique 4 character code, and register 
+it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
+
+  Section: Glyphset Checks
+
+>> googlefonts/glyphsets/shape_languages
+[1mFAIL[0m: [failed-language-shaping]: Failed language shaping:
+
+[m│[m                     Message                     [m│[m         Languages          [m│[m
+[m├[m[m─────────────────────────────────────────────────[m[m┼[m[m────────────────────────────[m[m┤[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m de_Latn (German)         [m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: ẞ                                      [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m hr_Latn (Croatian)       [m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: đ, Đ                                   [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m ro_Latn (Romanian)       [m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: ș, Ș, Ț, ț                             [m│[m                            [m│[m
+[m│[mThe following mark characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: ̦                                       [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m is_Latn (Icelandic)      [m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: ð, Þ, þ, Ð                             [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m tr_Latn (Turkish)        [m│[m
+[m│[mThe following mark characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: ̦                                       [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m cy_Latn (Welsh)          [m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: ỳ, ẃ, ẅ, Ẃ, Ẅ, Ỳ, ẁ, Ẁ                 [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m mt_Latn (Maltese)        [m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: ħ, GĦ, għ, Ħ                           [m│[m                            [m│[m
+[m│[mMandatory orthography codepoints:                [m│[m [m•[m sr_Latn (Serbian (Latin))[m│[m
+[m│[mThe following base characters are missing from   [m│[m                            [m│[m
+[m│[mthe font: Đ, đ                                   [m│[m                            [m│[m
+
+[1mWARN[0m: [warning-language-shaping]: Warning language shaping:
+
+[m│[m                         Message                          [m│[m     Languages     [m│[m
+[m├[m[m──────────────────────────────────────────────────────────[m[m┼[m[m───────────────────[m[m┤[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m de_Latn (German)[m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ſ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m es_Latn         [m│[m
+[m│[m                                                          [m│[m   (Spanish)       [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m [m•[m pt_Latn         [m│[m
+[m│[mfont: ª                                                   [m│[m   (Portuguese)    [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: º                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m fr_Latn (French)[m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ẞ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǔ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ſ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǔ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m it_Latn         [m│[m
+[m│[m                                                          [m│[m   (Italian)       [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ª                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ẞ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: º                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m pl_Latn (Polish)[m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m [m•[m tr_Latn         [m│[m
+[m│[mfont: ẞ                                                   [m│[m   (Turkish)       [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m da_Latn (Danish)[m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǿ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǿ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m nl_Latn (Dutch) [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ĳ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ĳ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m en_Latn         [m│[m
+[m│[m                                                          [m│[m   (English)       [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ʻ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m lt_Latn         [m│[m
+[m│[m                                                          [m│[m   (Lithuanian)    [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ẽ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ẽ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m ca_Latn         [m│[m
+[m│[m                                                          [m│[m   (Catalan)       [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ŀ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ŀ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: º                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m nb_Latn         [m│[m
+[m│[m                                                          [m│[m   (Norwegian      [m│[m
+[m│[m                                                          [m│[m   Bokmål)         [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǎ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Đ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ŋ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ŧ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǎ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: đ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ŋ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ŧ                                                   [m│[m                   [m│[m
+[m│[mAuxiliary orthography codepoints:                         [m│[m [m•[m fi_Latn         [m│[m
+[m│[m                                                          [m│[m   (Finnish)       [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ð                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Đ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǧ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǥ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ȟ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ħ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǩ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ŋ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ș                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ẞ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ț                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ŧ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ʒ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Ǯ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: Þ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ð                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: đ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǧ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǥ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ȟ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ħ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǩ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ŋ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ș                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ț                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ŧ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ʒ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: ǯ                                                   [m│[m                   [m│[m
+[m│[mThe following auxiliary characters are missing from the   [m│[m                   [m│[m
+[m│[mfont: þ                                                   [m│[m                   [m│[m
+
+>> googlefonts/separator_glyphs
+[1mWARN[0m: [missing-separator-glyphs]: Missing separator glyph U+2028
+
+[1mWARN[0m: [missing-separator-glyphs]: Missing separator glyph U+2029
+
+Markdown report written to output/nevlin-sprout-googlefonts/googlefonts-baseline.md
+Ran 682 checks in 0.651s
+
+Summary:
+  SKIP: 252 INFO: 14 PASS: 372 WARN: 52 FAIL: 21 FATAL: 0 ERROR: 0 

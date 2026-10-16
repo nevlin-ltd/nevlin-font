@@ -1,0 +1,15 @@
+{
+  "same_environment_repeat_build_identical": true,
+  "matches_tested_final_binaries": true,
+  "scope": "all eight TTF/WOFF2 files; same Python environment, not an independent clean-machine test",
+  "hashes": {
+    "NevlinSprout-Bold.ttf": "831e036e7eb1e7f84151485f01bece4c5984bdff73d6768ed797105236b6a9e5",
+    "NevlinSprout-Bold.woff2": "a18f84903e2f251a9c827cfa1d40dfe9c7402074f66c5cc13676c14e9e345c25",
+    "NevlinSprout-Medium.ttf": "5a339ba7f52fd67783442cb1d8d5dc1389627eb3710a8ede5d59f8450b486637",
+    "NevlinSprout-Medium.woff2": "ae3e64835f2ec2e9ad00bbb7e852120bee513563a59d53847240ac4281f99197",
+    "NevlinSprout-Regular.ttf": "e8e526605e09fd6be3e6bdc1cc1ae300123e35ca7e409f1b6699da6e63470b5e",
+    "NevlinSprout-Regular.woff2": "d401e6900f056fef19df60c97e4cb0a9e4d17ae41b3f869700aa945d8d261262",
+    "NevlinSprout-SemiBold.ttf": "4f2e46e97ed72ce551dc67f290fef30a5a6d22381b26651acc8003f006d2f851",
+    "NevlinSprout-SemiBold.woff2": "5cdc2fce940a6ad01ddfa746f9ff6b9dd65c055b3ab83ca04820bb2a5fee1de2"
+  }
+}
