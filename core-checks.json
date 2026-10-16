@@ -1,28 +1,28 @@
 [
   {
     "font": "NevlinFont-Bold.ttf",
-    "codepoints": 321,
+    "codepoints": 374,
     "coverage": true,
     "dot_removal": true,
     "tabular_digits": true
   },
   {
     "font": "NevlinFont-Medium.ttf",
-    "codepoints": 321,
+    "codepoints": 374,
     "coverage": true,
     "dot_removal": true,
     "tabular_digits": true
   },
   {
     "font": "NevlinFont-Regular.ttf",
-    "codepoints": 321,
+    "codepoints": 374,
     "coverage": true,
     "dot_removal": true,
     "tabular_digits": true
   },
   {
     "font": "NevlinFont-SemiBold.ttf",
-    "codepoints": 321,
+    "codepoints": 374,
     "coverage": true,
     "dot_removal": true,
     "tabular_digits": true

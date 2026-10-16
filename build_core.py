@@ -9,6 +9,7 @@ from fontTools.ttLib import TTFont, newTable
 from fontTools.ttLib.tables.ttProgram import Program
 from fontTools.ttLib.removeOverlaps import removeOverlaps
 from fontTools.ttLib.tables import otTables
+from fontTools.otlLib.builder import buildStatTable
 from fontTools import subset
 import glyphsLib
 import ufoLib2
@@ -32,6 +33,18 @@ def simplify_straight_segments(font):
         coords=[];flags=[];ends=[];start=0
         for end in glyph.endPtsOfContours:
             pts=list(zip(glyph.coordinates[start:end+1],glyph.flags[start:end+1]))
+            # Normalize tiny quantization slopes on long intended axis strokes.
+            # Maximum movement is one unit per endpoint (1/2048 em).
+            for i in range(len(pts)):
+                a,fa=pts[i-1];b,fb=pts[i]
+                if not (fa&1 and fb&1):continue
+                dx,dy=b[0]-a[0],b[1]-a[1]
+                if 0<abs(dx)<=2 and abs(dy)>=120 and abs(dx/dy)<0.0087:
+                    x=round((a[0]+b[0])/2)
+                    pts[i-1]=((x,a[1]),fa);pts[i]=((x,b[1]),fb)
+                elif 0<abs(dy)<=2 and abs(dx)>=120 and abs(dy/dx)<0.0087:
+                    y=round((a[1]+b[1])/2)
+                    pts[i-1]=((a[0],y),fa);pts[i]=((b[0],y),fb)
             changed=True
             while changed and len(pts)>3:
                 changed=False
@@ -74,6 +87,21 @@ def main():
             # Drop i/j dots before above accents, ignoring intervening below marks.
             import unicodedata
             ufo=masters[0]
+            # Correct inherited misleading names: U+0162 is T with cedilla.
+            import re
+            renames={"uni021A":"Tcedilla","uni021A.1":"Tcommaaccent"}
+            for old,new in renames.items():ufo.renameGlyph(old,new)
+            for glyph in ufo:
+                for component in glyph.components:
+                    component.baseGlyph=renames.get(component.baseGlyph,component.baseGlyph)
+            ufo.glyphOrder=[renames.get(n,n) for n in ufo.glyphOrder]
+            ufo.features.text=re.sub(r"(?<![\w.])(uni021A\.1|uni021A)(?![\w.])",lambda m:renames[m.group()],ufo.features.text)
+            categories=ufo.lib.get("public.openTypeCategories",{})
+            for old,new in renames.items():
+                if old in categories:categories[new]=categories.pop(old)
+            for cp in (0x2028,0x2029):
+                g=ufo.newGlyph(f"uni{cp:04X}");g.unicodes=[cp];g.width=0
+
             ogonek=ufo.newGlyph("iogonek.dotless")
             ufo["iogonek"].drawPoints(ogonek.getPointPen())
             ogonek.width=ufo["iogonek"].width
@@ -134,6 +162,9 @@ def main():
         sub = subset.Subsetter(options=options)
         sub.populate(unicodes=json.loads((ROOT / 'repertoire.json').read_text()))
         sub.subset(f)
+        # Normalize the final retained contours after component/subset processing.
+        for name in f.getGlyphOrder():f["glyf"][name]
+        simplify_straight_segments(f)
         f['meta'] = newTable('meta')
         f['meta'].data = {'dlng': 'Latn', 'slng': 'Latn'}
         f['prep'] = newTable('prep')
@@ -147,6 +178,9 @@ def main():
     ymin = min(g.yMin for _, f in fonts for g in f['glyf'].glyphs.values() if hasattr(g, 'yMin'))
     manifest = []
     for path, f in fonts:
+        f['OS/2'].fsSelection |= (1 << 8) # WWS-conformant upright family
+        weight=f['OS/2'].usWeightClass
+        buildStatTable(f,[{'tag':'wght','name':'Weight','values':[{'value':weight,'name':{400:'Regular',500:'Medium',600:'SemiBold',700:'Bold'}[weight],'flags':2 if weight==400 else 0}]},{'tag':'ital','name':'Italic','values':[{'value':0,'linkedValue':1,'name':'Roman','flags':2}]}])
         f['OS/2'].recalcAvgCharWidth(f)
         f['OS/2'].usWinAscent = ymax
         f['OS/2'].usWinDescent = -ymin

@@ -28,7 +28,7 @@ def specimen(path, lines=None):
 
 def main():
     out=ROOT/'googlefonts/nevlinfont';out.mkdir(parents=True,exist_ok=True)
-    p=FamilyProto();p.name='Nevlin Font';p.designer='Nevlin Font Project Authors, Inter Project Authors'
+    p=FamilyProto();p.name='Nevlin Font';p.designer='Nevlin, Rasmus Andersson'
     p.license='OFL';p.category.append('SANS_SERIF');p.date_added='2026-10-16'
     p.subsets.extend(sorted(['latin','latin-ext','menu']))
     p.source.repository_url='https://github.com/nevlin-ltd/nevlin-font'

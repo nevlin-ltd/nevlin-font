@@ -1,0 +1,30 @@
+[
+  {
+    "font": "NevlinFont-Bold.ttf",
+    "previous_characters": 321,
+    "current_characters": 374,
+    "missing": [],
+    "advance_width_changes": []
+  },
+  {
+    "font": "NevlinFont-Medium.ttf",
+    "previous_characters": 321,
+    "current_characters": 374,
+    "missing": [],
+    "advance_width_changes": []
+  },
+  {
+    "font": "NevlinFont-Regular.ttf",
+    "previous_characters": 321,
+    "current_characters": 374,
+    "missing": [],
+    "advance_width_changes": []
+  },
+  {
+    "font": "NevlinFont-SemiBold.ttf",
+    "previous_characters": 321,
+    "current_characters": 374,
+    "missing": [],
+    "advance_width_changes": []
+  }
+]

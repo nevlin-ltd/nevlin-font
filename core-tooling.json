@@ -1,0 +1,10 @@
+{
+  "fontspector": {
+    "version": "1.9.0",
+    "source": "https://github.com/fonttools/fontspector/releases/tag/fontspector-v1.9.0",
+    "sha256": "dd42d2de33346369cb7ba2b047bb2f9347292fe73d91534aaeeb41c4353324b5"
+  },
+  "fontbakery": "1.1.0",
+  "network_checks": true,
+  "checks_disabled": []
+}

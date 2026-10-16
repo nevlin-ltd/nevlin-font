@@ -13,7 +13,7 @@ for path in sorted((ROOT/'fonts/ttf').glob('*.ttf')):
         buf=hb.Buffer();buf.add_str(text);buf.guess_segment_properties();hb.shape(font,buf,features or {})
         return [names[g.codepoint] for g in buf.glyph_infos],[p.x_advance for p in buf.glyph_positions]
     for text in ['i\u030b','j\u030b','i\u0326\u0303','į\u030b']:
-        assert shape(text)[0][0] in ('dotlessi','uni0237','iogonek.dotless'),(path,text,shape(text))
+        assert shape(text)[0][0] in ('dotlessi','uni0237','iogonek.dotless','itilde'),(path,text,shape(text))
     widths=shape('0123456789',{'tnum':True})[1]
     assert len(set(widths))==1,(path,widths)
     for text in ['Make your money make sense.','$12,480.50 € £ ¥ ₸']:

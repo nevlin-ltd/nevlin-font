@@ -2,9 +2,9 @@
     "result": {
         "(not finished)": 0,
         "INFO": 29,
-        "PASS": 595,
-        "SKIP": 247,
-        "WARN": 22
+        "PASS": 611,
+        "SKIP": 239,
+        "WARN": 14
     },
     "sections": [
         {
@@ -8968,7 +8968,7 @@
                         {
                             "message": {
                                 "code": "size-impact",
-                                "message": "Hinting filesize impact:\n\n |               | output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-Bold.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 132.5kb |\n | Hinted Size   | 132.5kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
+                                "message": "Hinting filesize impact:\n\n |               | output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-Bold.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 135.9kb |\n | Hinted Size   | 135.9kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
                             },
                             "status": "INFO"
                         }
@@ -9000,7 +9000,7 @@
                         {
                             "message": {
                                 "code": "size-impact",
-                                "message": "Hinting filesize impact:\n\n |               | output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-Medium.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 131.8kb |\n | Hinted Size   | 131.8kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
+                                "message": "Hinting filesize impact:\n\n |               | output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-Medium.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 135.2kb |\n | Hinted Size   | 135.2kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
                             },
                             "status": "INFO"
                         }
@@ -9032,7 +9032,7 @@
                         {
                             "message": {
                                 "code": "size-impact",
-                                "message": "Hinting filesize impact:\n\n |               | output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-Regular.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 131.3kb |\n | Hinted Size   | 131.3kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
+                                "message": "Hinting filesize impact:\n\n |               | output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-Regular.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 134.7kb |\n | Hinted Size   | 134.7kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
                             },
                             "status": "INFO"
                         }
@@ -9064,7 +9064,7 @@
                         {
                             "message": {
                                 "code": "size-impact",
-                                "message": "Hinting filesize impact:\n\n |               | output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-SemiBold.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 132.0kb |\n | Hinted Size   | 132.0kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
+                                "message": "Hinting filesize impact:\n\n |               | output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-SemiBold.ttf     |\n |:------------- | ---------------:|\n | Dehinted Size | 135.4kb |\n | Hinted Size   | 135.4kb   |\n | Increase      | 24 bytes      |\n | Change        | 0.0 %  |\n"
                             },
                             "status": "INFO"
                         }
@@ -12215,10 +12215,10 @@
                     "logs": [
                         {
                             "message": {
-                                "code": "unfulfilled-conditions",
-                                "message": "Unfulfilled Conditions: has_STAT_table"
+                                "code": "ok",
+                                "message": "All looks good!"
                             },
-                            "status": "SKIP"
+                            "status": "PASS"
                         }
                     ],
                     "module": "STAT_in_statics",
@@ -12226,7 +12226,7 @@
                         "https://github.com/fonttools/fontbakery/issues/4149"
                     ],
                     "rationale": "\n        Adobe feature syntax allows for the definition of a STAT table. Fonts built\n        with a hand-coded STAT table in feature syntax may be built either as static\n        or variable, but will end up with the same STAT table.\n\n        This is a problem, because a STAT table which works on variable fonts\n        will not be appropriate for static instances. The examples in the OpenType spec\n        of non-variable fonts with a STAT table show that the table entries must be\n        restricted to those entries which refer to the static font's position in\n        the designspace. i.e. a Regular weight static should only have the following\n        entry for the weight axis:\n\n        <AxisIndex value=\"0\"/>\n        <Flags value=\"2\"/>  <!-- ElidableAxisValueName -->\n        <ValueNameID value=\"265\"/>  <!-- Regular -->\n        <Value value=\"400.0\"/>\n\n        However, if the STAT table intended for a variable font is compiled into a\n        static, it will have many entries for this axis. In this case, Windows will\n        read the first entry only, causing all instances to report themselves\n        as \"Thin Condensed\".\n    ",
-                    "result": "SKIP",
+                    "result": "PASS",
                     "severity": null
                 },
                 {
@@ -12247,10 +12247,10 @@
                     "logs": [
                         {
                             "message": {
-                                "code": "unfulfilled-conditions",
-                                "message": "Unfulfilled Conditions: has_STAT_table"
+                                "code": "ok",
+                                "message": "All looks good!"
                             },
-                            "status": "SKIP"
+                            "status": "PASS"
                         }
                     ],
                     "module": "STAT_in_statics",
@@ -12258,7 +12258,7 @@
                         "https://github.com/fonttools/fontbakery/issues/4149"
                     ],
                     "rationale": "\n        Adobe feature syntax allows for the definition of a STAT table. Fonts built\n        with a hand-coded STAT table in feature syntax may be built either as static\n        or variable, but will end up with the same STAT table.\n\n        This is a problem, because a STAT table which works on variable fonts\n        will not be appropriate for static instances. The examples in the OpenType spec\n        of non-variable fonts with a STAT table show that the table entries must be\n        restricted to those entries which refer to the static font's position in\n        the designspace. i.e. a Regular weight static should only have the following\n        entry for the weight axis:\n\n        <AxisIndex value=\"0\"/>\n        <Flags value=\"2\"/>  <!-- ElidableAxisValueName -->\n        <ValueNameID value=\"265\"/>  <!-- Regular -->\n        <Value value=\"400.0\"/>\n\n        However, if the STAT table intended for a variable font is compiled into a\n        static, it will have many entries for this axis. In this case, Windows will\n        read the first entry only, causing all instances to report themselves\n        as \"Thin Condensed\".\n    ",
-                    "result": "SKIP",
+                    "result": "PASS",
                     "severity": null
                 },
                 {
@@ -12279,10 +12279,10 @@
                     "logs": [
                         {
                             "message": {
-                                "code": "unfulfilled-conditions",
-                                "message": "Unfulfilled Conditions: has_STAT_table"
+                                "code": "ok",
+                                "message": "All looks good!"
                             },
-                            "status": "SKIP"
+                            "status": "PASS"
                         }
                     ],
                     "module": "STAT_in_statics",
@@ -12290,7 +12290,7 @@
                         "https://github.com/fonttools/fontbakery/issues/4149"
                     ],
                     "rationale": "\n        Adobe feature syntax allows for the definition of a STAT table. Fonts built\n        with a hand-coded STAT table in feature syntax may be built either as static\n        or variable, but will end up with the same STAT table.\n\n        This is a problem, because a STAT table which works on variable fonts\n        will not be appropriate for static instances. The examples in the OpenType spec\n        of non-variable fonts with a STAT table show that the table entries must be\n        restricted to those entries which refer to the static font's position in\n        the designspace. i.e. a Regular weight static should only have the following\n        entry for the weight axis:\n\n        <AxisIndex value=\"0\"/>\n        <Flags value=\"2\"/>  <!-- ElidableAxisValueName -->\n        <ValueNameID value=\"265\"/>  <!-- Regular -->\n        <Value value=\"400.0\"/>\n\n        However, if the STAT table intended for a variable font is compiled into a\n        static, it will have many entries for this axis. In this case, Windows will\n        read the first entry only, causing all instances to report themselves\n        as \"Thin Condensed\".\n    ",
-                    "result": "SKIP",
+                    "result": "PASS",
                     "severity": null
                 },
                 {
@@ -12311,10 +12311,10 @@
                     "logs": [
                         {
                             "message": {
-                                "code": "unfulfilled-conditions",
-                                "message": "Unfulfilled Conditions: has_STAT_table"
+                                "code": "ok",
+                                "message": "All looks good!"
                             },
-                            "status": "SKIP"
+                            "status": "PASS"
                         }
                     ],
                     "module": "STAT_in_statics",
@@ -12322,7 +12322,7 @@
                         "https://github.com/fonttools/fontbakery/issues/4149"
                     ],
                     "rationale": "\n        Adobe feature syntax allows for the definition of a STAT table. Fonts built\n        with a hand-coded STAT table in feature syntax may be built either as static\n        or variable, but will end up with the same STAT table.\n\n        This is a problem, because a STAT table which works on variable fonts\n        will not be appropriate for static instances. The examples in the OpenType spec\n        of non-variable fonts with a STAT table show that the table entries must be\n        restricted to those entries which refer to the static font's position in\n        the designspace. i.e. a Regular weight static should only have the following\n        entry for the weight axis:\n\n        <AxisIndex value=\"0\"/>\n        <Flags value=\"2\"/>  <!-- ElidableAxisValueName -->\n        <ValueNameID value=\"265\"/>  <!-- Regular -->\n        <Value value=\"400.0\"/>\n\n        However, if the STAT table intended for a variable font is compiled into a\n        static, it will have many entries for this axis. In this case, Windows will\n        read the first entry only, causing all instances to report themselves\n        as \"Thin Condensed\".\n    ",
-                    "result": "SKIP",
+                    "result": "PASS",
                     "severity": null
                 },
                 {
@@ -12343,10 +12343,10 @@
                     "logs": [
                         {
                             "message": {
-                                "code": "unfulfilled-conditions",
-                                "message": "Unfulfilled Conditions: has_STAT_table"
+                                "code": "ok",
+                                "message": "All looks good!"
                             },
-                            "status": "SKIP"
+                            "status": "PASS"
                         }
                     ],
                     "module": "STAT_strings",
@@ -12354,7 +12354,7 @@
                         "https://github.com/fonttools/fontbakery/issues/2863"
                     ],
                     "rationale": "\n        On the STAT table, the \"Italic\" keyword must not be used on AxisValues\n        for variation axes other than 'ital'.\n    ",
-                    "result": "SKIP",
+                    "result": "PASS",
                     "severity": null
                 },
                 {
@@ -12375,10 +12375,10 @@
                     "logs": [
                         {
                             "message": {
-                                "code": "unfulfilled-conditions",
-                                "message": "Unfulfilled Conditions: has_STAT_table"
+                                "code": "ok",
+                                "message": "All looks good!"
                             },
-                            "status": "SKIP"
+                            "status": "PASS"
                         }
                     ],
                     "module": "STAT_strings",
@@ -12386,7 +12386,7 @@
                         "https://github.com/fonttools/fontbakery/issues/2863"
                     ],
                     "rationale": "\n        On the STAT table, the \"Italic\" keyword must not be used on AxisValues\n        for variation axes other than 'ital'.\n    ",
-                    "result": "SKIP",
+                    "result": "PASS",
                     "severity": null
                 },
                 {
@@ -12407,10 +12407,10 @@
                     "logs": [
                         {
                             "message": {
-                                "code": "unfulfilled-conditions",
-                                "message": "Unfulfilled Conditions: has_STAT_table"
+                                "code": "ok",
+                                "message": "All looks good!"
                             },
-                            "status": "SKIP"
+                            "status": "PASS"
                         }
                     ],
                     "module": "STAT_strings",
@@ -12418,7 +12418,7 @@
                         "https://github.com/fonttools/fontbakery/issues/2863"
                     ],
                     "rationale": "\n        On the STAT table, the \"Italic\" keyword must not be used on AxisValues\n        for variation axes other than 'ital'.\n    ",
-                    "result": "SKIP",
+                    "result": "PASS",
                     "severity": null
                 },
                 {
@@ -12439,10 +12439,10 @@
                     "logs": [
                         {
                             "message": {
-                                "code": "unfulfilled-conditions",
-                                "message": "Unfulfilled Conditions: has_STAT_table"
+                                "code": "ok",
+                                "message": "All looks good!"
                             },
-                            "status": "SKIP"
+                            "status": "PASS"
                         }
                     ],
                     "module": "STAT_strings",
@@ -12450,7 +12450,7 @@
                         "https://github.com/fonttools/fontbakery/issues/2863"
                     ],
                     "rationale": "\n        On the STAT table, the \"Italic\" keyword must not be used on AxisValues\n        for variation axes other than 'ital'.\n    ",
-                    "result": "SKIP",
+                    "result": "PASS",
                     "severity": null
                 },
                 {
@@ -14543,8 +14543,8 @@
             ],
             "result": {
                 "INFO": 8,
-                "PASS": 174,
-                "SKIP": 73
+                "PASS": 182,
+                "SKIP": 65
             }
         },
         {
@@ -16124,14 +16124,14 @@
                         {
                             "message": {
                                 "code": "profile-not-found",
-                                "message": "It seems that Nevlin Font Project Authors is still not listed on the designers catalog. Please submit a photo and a link to a webpage where people can learn more about the work of this designer/typefoundry."
+                                "message": "It seems that Nevlin is still not listed on the designers catalog. Please submit a photo and a link to a webpage where people can learn more about the work of this designer/typefoundry."
                             },
                             "status": "WARN"
                         },
                         {
                             "message": {
                                 "code": "profile-not-found",
-                                "message": "It seems that Inter Project Authors is still not listed on the designers catalog. Please submit a photo and a link to a webpage where people can learn more about the work of this designer/typefoundry."
+                                "message": "It seems that Rasmus Andersson is still not listed on the designers catalog. Please submit a photo and a link to a webpage where people can learn more about the work of this designer/typefoundry."
                             },
                             "status": "WARN"
                         }
@@ -16163,14 +16163,14 @@
                         {
                             "message": {
                                 "code": "profile-not-found",
-                                "message": "It seems that Nevlin Font Project Authors is still not listed on the designers catalog. Please submit a photo and a link to a webpage where people can learn more about the work of this designer/typefoundry."
+                                "message": "It seems that Nevlin is still not listed on the designers catalog. Please submit a photo and a link to a webpage where people can learn more about the work of this designer/typefoundry."
                             },
                             "status": "WARN"
                         },
                         {
                             "message": {
                                 "code": "profile-not-found",
-                                "message": "It seems that Inter Project Authors is still not listed on the designers catalog. Please submit a photo and a link to a webpage where people can learn more about the work of this designer/typefoundry."
+                                "message": "It seems that Rasmus Andersson is still not listed on the designers catalog. Please submit a photo and a link to a webpage where people can learn more about the work of this designer/typefoundry."
                             },
                             "status": "WARN"
                         }
@@ -16202,14 +16202,14 @@
                         {
                             "message": {
                                 "code": "profile-not-found",
-                                "message": "It seems that Nevlin Font Project Authors is still not listed on the designers catalog. Please submit a photo and a link to a webpage where people can learn more about the work of this designer/typefoundry."
+                                "message": "It seems that Nevlin is still not listed on the designers catalog. Please submit a photo and a link to a webpage where people can learn more about the work of this designer/typefoundry."
                             },
                             "status": "WARN"
                         },
                         {
                             "message": {
                                 "code": "profile-not-found",
-                                "message": "It seems that Inter Project Authors is still not listed on the designers catalog. Please submit a photo and a link to a webpage where people can learn more about the work of this designer/typefoundry."
+                                "message": "It seems that Rasmus Andersson is still not listed on the designers catalog. Please submit a photo and a link to a webpage where people can learn more about the work of this designer/typefoundry."
                             },
                             "status": "WARN"
                         }
@@ -16241,14 +16241,14 @@
                         {
                             "message": {
                                 "code": "profile-not-found",
-                                "message": "It seems that Nevlin Font Project Authors is still not listed on the designers catalog. Please submit a photo and a link to a webpage where people can learn more about the work of this designer/typefoundry."
+                                "message": "It seems that Nevlin is still not listed on the designers catalog. Please submit a photo and a link to a webpage where people can learn more about the work of this designer/typefoundry."
                             },
                             "status": "WARN"
                         },
                         {
                             "message": {
                                 "code": "profile-not-found",
-                                "message": "It seems that Inter Project Authors is still not listed on the designers catalog. Please submit a photo and a link to a webpage where people can learn more about the work of this designer/typefoundry."
+                                "message": "It seems that Rasmus Andersson is still not listed on the designers catalog. Please submit a photo and a link to a webpage where people can learn more about the work of this designer/typefoundry."
                             },
                             "status": "WARN"
                         }
@@ -19488,7 +19488,7 @@
                         {
                             "message": {
                                 "code": "unreachable-subsetting",
-                                "message": "The following codepoints supported by the font are not covered by\n    any subsets defined in the font's metadata file, and will never\n    be served. You can solve this by either manually adding additional\n    subset declarations to METADATA.pb, or by editing the glyphset\n    definitions.\n\n * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal\n * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal\n * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal\n * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, cherokee, tifinagh\n * U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic\n * U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, duployan, tifinagh, todhri, coptic, malayalam, math, old-permic, syriac, canadian-aboriginal, hebrew\n * U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan\n * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage\n * U+030C COMBINING CARON: try adding one of: tai-le, cherokee\n * U+0326 COMBINING COMMA BELOW: try adding math\n3 more.\n\nUse -F or --full-lists to disable shortening of long lists.\n\nOr you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext`, `menu`"
+                                "message": "The following codepoints supported by the font are not covered by\n    any subsets defined in the font's metadata file, and will never\n    be served. You can solve this by either manually adding additional\n    subset declarations to METADATA.pb, or by editing the glyphset\n    definitions.\n\n * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal\n * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal\n * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal\n * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh\n * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh\n * U+0307 COMBINING DOT ABOVE: try adding one of: coptic, tai-le, malayalam, hebrew, old-permic, syriac, canadian-aboriginal, tifinagh, math, duployan, todhri\n * U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan\n * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee\n * U+030C COMBINING CARON: try adding one of: cherokee, tai-le\n * U+0326 COMBINING COMMA BELOW: try adding math\n7 more.\n\nUse -F or --full-lists to disable shortening of long lists.\n\nOr you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext`, `menu`"
                             },
                             "status": "WARN"
                         }
@@ -19521,7 +19521,7 @@
                         {
                             "message": {
                                 "code": "unreachable-subsetting",
-                                "message": "The following codepoints supported by the font are not covered by\n    any subsets defined in the font's metadata file, and will never\n    be served. You can solve this by either manually adding additional\n    subset declarations to METADATA.pb, or by editing the glyphset\n    definitions.\n\n * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal\n * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal\n * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal\n * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, cherokee, tifinagh\n * U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic\n * U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, duployan, tifinagh, todhri, coptic, malayalam, math, old-permic, syriac, canadian-aboriginal, hebrew\n * U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan\n * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage\n * U+030C COMBINING CARON: try adding one of: tai-le, cherokee\n * U+0326 COMBINING COMMA BELOW: try adding math\n3 more.\n\nUse -F or --full-lists to disable shortening of long lists.\n\nOr you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext`, `menu`"
+                                "message": "The following codepoints supported by the font are not covered by\n    any subsets defined in the font's metadata file, and will never\n    be served. You can solve this by either manually adding additional\n    subset declarations to METADATA.pb, or by editing the glyphset\n    definitions.\n\n * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal\n * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal\n * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal\n * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh\n * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh\n * U+0307 COMBINING DOT ABOVE: try adding one of: coptic, tai-le, malayalam, hebrew, old-permic, syriac, canadian-aboriginal, tifinagh, math, duployan, todhri\n * U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan\n * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee\n * U+030C COMBINING CARON: try adding one of: cherokee, tai-le\n * U+0326 COMBINING COMMA BELOW: try adding math\n7 more.\n\nUse -F or --full-lists to disable shortening of long lists.\n\nOr you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext`, `menu`"
                             },
                             "status": "WARN"
                         }
@@ -19554,7 +19554,7 @@
                         {
                             "message": {
                                 "code": "unreachable-subsetting",
-                                "message": "The following codepoints supported by the font are not covered by\n    any subsets defined in the font's metadata file, and will never\n    be served. You can solve this by either manually adding additional\n    subset declarations to METADATA.pb, or by editing the glyphset\n    definitions.\n\n * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal\n * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal\n * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal\n * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, cherokee, tifinagh\n * U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic\n * U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, duployan, tifinagh, todhri, coptic, malayalam, math, old-permic, syriac, canadian-aboriginal, hebrew\n * U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan\n * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage\n * U+030C COMBINING CARON: try adding one of: tai-le, cherokee\n * U+0326 COMBINING COMMA BELOW: try adding math\n3 more.\n\nUse -F or --full-lists to disable shortening of long lists.\n\nOr you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext`, `menu`"
+                                "message": "The following codepoints supported by the font are not covered by\n    any subsets defined in the font's metadata file, and will never\n    be served. You can solve this by either manually adding additional\n    subset declarations to METADATA.pb, or by editing the glyphset\n    definitions.\n\n * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal\n * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal\n * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal\n * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh\n * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh\n * U+0307 COMBINING DOT ABOVE: try adding one of: coptic, tai-le, malayalam, hebrew, old-permic, syriac, canadian-aboriginal, tifinagh, math, duployan, todhri\n * U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan\n * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee\n * U+030C COMBINING CARON: try adding one of: cherokee, tai-le\n * U+0326 COMBINING COMMA BELOW: try adding math\n7 more.\n\nUse -F or --full-lists to disable shortening of long lists.\n\nOr you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext`, `menu`"
                             },
                             "status": "WARN"
                         }
@@ -19587,7 +19587,7 @@
                         {
                             "message": {
                                 "code": "unreachable-subsetting",
-                                "message": "The following codepoints supported by the font are not covered by\n    any subsets defined in the font's metadata file, and will never\n    be served. You can solve this by either manually adding additional\n    subset declarations to METADATA.pb, or by editing the glyphset\n    definitions.\n\n * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal\n * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal\n * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal\n * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, coptic, cherokee, tifinagh\n * U+0306 COMBINING BREVE: try adding one of: tifinagh, old-permic\n * U+0307 COMBINING DOT ABOVE: try adding one of: tai-le, duployan, tifinagh, todhri, coptic, malayalam, math, old-permic, syriac, canadian-aboriginal, hebrew\n * U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan\n * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: cherokee, osage\n * U+030C COMBINING CARON: try adding one of: tai-le, cherokee\n * U+0326 COMBINING COMMA BELOW: try adding math\n3 more.\n\nUse -F or --full-lists to disable shortening of long lists.\n\nOr you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext`, `menu`"
+                                "message": "The following codepoints supported by the font are not covered by\n    any subsets defined in the font's metadata file, and will never\n    be served. You can solve this by either manually adding additional\n    subset declarations to METADATA.pb, or by editing the glyphset\n    definitions.\n\n * U+02D8 BREVE: try adding one of: yi, canadian-aboriginal\n * U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal\n * U+02DB OGONEK: try adding one of: yi, canadian-aboriginal\n * U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: math, cherokee, coptic, tifinagh\n * U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh\n * U+0307 COMBINING DOT ABOVE: try adding one of: coptic, tai-le, malayalam, hebrew, old-permic, syriac, canadian-aboriginal, tifinagh, math, duployan, todhri\n * U+030A COMBINING RING ABOVE: try adding one of: syriac, duployan\n * U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee\n * U+030C COMBINING CARON: try adding one of: cherokee, tai-le\n * U+0326 COMBINING COMMA BELOW: try adding math\n7 more.\n\nUse -F or --full-lists to disable shortening of long lists.\n\nOr you can add the above codepoints to one of the subsets supported by the font: `latin`, `latin-ext`, `menu`"
                             },
                             "status": "WARN"
                         }
@@ -20414,10 +20414,10 @@
                     "logs": [
                         {
                             "message": {
-                                "code": "warning-language-shaping",
-                                "message": "GF_TransLatin_Arabic glyphset:\n| WARN messages | Languages |\n| :--- | :--- |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u0114\n  The following auxiliary characters are missing from the font: \u012c\n  The following auxiliary characters are missing from the font: \u013f\n  The following auxiliary characters are missing from the font: \u014e\n  The following auxiliary characters are missing from the font: \u014c\n  The following auxiliary characters are missing from the font: \u016c\n  The following auxiliary characters are missing from the font: \u0115\n  The following auxiliary characters are missing from the font: \u012d\n  The following auxiliary characters are missing from the font: \u0140\n  The following auxiliary characters are missing from the font: \u014f\n  The following auxiliary characters are missing from the font: \u014d\n  The following auxiliary characters are missing from the font: \u016d | ca_Latn (Catalan) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u0114\n  The following auxiliary characters are missing from the font: \u012c\n  The following auxiliary characters are missing from the font: \u014e\n  The following auxiliary characters are missing from the font: \u014c\n  The following auxiliary characters are missing from the font: \u016c\n  The following auxiliary characters are missing from the font: \u0115\n  The following auxiliary characters are missing from the font: \u012d\n  The following auxiliary characters are missing from the font: \u014f\n  The following auxiliary characters are missing from the font: \u014d\n  The following auxiliary characters are missing from the font: \u016d | cs_Latn (Czech), cy_Latn (Welsh), es_Latn (Spanish), hu_Latn (Hungarian), pt_Latn (Portuguese), sk_Latn (Slovak) and tr_Latn (Turkish) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u01fe\n  The following auxiliary characters are missing from the font: \u01ff | da_Latn (Danish) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u0114\n  The following auxiliary characters are missing from the font: \u012c\n  The following auxiliary characters are missing from the font: \u014e\n  The following auxiliary characters are missing from the font: \u014c\n  The following auxiliary characters are missing from the font: \u016c\n  The following auxiliary characters are missing from the font: \u0115\n  The following auxiliary characters are missing from the font: \u012d\n  The following auxiliary characters are missing from the font: \u014f\n  The following auxiliary characters are missing from the font: \u014d\n  The following auxiliary characters are missing from the font: \u017f\n  The following auxiliary characters are missing from the font: \u016d | de_Latn (German) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u0114\n  The following auxiliary characters are missing from the font: \u012c\n  The following auxiliary characters are missing from the font: \u014e\n  The following auxiliary characters are missing from the font: \u014c\n  The following auxiliary characters are missing from the font: \u016c\n  The following auxiliary characters are missing from the font: \u0115\n  The following auxiliary characters are missing from the font: \u012d\n  The following auxiliary characters are missing from the font: \u014f\n  The following auxiliary characters are missing from the font: \u014d\n  The following auxiliary characters are missing from the font: \u016d\n  The following auxiliary characters are missing from the font: \u02bb | en_Latn (English) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u01e6\n  The following auxiliary characters are missing from the font: \u01e4\n  The following auxiliary characters are missing from the font: \u021e\n  The following auxiliary characters are missing from the font: \u01e8\n  The following auxiliary characters are missing from the font: \u014a\n  The following auxiliary characters are missing from the font: \u015c\n  The following auxiliary characters are missing from the font: \u0162\n  The following auxiliary characters are missing from the font: \u0166\n  The following auxiliary characters are missing from the font: \u01b7\n  The following auxiliary characters are missing from the font: \u01ee\n  The following auxiliary characters are missing from the font: \u01e7\n  The following auxiliary characters are missing from the font: \u01e5\n  The following auxiliary characters are missing from the font: \u021f\n  The following auxiliary characters are missing from the font: \u01e9\n  The following auxiliary characters are missing from the font: \u014b\n  The following auxiliary characters are missing from the font: \u015d\n  The following auxiliary characters are missing from the font: \u0163\n  The following auxiliary characters are missing from the font: \u0167\n  The following auxiliary characters are missing from the font: \u0292\n  The following auxiliary characters are missing from the font: \u01ef | fi_Latn (Finnish) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u01d3\n  The following auxiliary characters are missing from the font: \u017f\n  The following auxiliary characters are missing from the font: \u01d4 | fr_Latn (French) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u1ebc\n  The following auxiliary characters are missing from the font: \u0128\n  The following auxiliary characters are missing from the font: \u0168\n  The following auxiliary characters are missing from the font: \u1ebd\n  The following auxiliary characters are missing from the font: \u0129\n  The following auxiliary characters are missing from the font: \u0169 | lt_Latn (Lithuanian) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u014c\n  The following auxiliary characters are missing from the font: \u0156\n  The following auxiliary characters are missing from the font: \u014d\n  The following auxiliary characters are missing from the font: \u0157 | lv_Latn (Latvian) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u01cd\n  The following auxiliary characters are missing from the font: \u014a\n  The following auxiliary characters are missing from the font: \u0166\n  The following auxiliary characters are missing from the font: \u01ce\n  The following auxiliary characters are missing from the font: \u014b\n  The following auxiliary characters are missing from the font: \u0167 | nb_Latn (Norwegian Bokm\u00e5l) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u0132\n  The following auxiliary characters are missing from the font: \u0133 | nl_Latn (Dutch) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u0162\n  The following auxiliary characters are missing from the font: \u0163 | ro_Latn (Romanian) |\n"
+                                "code": "ok",
+                                "message": "All looks good!"
                             },
-                            "status": "WARN"
+                            "status": "PASS"
                         }
                     ],
                     "module": "vendorspecific.googlefonts.glyphsets.shape_languages",
@@ -20425,7 +20425,7 @@
                         "https://github.com/googlefonts/fontbakery/issues/4147"
                     ],
                     "rationale": "\n        This check uses a heuristic to determine which GF glyphsets a font supports.\n        Then it checks the font for correct shaping behaviour for all languages in\n        those glyphsets.\n    ",
-                    "result": "WARN",
+                    "result": "PASS",
                     "severity": null
                 },
                 {
@@ -20446,10 +20446,10 @@
                     "logs": [
                         {
                             "message": {
-                                "code": "warning-language-shaping",
-                                "message": "GF_TransLatin_Arabic glyphset:\n| WARN messages | Languages |\n| :--- | :--- |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u0114\n  The following auxiliary characters are missing from the font: \u012c\n  The following auxiliary characters are missing from the font: \u013f\n  The following auxiliary characters are missing from the font: \u014e\n  The following auxiliary characters are missing from the font: \u014c\n  The following auxiliary characters are missing from the font: \u016c\n  The following auxiliary characters are missing from the font: \u0115\n  The following auxiliary characters are missing from the font: \u012d\n  The following auxiliary characters are missing from the font: \u0140\n  The following auxiliary characters are missing from the font: \u014f\n  The following auxiliary characters are missing from the font: \u014d\n  The following auxiliary characters are missing from the font: \u016d | ca_Latn (Catalan) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u0114\n  The following auxiliary characters are missing from the font: \u012c\n  The following auxiliary characters are missing from the font: \u014e\n  The following auxiliary characters are missing from the font: \u014c\n  The following auxiliary characters are missing from the font: \u016c\n  The following auxiliary characters are missing from the font: \u0115\n  The following auxiliary characters are missing from the font: \u012d\n  The following auxiliary characters are missing from the font: \u014f\n  The following auxiliary characters are missing from the font: \u014d\n  The following auxiliary characters are missing from the font: \u016d | cs_Latn (Czech), cy_Latn (Welsh), es_Latn (Spanish), hu_Latn (Hungarian), pt_Latn (Portuguese), sk_Latn (Slovak) and tr_Latn (Turkish) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u01fe\n  The following auxiliary characters are missing from the font: \u01ff | da_Latn (Danish) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u0114\n  The following auxiliary characters are missing from the font: \u012c\n  The following auxiliary characters are missing from the font: \u014e\n  The following auxiliary characters are missing from the font: \u014c\n  The following auxiliary characters are missing from the font: \u016c\n  The following auxiliary characters are missing from the font: \u0115\n  The following auxiliary characters are missing from the font: \u012d\n  The following auxiliary characters are missing from the font: \u014f\n  The following auxiliary characters are missing from the font: \u014d\n  The following auxiliary characters are missing from the font: \u017f\n  The following auxiliary characters are missing from the font: \u016d | de_Latn (German) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u0114\n  The following auxiliary characters are missing from the font: \u012c\n  The following auxiliary characters are missing from the font: \u014e\n  The following auxiliary characters are missing from the font: \u014c\n  The following auxiliary characters are missing from the font: \u016c\n  The following auxiliary characters are missing from the font: \u0115\n  The following auxiliary characters are missing from the font: \u012d\n  The following auxiliary characters are missing from the font: \u014f\n  The following auxiliary characters are missing from the font: \u014d\n  The following auxiliary characters are missing from the font: \u016d\n  The following auxiliary characters are missing from the font: \u02bb | en_Latn (English) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u01e6\n  The following auxiliary characters are missing from the font: \u01e4\n  The following auxiliary characters are missing from the font: \u021e\n  The following auxiliary characters are missing from the font: \u01e8\n  The following auxiliary characters are missing from the font: \u014a\n  The following auxiliary characters are missing from the font: \u015c\n  The following auxiliary characters are missing from the font: \u0162\n  The following auxiliary characters are missing from the font: \u0166\n  The following auxiliary characters are missing from the font: \u01b7\n  The following auxiliary characters are missing from the font: \u01ee\n  The following auxiliary characters are missing from the font: \u01e7\n  The following auxiliary characters are missing from the font: \u01e5\n  The following auxiliary characters are missing from the font: \u021f\n  The following auxiliary characters are missing from the font: \u01e9\n  The following auxiliary characters are missing from the font: \u014b\n  The following auxiliary characters are missing from the font: \u015d\n  The following auxiliary characters are missing from the font: \u0163\n  The following auxiliary characters are missing from the font: \u0167\n  The following auxiliary characters are missing from the font: \u0292\n  The following auxiliary characters are missing from the font: \u01ef | fi_Latn (Finnish) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u01d3\n  The following auxiliary characters are missing from the font: \u017f\n  The following auxiliary characters are missing from the font: \u01d4 | fr_Latn (French) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u1ebc\n  The following auxiliary characters are missing from the font: \u0128\n  The following auxiliary characters are missing from the font: \u0168\n  The following auxiliary characters are missing from the font: \u1ebd\n  The following auxiliary characters are missing from the font: \u0129\n  The following auxiliary characters are missing from the font: \u0169 | lt_Latn (Lithuanian) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u014c\n  The following auxiliary characters are missing from the font: \u0156\n  The following auxiliary characters are missing from the font: \u014d\n  The following auxiliary characters are missing from the font: \u0157 | lv_Latn (Latvian) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u01cd\n  The following auxiliary characters are missing from the font: \u014a\n  The following auxiliary characters are missing from the font: \u0166\n  The following auxiliary characters are missing from the font: \u01ce\n  The following auxiliary characters are missing from the font: \u014b\n  The following auxiliary characters are missing from the font: \u0167 | nb_Latn (Norwegian Bokm\u00e5l) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u0132\n  The following auxiliary characters are missing from the font: \u0133 | nl_Latn (Dutch) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u0162\n  The following auxiliary characters are missing from the font: \u0163 | ro_Latn (Romanian) |\n"
+                                "code": "ok",
+                                "message": "All looks good!"
                             },
-                            "status": "WARN"
+                            "status": "PASS"
                         }
                     ],
                     "module": "vendorspecific.googlefonts.glyphsets.shape_languages",
@@ -20457,7 +20457,7 @@
                         "https://github.com/googlefonts/fontbakery/issues/4147"
                     ],
                     "rationale": "\n        This check uses a heuristic to determine which GF glyphsets a font supports.\n        Then it checks the font for correct shaping behaviour for all languages in\n        those glyphsets.\n    ",
-                    "result": "WARN",
+                    "result": "PASS",
                     "severity": null
                 },
                 {
@@ -20478,10 +20478,10 @@
                     "logs": [
                         {
                             "message": {
-                                "code": "warning-language-shaping",
-                                "message": "GF_TransLatin_Arabic glyphset:\n| WARN messages | Languages |\n| :--- | :--- |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u0114\n  The following auxiliary characters are missing from the font: \u012c\n  The following auxiliary characters are missing from the font: \u013f\n  The following auxiliary characters are missing from the font: \u014e\n  The following auxiliary characters are missing from the font: \u014c\n  The following auxiliary characters are missing from the font: \u016c\n  The following auxiliary characters are missing from the font: \u0115\n  The following auxiliary characters are missing from the font: \u012d\n  The following auxiliary characters are missing from the font: \u0140\n  The following auxiliary characters are missing from the font: \u014f\n  The following auxiliary characters are missing from the font: \u014d\n  The following auxiliary characters are missing from the font: \u016d | ca_Latn (Catalan) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u0114\n  The following auxiliary characters are missing from the font: \u012c\n  The following auxiliary characters are missing from the font: \u014e\n  The following auxiliary characters are missing from the font: \u014c\n  The following auxiliary characters are missing from the font: \u016c\n  The following auxiliary characters are missing from the font: \u0115\n  The following auxiliary characters are missing from the font: \u012d\n  The following auxiliary characters are missing from the font: \u014f\n  The following auxiliary characters are missing from the font: \u014d\n  The following auxiliary characters are missing from the font: \u016d | cs_Latn (Czech), cy_Latn (Welsh), es_Latn (Spanish), hu_Latn (Hungarian), pt_Latn (Portuguese), sk_Latn (Slovak) and tr_Latn (Turkish) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u01fe\n  The following auxiliary characters are missing from the font: \u01ff | da_Latn (Danish) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u0114\n  The following auxiliary characters are missing from the font: \u012c\n  The following auxiliary characters are missing from the font: \u014e\n  The following auxiliary characters are missing from the font: \u014c\n  The following auxiliary characters are missing from the font: \u016c\n  The following auxiliary characters are missing from the font: \u0115\n  The following auxiliary characters are missing from the font: \u012d\n  The following auxiliary characters are missing from the font: \u014f\n  The following auxiliary characters are missing from the font: \u014d\n  The following auxiliary characters are missing from the font: \u017f\n  The following auxiliary characters are missing from the font: \u016d | de_Latn (German) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u0114\n  The following auxiliary characters are missing from the font: \u012c\n  The following auxiliary characters are missing from the font: \u014e\n  The following auxiliary characters are missing from the font: \u014c\n  The following auxiliary characters are missing from the font: \u016c\n  The following auxiliary characters are missing from the font: \u0115\n  The following auxiliary characters are missing from the font: \u012d\n  The following auxiliary characters are missing from the font: \u014f\n  The following auxiliary characters are missing from the font: \u014d\n  The following auxiliary characters are missing from the font: \u016d\n  The following auxiliary characters are missing from the font: \u02bb | en_Latn (English) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u01e6\n  The following auxiliary characters are missing from the font: \u01e4\n  The following auxiliary characters are missing from the font: \u021e\n  The following auxiliary characters are missing from the font: \u01e8\n  The following auxiliary characters are missing from the font: \u014a\n  The following auxiliary characters are missing from the font: \u015c\n  The following auxiliary characters are missing from the font: \u0162\n  The following auxiliary characters are missing from the font: \u0166\n  The following auxiliary characters are missing from the font: \u01b7\n  The following auxiliary characters are missing from the font: \u01ee\n  The following auxiliary characters are missing from the font: \u01e7\n  The following auxiliary characters are missing from the font: \u01e5\n  The following auxiliary characters are missing from the font: \u021f\n  The following auxiliary characters are missing from the font: \u01e9\n  The following auxiliary characters are missing from the font: \u014b\n  The following auxiliary characters are missing from the font: \u015d\n  The following auxiliary characters are missing from the font: \u0163\n  The following auxiliary characters are missing from the font: \u0167\n  The following auxiliary characters are missing from the font: \u0292\n  The following auxiliary characters are missing from the font: \u01ef | fi_Latn (Finnish) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u01d3\n  The following auxiliary characters are missing from the font: \u017f\n  The following auxiliary characters are missing from the font: \u01d4 | fr_Latn (French) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u1ebc\n  The following auxiliary characters are missing from the font: \u0128\n  The following auxiliary characters are missing from the font: \u0168\n  The following auxiliary characters are missing from the font: \u1ebd\n  The following auxiliary characters are missing from the font: \u0129\n  The following auxiliary characters are missing from the font: \u0169 | lt_Latn (Lithuanian) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u014c\n  The following auxiliary characters are missing from the font: \u0156\n  The following auxiliary characters are missing from the font: \u014d\n  The following auxiliary characters are missing from the font: \u0157 | lv_Latn (Latvian) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u01cd\n  The following auxiliary characters are missing from the font: \u014a\n  The following auxiliary characters are missing from the font: \u0166\n  The following auxiliary characters are missing from the font: \u01ce\n  The following auxiliary characters are missing from the font: \u014b\n  The following auxiliary characters are missing from the font: \u0167 | nb_Latn (Norwegian Bokm\u00e5l) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u0132\n  The following auxiliary characters are missing from the font: \u0133 | nl_Latn (Dutch) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u0162\n  The following auxiliary characters are missing from the font: \u0163 | ro_Latn (Romanian) |\n"
+                                "code": "ok",
+                                "message": "All looks good!"
                             },
-                            "status": "WARN"
+                            "status": "PASS"
                         }
                     ],
                     "module": "vendorspecific.googlefonts.glyphsets.shape_languages",
@@ -20489,7 +20489,7 @@
                         "https://github.com/googlefonts/fontbakery/issues/4147"
                     ],
                     "rationale": "\n        This check uses a heuristic to determine which GF glyphsets a font supports.\n        Then it checks the font for correct shaping behaviour for all languages in\n        those glyphsets.\n    ",
-                    "result": "WARN",
+                    "result": "PASS",
                     "severity": null
                 },
                 {
@@ -20510,10 +20510,10 @@
                     "logs": [
                         {
                             "message": {
-                                "code": "warning-language-shaping",
-                                "message": "GF_TransLatin_Arabic glyphset:\n| WARN messages | Languages |\n| :--- | :--- |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u0114\n  The following auxiliary characters are missing from the font: \u012c\n  The following auxiliary characters are missing from the font: \u013f\n  The following auxiliary characters are missing from the font: \u014e\n  The following auxiliary characters are missing from the font: \u014c\n  The following auxiliary characters are missing from the font: \u016c\n  The following auxiliary characters are missing from the font: \u0115\n  The following auxiliary characters are missing from the font: \u012d\n  The following auxiliary characters are missing from the font: \u0140\n  The following auxiliary characters are missing from the font: \u014f\n  The following auxiliary characters are missing from the font: \u014d\n  The following auxiliary characters are missing from the font: \u016d | ca_Latn (Catalan) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u0114\n  The following auxiliary characters are missing from the font: \u012c\n  The following auxiliary characters are missing from the font: \u014e\n  The following auxiliary characters are missing from the font: \u014c\n  The following auxiliary characters are missing from the font: \u016c\n  The following auxiliary characters are missing from the font: \u0115\n  The following auxiliary characters are missing from the font: \u012d\n  The following auxiliary characters are missing from the font: \u014f\n  The following auxiliary characters are missing from the font: \u014d\n  The following auxiliary characters are missing from the font: \u016d | cs_Latn (Czech), cy_Latn (Welsh), es_Latn (Spanish), hu_Latn (Hungarian), pt_Latn (Portuguese), sk_Latn (Slovak) and tr_Latn (Turkish) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u01fe\n  The following auxiliary characters are missing from the font: \u01ff | da_Latn (Danish) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u0114\n  The following auxiliary characters are missing from the font: \u012c\n  The following auxiliary characters are missing from the font: \u014e\n  The following auxiliary characters are missing from the font: \u014c\n  The following auxiliary characters are missing from the font: \u016c\n  The following auxiliary characters are missing from the font: \u0115\n  The following auxiliary characters are missing from the font: \u012d\n  The following auxiliary characters are missing from the font: \u014f\n  The following auxiliary characters are missing from the font: \u014d\n  The following auxiliary characters are missing from the font: \u017f\n  The following auxiliary characters are missing from the font: \u016d | de_Latn (German) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u0114\n  The following auxiliary characters are missing from the font: \u012c\n  The following auxiliary characters are missing from the font: \u014e\n  The following auxiliary characters are missing from the font: \u014c\n  The following auxiliary characters are missing from the font: \u016c\n  The following auxiliary characters are missing from the font: \u0115\n  The following auxiliary characters are missing from the font: \u012d\n  The following auxiliary characters are missing from the font: \u014f\n  The following auxiliary characters are missing from the font: \u014d\n  The following auxiliary characters are missing from the font: \u016d\n  The following auxiliary characters are missing from the font: \u02bb | en_Latn (English) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u01e6\n  The following auxiliary characters are missing from the font: \u01e4\n  The following auxiliary characters are missing from the font: \u021e\n  The following auxiliary characters are missing from the font: \u01e8\n  The following auxiliary characters are missing from the font: \u014a\n  The following auxiliary characters are missing from the font: \u015c\n  The following auxiliary characters are missing from the font: \u0162\n  The following auxiliary characters are missing from the font: \u0166\n  The following auxiliary characters are missing from the font: \u01b7\n  The following auxiliary characters are missing from the font: \u01ee\n  The following auxiliary characters are missing from the font: \u01e7\n  The following auxiliary characters are missing from the font: \u01e5\n  The following auxiliary characters are missing from the font: \u021f\n  The following auxiliary characters are missing from the font: \u01e9\n  The following auxiliary characters are missing from the font: \u014b\n  The following auxiliary characters are missing from the font: \u015d\n  The following auxiliary characters are missing from the font: \u0163\n  The following auxiliary characters are missing from the font: \u0167\n  The following auxiliary characters are missing from the font: \u0292\n  The following auxiliary characters are missing from the font: \u01ef | fi_Latn (Finnish) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u01d3\n  The following auxiliary characters are missing from the font: \u017f\n  The following auxiliary characters are missing from the font: \u01d4 | fr_Latn (French) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u1ebc\n  The following auxiliary characters are missing from the font: \u0128\n  The following auxiliary characters are missing from the font: \u0168\n  The following auxiliary characters are missing from the font: \u1ebd\n  The following auxiliary characters are missing from the font: \u0129\n  The following auxiliary characters are missing from the font: \u0169 | lt_Latn (Lithuanian) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u014c\n  The following auxiliary characters are missing from the font: \u0156\n  The following auxiliary characters are missing from the font: \u014d\n  The following auxiliary characters are missing from the font: \u0157 | lv_Latn (Latvian) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u01cd\n  The following auxiliary characters are missing from the font: \u014a\n  The following auxiliary characters are missing from the font: \u0166\n  The following auxiliary characters are missing from the font: \u01ce\n  The following auxiliary characters are missing from the font: \u014b\n  The following auxiliary characters are missing from the font: \u0167 | nb_Latn (Norwegian Bokm\u00e5l) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u0132\n  The following auxiliary characters are missing from the font: \u0133 | nl_Latn (Dutch) |\n| Auxiliary orthography codepoints:\n  The following auxiliary characters are missing from the font: \u0162\n  The following auxiliary characters are missing from the font: \u0163 | ro_Latn (Romanian) |\n"
+                                "code": "ok",
+                                "message": "All looks good!"
                             },
-                            "status": "WARN"
+                            "status": "PASS"
                         }
                     ],
                     "module": "vendorspecific.googlefonts.glyphsets.shape_languages",
@@ -20521,7 +20521,7 @@
                         "https://github.com/googlefonts/fontbakery/issues/4147"
                     ],
                     "rationale": "\n        This check uses a heuristic to determine which GF glyphsets a font supports.\n        Then it checks the font for correct shaping behaviour for all languages in\n        those glyphsets.\n    ",
-                    "result": "WARN",
+                    "result": "PASS",
                     "severity": null
                 }
             ],
@@ -20531,7 +20531,7 @@
                 null
             ],
             "result": {
-                "WARN": 4
+                "PASS": 4
             }
         },
         {
@@ -24730,10 +24730,10 @@
                     "logs": [
                         {
                             "message": {
-                                "code": "found-colinear-vectors",
-                                "message": "The following glyphs have colinear vectors:\n\n\t* K (U+004B): L<<436.0,1490.0>--<436.0,1095.0>> -> L<<436.0,1095.0>--<434.0,793.0>>\n\n\t* K.squared: L<<1120.0,1490.0>--<1120.0,1095.0>> -> L<<1120.0,1095.0>--<1118.0,793.0>>\n\n\t* uni0136 (U+0136): L<<436.0,1490.0>--<436.0,1095.0>> -> L<<436.0,1095.0>--<434.0,793.0>>\n\n\t* uni0136.ss03: L<<436.0,1490.0>--<436.0,1095.0>> -> L<<436.0,1095.0>--<434.0,793.0>>\n\n\t* uni0136.ss07: L<<436.0,1490.0>--<436.0,1095.0>> -> L<<436.0,1095.0>--<434.0,793.0>>\n\n\t* uni01E8: L<<436.0,1490.0>--<436.0,1095.0>> -> L<<436.0,1095.0>--<434.0,793.0>>\n\n\t* uni1E30: L<<436.0,1490.0>--<436.0,1095.0>> -> L<<436.0,1095.0>--<434.0,793.0>>\n\n\t* uni24C0: L<<1157.0,1490.0>--<1157.0,1095.0>> -> L<<1157.0,1095.0>--<1155.0,793.0>>"
+                                "code": null,
+                                "message": "No colinear vectors found."
                             },
-                            "status": "WARN"
+                            "status": "PASS"
                         }
                     ],
                     "module": "outline_colinear_vectors",
@@ -24741,7 +24741,7 @@
                         "https://github.com/fonttools/fontbakery/pull/3088"
                     ],
                     "rationale": "\n        This check looks for consecutive line segments which have the same angle. This\n        normally happens if an outline point has been added by accident.\n\n        This check is not run for variable fonts, as they may legitimately have\n        colinear vectors.\n    ",
-                    "result": "WARN",
+                    "result": "PASS",
                     "severity": null
                 },
                 {
@@ -24987,7 +24987,7 @@
                         {
                             "message": {
                                 "code": "found-jaggy-segments",
-                                "message": "The following glyphs have jaggy segments:\n\n\t* M (U+004D): B<<1437.0,1129.0>-<1437.0,1142.0>-<1438.0,1155.0>>/L<<1438.0,1155.0>--<1428.0,1121.0>> = 11.990834979039256\n\n\t* M.squared: B<<1922.0,1129.0>-<1922.0,1142.0>-<1923.0,1155.0>>/L<<1923.0,1155.0>--<1913.0,1121.0>> = 11.990834979039256\n\n\t* g (U+0067): B<<807.0,976.5>-<851.0,931.0>-<855.0,865.0>>/L<<855.0,865.0>--<855.0,1049.0>> = 3.468229258917096\n\n\t* g.subs: B<<539.0,227.0>-<567.0,201.0>-<570.0,164.0>>/L<<570.0,164.0>--<570.0,268.0>> = 4.635463426902618\n\n\t* g.sups: B<<539.0,1427.0>-<567.0,1401.0>-<570.0,1364.0>>/L<<570.0,1364.0>--<570.0,1468.0>> = 4.635463426902618\n\n\t* gbreve (U+011F): B<<807.0,976.5>-<851.0,931.0>-<855.0,865.0>>/L<<855.0,865.0>--<855.0,1049.0>> = 3.468229258917096\n\n\t* gcaron: B<<807.0,976.5>-<851.0,931.0>-<855.0,865.0>>/L<<855.0,865.0>--<855.0,1049.0>> = 3.468229258917096\n\n\t* gcircumflex: B<<807.0,976.5>-<851.0,931.0>-<855.0,865.0>>/L<<855.0,865.0>--<855.0,1049.0>> = 3.468229258917096\n\n\t* gdotaccent (U+0121): B<<807.0,976.5>-<851.0,931.0>-<855.0,865.0>>/L<<855.0,865.0>--<855.0,1049.0>> = 3.468229258917096\n\n\t* gdotaccent.ss07: B<<807.0,976.5>-<851.0,931.0>-<855.0,865.0>>/L<<855.0,865.0>--<855.0,1049.0>> = 3.468229258917096\n\n\t* 14 more.\n\nUse -F or --full-lists to disable shortening of long lists."
+                                "message": "The following glyphs have jaggy segments:\n\n\t* M (U+004D): B<<1437.0,1129.0>-<1437.0,1142.0>-<1438.0,1155.0>>/L<<1438.0,1155.0>--<1428.0,1121.0>> = 11.990834979039256\n\n\t* M.squared: B<<1922.0,1129.0>-<1922.0,1142.0>-<1923.0,1155.0>>/L<<1923.0,1155.0>--<1913.0,1121.0>> = 11.990834979039256\n\n\t* g (U+0067): B<<807.0,976.5>-<851.0,931.0>-<855.0,865.0>>/L<<855.0,865.0>--<855.0,1049.0>> = 3.468229258917096\n\n\t* g.subs: B<<539.0,227.0>-<567.0,201.0>-<570.0,164.0>>/L<<570.0,164.0>--<570.0,268.0>> = 4.635463426902618\n\n\t* g.sups: B<<539.0,1427.0>-<567.0,1401.0>-<570.0,1364.0>>/L<<570.0,1364.0>--<570.0,1468.0>> = 4.635463426902618\n\n\t* gbar (U+01E5): B<<807.0,976.5>-<851.0,931.0>-<855.0,865.0>>/L<<855.0,865.0>--<855.0,1049.0>> = 3.468229258917096\n\n\t* gbreve (U+011F): B<<807.0,976.5>-<851.0,931.0>-<855.0,865.0>>/L<<855.0,865.0>--<855.0,1049.0>> = 3.468229258917096\n\n\t* gcaron (U+01E7): B<<807.0,976.5>-<851.0,931.0>-<855.0,865.0>>/L<<855.0,865.0>--<855.0,1049.0>> = 3.468229258917096\n\n\t* gcircumflex: B<<807.0,976.5>-<851.0,931.0>-<855.0,865.0>>/L<<855.0,865.0>--<855.0,1049.0>> = 3.468229258917096\n\n\t* gdotaccent (U+0121): B<<807.0,976.5>-<851.0,931.0>-<855.0,865.0>>/L<<855.0,865.0>--<855.0,1049.0>> = 3.468229258917096\n\n\t* 18 more.\n\nUse -F or --full-lists to disable shortening of long lists."
                             },
                             "status": "WARN"
                         }
@@ -25083,7 +25083,7 @@
                         {
                             "message": {
                                 "code": "found-jaggy-segments",
-                                "message": "The following glyphs have jaggy segments:\n\n\t* r (U+0072): L<<349.0,1070.0>--<349.0,851.0>>/B<<349.0,851.0>-<360.0,942.0>-<410.0,998.0>> = 6.892423122485113\n\n\t* r.subs: L<<252.0,267.0>--<252.0,145.0>>/B<<252.0,145.0>-<260.0,196.0>-<294.5,227.0>> = 8.914926957147863\n\n\t* r.sups: L<<252.0,1462.0>--<252.0,1341.0>>/B<<252.0,1341.0>-<260.0,1391.0>-<294.5,1422.0>> = 9.090276920822312\n\n\t* racute (U+0155): L<<349.0,1070.0>--<349.0,851.0>>/B<<349.0,851.0>-<360.0,942.0>-<410.0,998.0>> = 6.892423122485113\n\n\t* rcaron (U+0159): L<<349.0,1070.0>--<349.0,851.0>>/B<<349.0,851.0>-<360.0,942.0>-<410.0,998.0>> = 6.892423122485113\n\n\t* uni1E59.ss07: L<<349.0,1070.0>--<349.0,851.0>>/B<<349.0,851.0>-<360.0,942.0>-<410.0,998.0>> = 6.892423122485113\n\n\t* uni1E59: L<<349.0,1070.0>--<349.0,851.0>>/B<<349.0,851.0>-<360.0,942.0>-<410.0,998.0>> = 6.892423122485113"
+                                "message": "The following glyphs have jaggy segments:\n\n\t* r (U+0072): L<<349.0,1070.0>--<349.0,851.0>>/B<<349.0,851.0>-<360.0,942.0>-<410.0,998.0>> = 6.892423122485113\n\n\t* r.subs: L<<252.0,267.0>--<252.0,145.0>>/B<<252.0,145.0>-<260.0,196.0>-<294.5,227.0>> = 8.914926957147863\n\n\t* r.sups: L<<252.0,1462.0>--<252.0,1341.0>>/B<<252.0,1341.0>-<260.0,1391.0>-<294.5,1422.0>> = 9.090276920822312\n\n\t* racute (U+0155): L<<349.0,1070.0>--<349.0,851.0>>/B<<349.0,851.0>-<360.0,942.0>-<410.0,998.0>> = 6.892423122485113\n\n\t* rcaron (U+0159): L<<349.0,1070.0>--<349.0,851.0>>/B<<349.0,851.0>-<360.0,942.0>-<410.0,998.0>> = 6.892423122485113\n\n\t* uni0157 (U+0157): L<<349.0,1070.0>--<349.0,851.0>>/B<<349.0,851.0>-<360.0,942.0>-<410.0,998.0>> = 6.892423122485113\n\n\t* uni0157.ss03: L<<349.0,1070.0>--<349.0,851.0>>/B<<349.0,851.0>-<360.0,942.0>-<410.0,998.0>> = 6.892423122485113\n\n\t* uni0157.ss07: L<<349.0,1070.0>--<349.0,851.0>>/B<<349.0,851.0>-<360.0,942.0>-<410.0,998.0>> = 6.892423122485113\n\n\t* uni1E59.ss07: L<<349.0,1070.0>--<349.0,851.0>>/B<<349.0,851.0>-<360.0,942.0>-<410.0,998.0>> = 6.892423122485113\n\n\t* uni1E59: L<<349.0,1070.0>--<349.0,851.0>>/B<<349.0,851.0>-<360.0,942.0>-<410.0,998.0>> = 6.892423122485113"
                             },
                             "status": "WARN"
                         }
@@ -25114,10 +25114,10 @@
                     "logs": [
                         {
                             "message": {
-                                "code": "found-semi-vertical",
-                                "message": "The following glyphs have semi-vertical/semi-horizontal lines:\n\n\t* K (U+004B): L<<436.0,1095.0>--<434.0,793.0>>\n\n\t* K.squared: L<<1120.0,1095.0>--<1118.0,793.0>>\n\n\t* f.i.1: L<<586.0,1503.0>--<584.0,1259.0>>\n\n\t* n (U+006E): L<<412.0,1070.0>--<413.0,889.0>>\n\n\t* nacute (U+0144): L<<412.0,1070.0>--<413.0,889.0>>\n\n\t* ncaron (U+0148): L<<412.0,1070.0>--<413.0,889.0>>\n\n\t* ntilde (U+00F1): L<<412.0,1070.0>--<413.0,889.0>>\n\n\t* u (U+0075): L<<815.0,0.0>--<814.0,182.0>>\n\n\t* uacute (U+00FA): L<<815.0,0.0>--<814.0,182.0>>\n\n\t* ubreve: L<<815.0,0.0>--<814.0,182.0>>\n\n\t* 22 more.\n\nUse -F or --full-lists to disable shortening of long lists."
+                                "code": null,
+                                "message": "No semi-horizontal/semi-vertical lines found."
                             },
-                            "status": "WARN"
+                            "status": "PASS"
                         }
                     ],
                     "module": "outline_semi_vertical",
@@ -25125,7 +25125,7 @@
                         "https://github.com/fonttools/fontbakery/pull/3088"
                     ],
                     "rationale": "\n        This check detects line segments which are nearly, but not quite, exactly\n        horizontal or vertical. Sometimes such lines are created by design, but often\n        they are indicative of a design error.\n\n        This check is disabled for italic styles, which often contain nearly-upright\n        lines.\n    ",
-                    "result": "WARN",
+                    "result": "PASS",
                     "severity": null
                 },
                 {
@@ -25146,10 +25146,10 @@
                     "logs": [
                         {
                             "message": {
-                                "code": "found-semi-vertical",
-                                "message": "The following glyphs have semi-vertical/semi-horizontal lines:\n\n\t* K (U+004B): L<<376.0,1490.0>--<375.0,749.0>>\n\n\t* K.squared: L<<1081.0,1490.0>--<1080.0,749.0>>\n\n\t* Thorn (U+00DE): L<<367.0,1197.0>--<626.0,1196.0>>\n\n\t* n (U+006E): L<<344.0,1070.0>--<345.0,898.0>>\n\n\t* nacute (U+0144): L<<344.0,1070.0>--<345.0,898.0>>\n\n\t* ncaron (U+0148): L<<344.0,1070.0>--<345.0,898.0>>\n\n\t* ntilde (U+00F1): L<<344.0,1070.0>--<345.0,898.0>>\n\n\t* u (U+0075): L<<830.0,0.0>--<829.0,172.0>>\n\n\t* uacute (U+00FA): L<<830.0,0.0>--<829.0,172.0>>\n\n\t* ubreve: L<<830.0,0.0>--<829.0,172.0>>\n\n\t* 22 more.\n\nUse -F or --full-lists to disable shortening of long lists."
+                                "code": null,
+                                "message": "No semi-horizontal/semi-vertical lines found."
                             },
-                            "status": "WARN"
+                            "status": "PASS"
                         }
                     ],
                     "module": "outline_semi_vertical",
@@ -25157,7 +25157,7 @@
                         "https://github.com/fonttools/fontbakery/pull/3088"
                     ],
                     "rationale": "\n        This check detects line segments which are nearly, but not quite, exactly\n        horizontal or vertical. Sometimes such lines are created by design, but often\n        they are indicative of a design error.\n\n        This check is disabled for italic styles, which often contain nearly-upright\n        lines.\n    ",
-                    "result": "WARN",
+                    "result": "PASS",
                     "severity": null
                 },
                 {
@@ -25210,10 +25210,10 @@
                     "logs": [
                         {
                             "message": {
-                                "code": "found-semi-vertical",
-                                "message": "The following glyphs have semi-vertical/semi-horizontal lines:\n\n\t* K (U+004B): L<<405.0,1490.0>--<404.0,771.0>>\n\n\t* K.squared: L<<1100.0,1490.0>--<1099.0,771.0>>\n\n\t* n (U+006E): L<<377.0,1070.0>--<378.0,894.0>>\n\n\t* nacute (U+0144): L<<377.0,1070.0>--<378.0,894.0>>\n\n\t* ncaron (U+0148): L<<377.0,1070.0>--<378.0,894.0>>\n\n\t* ntilde (U+00F1): L<<377.0,1070.0>--<378.0,894.0>>\n\n\t* u (U+0075): L<<823.0,0.0>--<822.0,177.0>>\n\n\t* uacute (U+00FA): L<<823.0,0.0>--<822.0,177.0>>\n\n\t* ubreve: L<<823.0,0.0>--<822.0,177.0>>\n\n\t* ucircumflex (U+00FB): L<<823.0,0.0>--<822.0,177.0>>\n\n\t* 21 more.\n\nUse -F or --full-lists to disable shortening of long lists."
+                                "code": null,
+                                "message": "No semi-horizontal/semi-vertical lines found."
                             },
-                            "status": "WARN"
+                            "status": "PASS"
                         }
                     ],
                     "module": "outline_semi_vertical",
@@ -25221,7 +25221,7 @@
                         "https://github.com/fonttools/fontbakery/pull/3088"
                     ],
                     "rationale": "\n        This check detects line segments which are nearly, but not quite, exactly\n        horizontal or vertical. Sometimes such lines are created by design, but often\n        they are indicative of a design error.\n\n        This check is disabled for italic styles, which often contain nearly-upright\n        lines.\n    ",
-                    "result": "WARN",
+                    "result": "PASS",
                     "severity": null
                 },
                 {
@@ -25359,8 +25359,8 @@
                 null
             ],
             "result": {
-                "PASS": 18,
-                "WARN": 6
+                "PASS": 22,
+                "WARN": 2
             }
         },
         {
@@ -27853,36 +27853,8 @@
                     "logs": [
                         {
                             "message": {
-                                "code": "missing-STAT",
-                                "message": "This font does not have a STAT table: Font(file='output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-Bold.ttf', context=CheckRunContext(testables=[..., Font(file='output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-Medium.ttf', context=...), Font(file='output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-Regular.ttf', context=...), Font(file='output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-SemiBold.ttf', context=...)], config={'file_size': {'WARN_SIZE': 1048576, 'FAIL_SIZE': 9437184}, 'custom_order': None, 'explicit_checks': None, 'exclude_checks': None, 'full_lists': False, 'skip_network': False}, is_multithreaded=True))"
-                            },
-                            "status": "SKIP"
-                        },
-                        {
-                            "message": {
-                                "code": "missing-STAT",
-                                "message": "This font does not have a STAT table: Font(file='output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-Medium.ttf', context=CheckRunContext(testables=[Font(file='output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-Bold.ttf', context=...), ..., Font(file='output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-Regular.ttf', context=...), Font(file='output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-SemiBold.ttf', context=...)], config={'file_size': {'WARN_SIZE': 1048576, 'FAIL_SIZE': 9437184}, 'custom_order': None, 'explicit_checks': None, 'exclude_checks': None, 'full_lists': False, 'skip_network': False}, is_multithreaded=True))"
-                            },
-                            "status": "SKIP"
-                        },
-                        {
-                            "message": {
-                                "code": "missing-STAT",
-                                "message": "This font does not have a STAT table: Font(file='output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-Regular.ttf', context=CheckRunContext(testables=[Font(file='output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-Bold.ttf', context=...), Font(file='output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-Medium.ttf', context=...), ..., Font(file='output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-SemiBold.ttf', context=...)], config={'file_size': {'WARN_SIZE': 1048576, 'FAIL_SIZE': 9437184}, 'custom_order': None, 'explicit_checks': None, 'exclude_checks': None, 'full_lists': False, 'skip_network': False}, is_multithreaded=True))"
-                            },
-                            "status": "SKIP"
-                        },
-                        {
-                            "message": {
-                                "code": "missing-STAT",
-                                "message": "This font does not have a STAT table: Font(file='output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-SemiBold.ttf', context=CheckRunContext(testables=[Font(file='output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-Bold.ttf', context=...), Font(file='output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-Medium.ttf', context=...), Font(file='output/nevlin-google-fonts/core-latin/googlefonts/nevlinfont/NevlinFont-Regular.ttf', context=...), ...], config={'file_size': {'WARN_SIZE': 1048576, 'FAIL_SIZE': 9437184}, 'custom_order': None, 'explicit_checks': None, 'exclude_checks': None, 'full_lists': False, 'skip_network': False}, is_multithreaded=True))"
-                            },
-                            "status": "SKIP"
-                        },
-                        {
-                            "message": {
                                 "code": "summary",
-                                "message": "All of the fonts lack a STAT table.\n"
+                                "message": "None of the fonts lack a STAT table.\n\n\tAnd these are the most common STAT axis orderings:\n\t('wght-ital', 4)"
                             },
                             "status": "INFO"
                         }

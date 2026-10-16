@@ -1,25 +1,37 @@
 # Core Latin validation — 16 October 2026
 
-Full Google Fonts profile, with network checks enabled: **595 PASS, 0 FAIL, 0 ERROR, 22 WARN, 247 SKIP, 29 INFO**. No checks disabled or warnings suppressed.
+| Checker (full Google Fonts profile, network enabled) | Pass | Fail | Error | Warn |
+|---|---:|---:|---:|---:|
+| FontBakery 1.1.0 | 611 | 0 | 0 | 14 |
+| Fontspector 1.9.0 | 415 | 0 | 0 | 10 |
 
-All four weights contain the 321 requested codepoints. Coverage, tabular-digit alignment, specimen coverage and i/j/į dot removal pass the supplied check_core.py. The earlier broad candidate remains unchanged (all eight binary hashes verified against its manifest).
+The checker suites and reporting units differ; their totals are not directly interchangeable. No checks were disabled, no warning severity was overridden, and no external approval is claimed.
 
-The editable Glyphs/UFO sources retain the full design inventory. repertoire.json controls the core distribution. build.py adds explicit dot-removal rules and a dotless-ogonek alternate, retaining its mark-positioning lookups; generated UFOs expose those rules for editing. The broad candidate has a separately verified reproducible build; this core candidate has not yet undergone a second independent clean-build comparison.
+## Repairs in this update
 
-## Remaining warnings
+- Added 50 auxiliary Latin characters already present in the source inventory. Language-shaping warnings are resolved.
+- Added U+2028/U+2029 separators and U+20B9 rupee. The distributed repertoire now has 374 codepoints; all previous 321 remain.
+- Normalized tiny axis slopes and redundant straight-line points in final contours, with at most one design-unit endpoint movement during axis normalization. Near-axis and redundant-point warnings are resolved.
+- Corrected misleading inherited T-cedilla/T-comma glyph names without changing Unicode or drawing. Contour-count warning resolved.
+- Added WWS-conformant metadata and STAT weight/italic axes, including italic linked value 1.
+- Existing dot-removal, numeral alignment and coverage checks pass in all weights. Advance widths of all previous characters remain unchanged.
+- Preserved the full beta separately; the NevlinUIPlus files are untouched.
 
-| Check | Weight-level results | Disposition |
+## Remaining 14 FontBakery warning results
+
+| Group | Results | What remains |
 |---|---:|---|
-| vendorspecific.googlefonts.metadata.designer_profiles | 4 | Needs Google designer catalog profiles; no profiles or photos submitted. |
-| vendorspecific.googlefonts.metadata.unreachable_subsetting | 4 | 13 Latin accents/symbols fall outside the selected serving subsets. Preserve required Latin Core coverage; coordinate serving ranges with Google. Do not falsely claim other scripts. |
-| vendorspecific.googlefonts.glyphsets.shape_languages | 4 | Missing optional auxiliary orthography characters. Mandatory language shaping passes; optional language expansion remains outside this core release. |
-| outline_colinear_vectors | 1 | Review near-collinear K segments; no waiver has been approved. |
-| outline_jaggy_segments | 2 | Review joins on inherited M and customized g; no waiver has been approved. |
-| outline_semi_vertical | 3 | Review near-axis optical segments; no waiver has been approved. |
-| vendorspecific.googlefonts.vendor_id | 4 | Vendor ID is unregistered. Registration is optional and has not been claimed. |
+| Designer catalog | 4 | Nevlin needs an accepted Google designer profile. Credit now uses Nevlin and Inter designer Rasmus Andersson; all upstream copyright notices remain. |
+| Vendor ID | 4 | Microsoft registration is optional. NONE remains until a real vendor ID is confirmed; no borrowed registration is used. |
+| Serving subsets | 4 | Google serving subsets omit required Latin Core marks. Preserve required coverage and request catalog review; do not add unrelated script claims. |
+| Tight outline joins | 2 | SemiBold r and Bold M/g (including derivatives) trigger an acute-angle heuristic. Enlarged visual proof shows the flags at the intentional-looking stem/shoulder and bowl junctions. Kept for qualified type-design/Google review rather than reshaping approved letters solely for the checker. No waiver is approved. |
 
-## Admission is separate from testing
+The current Fontspector report also retains vendor, serving-subset and tight-join warnings. See complete reports for details.
 
-This remains an Inter-derived development candidate. Zero automated failures do not establish originality, visual quality or Google Fonts acceptance. Human outline review, cross-platform rendering, design eligibility and the copyright-holder agreement process remain before submission. No Google onboarding issue, PR or CLA has been sent.
+## Submission status
 
-The full machine-readable and Markdown reports are in core-fontbakery.json and core-fontbakery.md (also in the source archive). The full beta is separately preserved as the unchanged NevlinUIPlus files in this repository.
+These are improved development fonts, not a warning-free or Google-approved release. The family remains substantially Inter-derived; originality/admission is a separate Google decision. External catalog acceptance, outline review and copyright-holder CLA requirements cannot be manufactured by changing local checker configuration.
+
+See ONBOARDING-NOTES.md for the unsent vendor request and designer-profile/subsetting notes. No emails, PRs, onboarding issues or agreements have been submitted.
+
+Current Google QA guidance: https://googlefonts.github.io/gf-guide/qa.html
