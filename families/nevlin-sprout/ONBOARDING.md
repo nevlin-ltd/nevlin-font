@@ -35,3 +35,6 @@ The previous issue https://github.com/google/fonts/issues/11128 is unchanged.
 References:
 - https://googlefonts.github.io/gf-guide/onboarding.html
 - https://googlefonts.github.io/gf-guide/qa.html
+
+Version 1.001 RC2 is now resubmitted with the official New Font template:
+https://github.com/google/fonts/issues/11130. No acceptance is claimed.
