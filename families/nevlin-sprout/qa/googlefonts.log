@@ -1,27 +1,26 @@
 Running 682 checks on 4 files in 1 family
-Testing: output/nevlin-sprout-googlefonts/googlefonts/nevlinsprout
+Testing: output/nevlin-font-sprout-upload/families/nevlin-sprout/googlefonts/nevlinsprout
   Section: Metadata Checks
 
 >> googlefonts/metadata/unreachable_subsetting
 [1mWARN[0m: [unreachable-subsetting]: 
-output/nevlin-sprout-googlefonts/googlefonts/nevlinsprout/NevlinSprout-Bold.ttf:
-The following codepoints supported by the font are not covered by any subsets 
-defined in the font's metadata file, and will never be served. You can solve 
-this by either manually adding additional subset declarations to METADATA.pb, or
-by editing the glyphset definitions.
+output/nevlin-font-sprout-upload/families/nevlin-sprout/googlefonts/nevlinsprout
+/NevlinSprout-Bold.ttf: The following codepoints supported by the font are not 
+covered by any subsets defined in the font's metadata file, and will never be 
+served. You can solve this by either manually adding additional subset 
+declarations to METADATA.pb, or by editing the glyphset definitions.
 
-[m•[m U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
+[m•[m U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
 [m•[m U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
-[m•[m U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
-[m•[m U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, tifinagh, 
-  cherokee, math
+[m•[m U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+[m•[m U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, tifinagh, 
+  coptic, math
 [m•[m U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
-[m•[m U+0307 COMBINING DOT ABOVE: try adding one of: hebrew, old-permic, math, 
-  malayalam, tai-le, canadian-aboriginal, coptic, syriac, tifinagh, todhri, 
-  duployan
+[m•[m U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, malayalam,
+  coptic, syriac, tai-le, tifinagh, old-permic, math, todhri, hebrew, duployan
 [m•[m U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac
 [m•[m U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
-[m•[m U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+[m•[m U+030C COMBINING CARON: try adding one of: tai-le, cherokee
 [m•[m U+0326 COMBINING COMMA BELOW: try adding math
 [m•[m U+0327 COMBINING CEDILLA: try adding math
 [m•[m U+1EBC LATIN CAPITAL LETTER E WITH TILDE: try adding vietnamese
@@ -30,42 +29,40 @@ by editing the glyphset definitions.
 [m•[m U+2192 RIGHTWARDS ARROW: try adding one of: math, symbols
 [m•[m U+2264 LESS-THAN OR EQUAL TO: try adding math
 [m•[m U+2265 GREATER-THAN OR EQUAL TO: try adding math
-[m•[m U+25CC DOTTED CIRCLE: try adding one of: duployan, mahajani, buginese, 
-  saurashtra, takri, gunjala-gondi, lao, tifinagh, javanese, tai-le, balinese, 
-  caucasian-albanian, osage, tai-tham, adlam, symbols, sogdian, khudawadi, 
-  batak, dogra, kayah-li, grantha, mende-kikakui, miao, psalter-pahlavi, brahmi,
-  sharada, hanifi-rohingya, gujarati, syriac, kannada, marchen, kaithi, 
-  bassa-vah, buhid, meetei-mayek, phags-pa, devanagari, tirhuta, newa, 
-  old-permic, music, armenian, bengali, hanunoo, canadian-aboriginal, myanmar, 
-  elbasan, khojki, limbu, thaana, mandaic, gurmukhi, chakma, cham, kharoshthi, 
-  nko, oriya, sinhala, manichaean, khmer, syloti-nagri, tai-viet, wancho, 
-  zanabazar-square, tamil, telugu, tagalog, modi, tagbanwa, coptic, thai, 
-  warang-citi, new-tai-lue, malayalam, ahom, mongolian, pahawh-hmong, lepcha, 
-  siddham, hebrew, soyombo, rejang, sundanese, tibetan, yi, bhaiksuki, 
-  masaram-gondi, math
+[m•[m U+25CC DOTTED CIRCLE: try adding one of: sundanese, kaithi, bengali, 
+  mende-kikakui, javanese, ahom, cham, mongolian, armenian, mahajani, malayalam,
+  new-tai-lue, oriya, osage, tirhuta, warang-citi, buhid, miao, khojki, yi, 
+  hebrew, rejang, lepcha, balinese, psalter-pahlavi, tifinagh, tai-viet, dogra, 
+  syloti-nagri, brahmi, khudawadi, siddham, tamil, kharoshthi, devanagari, 
+  grantha, bhaiksuki, batak, old-permic, tibetan, lao, symbols, masaram-gondi, 
+  buginese, hanunoo, tai-tham, thai, gunjala-gondi, tagalog, nko, wancho, 
+  kayah-li, khmer, phags-pa, chakma, myanmar, meetei-mayek, tagbanwa, adlam, 
+  music, takri, hanifi-rohingya, bassa-vah, sharada, saurashtra, soyombo, 
+  syriac, newa, coptic, telugu, zanabazar-square, caucasian-albanian, gujarati, 
+  marchen, pahawh-hmong, gurmukhi, sinhala, kannada, limbu, modi, manichaean, 
+  mandaic, thaana, duployan, math, canadian-aboriginal, elbasan, sogdian, tai-le
 
 Or you can add the above codepoints to one of the subsets supported by the font:
 latin-ext, latin
 
 [1mWARN[0m: [unreachable-subsetting]: 
-output/nevlin-sprout-googlefonts/googlefonts/nevlinsprout/NevlinSprout-Medium.tt
-f: The following codepoints supported by the font are not covered by any subsets
-defined in the font's metadata file, and will never be served. You can solve 
-this by either manually adding additional subset declarations to METADATA.pb, or
-by editing the glyphset definitions.
+output/nevlin-font-sprout-upload/families/nevlin-sprout/googlefonts/nevlinsprout
+/NevlinSprout-Medium.ttf: The following codepoints supported by the font are not
+covered by any subsets defined in the font's metadata file, and will never be 
+served. You can solve this by either manually adding additional subset 
+declarations to METADATA.pb, or by editing the glyphset definitions.
 
-[m•[m U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
+[m•[m U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
 [m•[m U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
-[m•[m U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
-[m•[m U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, tifinagh, 
-  cherokee, math
+[m•[m U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+[m•[m U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, tifinagh, 
+  coptic, math
 [m•[m U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
-[m•[m U+0307 COMBINING DOT ABOVE: try adding one of: hebrew, old-permic, math, 
-  malayalam, tai-le, canadian-aboriginal, coptic, syriac, tifinagh, todhri, 
-  duployan
+[m•[m U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, malayalam,
+  coptic, syriac, tai-le, tifinagh, old-permic, math, todhri, hebrew, duployan
 [m•[m U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac
 [m•[m U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
-[m•[m U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+[m•[m U+030C COMBINING CARON: try adding one of: tai-le, cherokee
 [m•[m U+0326 COMBINING COMMA BELOW: try adding math
 [m•[m U+0327 COMBINING CEDILLA: try adding math
 [m•[m U+1EBC LATIN CAPITAL LETTER E WITH TILDE: try adding vietnamese
@@ -74,42 +71,40 @@ by editing the glyphset definitions.
 [m•[m U+2192 RIGHTWARDS ARROW: try adding one of: math, symbols
 [m•[m U+2264 LESS-THAN OR EQUAL TO: try adding math
 [m•[m U+2265 GREATER-THAN OR EQUAL TO: try adding math
-[m•[m U+25CC DOTTED CIRCLE: try adding one of: duployan, mahajani, buginese, 
-  saurashtra, takri, gunjala-gondi, lao, tifinagh, javanese, tai-le, balinese, 
-  caucasian-albanian, osage, tai-tham, adlam, symbols, sogdian, khudawadi, 
-  batak, dogra, kayah-li, grantha, mende-kikakui, miao, psalter-pahlavi, brahmi,
-  sharada, hanifi-rohingya, gujarati, syriac, kannada, marchen, kaithi, 
-  bassa-vah, buhid, meetei-mayek, phags-pa, devanagari, tirhuta, newa, 
-  old-permic, music, armenian, bengali, hanunoo, canadian-aboriginal, myanmar, 
-  elbasan, khojki, limbu, thaana, mandaic, gurmukhi, chakma, cham, kharoshthi, 
-  nko, oriya, sinhala, manichaean, khmer, syloti-nagri, tai-viet, wancho, 
-  zanabazar-square, tamil, telugu, tagalog, modi, tagbanwa, coptic, thai, 
-  warang-citi, new-tai-lue, malayalam, ahom, mongolian, pahawh-hmong, lepcha, 
-  siddham, hebrew, soyombo, rejang, sundanese, tibetan, yi, bhaiksuki, 
-  masaram-gondi, math
+[m•[m U+25CC DOTTED CIRCLE: try adding one of: sundanese, kaithi, bengali, 
+  mende-kikakui, javanese, ahom, cham, mongolian, armenian, mahajani, malayalam,
+  new-tai-lue, oriya, osage, tirhuta, warang-citi, buhid, miao, khojki, yi, 
+  hebrew, rejang, lepcha, balinese, psalter-pahlavi, tifinagh, tai-viet, dogra, 
+  syloti-nagri, brahmi, khudawadi, siddham, tamil, kharoshthi, devanagari, 
+  grantha, bhaiksuki, batak, old-permic, tibetan, lao, symbols, masaram-gondi, 
+  buginese, hanunoo, tai-tham, thai, gunjala-gondi, tagalog, nko, wancho, 
+  kayah-li, khmer, phags-pa, chakma, myanmar, meetei-mayek, tagbanwa, adlam, 
+  music, takri, hanifi-rohingya, bassa-vah, sharada, saurashtra, soyombo, 
+  syriac, newa, coptic, telugu, zanabazar-square, caucasian-albanian, gujarati, 
+  marchen, pahawh-hmong, gurmukhi, sinhala, kannada, limbu, modi, manichaean, 
+  mandaic, thaana, duployan, math, canadian-aboriginal, elbasan, sogdian, tai-le
 
 Or you can add the above codepoints to one of the subsets supported by the font:
 latin-ext, latin
 
 [1mWARN[0m: [unreachable-subsetting]: 
-output/nevlin-sprout-googlefonts/googlefonts/nevlinsprout/NevlinSprout-Regular.t
-tf: The following codepoints supported by the font are not covered by any 
-subsets defined in the font's metadata file, and will never be served. You can 
-solve this by either manually adding additional subset declarations to 
-METADATA.pb, or by editing the glyphset definitions.
+output/nevlin-font-sprout-upload/families/nevlin-sprout/googlefonts/nevlinsprout
+/NevlinSprout-Regular.ttf: The following codepoints supported by the font are 
+not covered by any subsets defined in the font's metadata file, and will never 
+be served. You can solve this by either manually adding additional subset 
+declarations to METADATA.pb, or by editing the glyphset definitions.
 
-[m•[m U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
+[m•[m U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
 [m•[m U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
-[m•[m U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
-[m•[m U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, tifinagh, 
-  cherokee, math
+[m•[m U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+[m•[m U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, tifinagh, 
+  coptic, math
 [m•[m U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
-[m•[m U+0307 COMBINING DOT ABOVE: try adding one of: hebrew, old-permic, math, 
-  malayalam, tai-le, canadian-aboriginal, coptic, syriac, tifinagh, todhri, 
-  duployan
+[m•[m U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, malayalam,
+  coptic, syriac, tai-le, tifinagh, old-permic, math, todhri, hebrew, duployan
 [m•[m U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac
 [m•[m U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
-[m•[m U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+[m•[m U+030C COMBINING CARON: try adding one of: tai-le, cherokee
 [m•[m U+0326 COMBINING COMMA BELOW: try adding math
 [m•[m U+0327 COMBINING CEDILLA: try adding math
 [m•[m U+1EBC LATIN CAPITAL LETTER E WITH TILDE: try adding vietnamese
@@ -118,42 +113,40 @@ METADATA.pb, or by editing the glyphset definitions.
 [m•[m U+2192 RIGHTWARDS ARROW: try adding one of: math, symbols
 [m•[m U+2264 LESS-THAN OR EQUAL TO: try adding math
 [m•[m U+2265 GREATER-THAN OR EQUAL TO: try adding math
-[m•[m U+25CC DOTTED CIRCLE: try adding one of: duployan, mahajani, buginese, 
-  saurashtra, takri, gunjala-gondi, lao, tifinagh, javanese, tai-le, balinese, 
-  caucasian-albanian, osage, tai-tham, adlam, symbols, sogdian, khudawadi, 
-  batak, dogra, kayah-li, grantha, mende-kikakui, miao, psalter-pahlavi, brahmi,
-  sharada, hanifi-rohingya, gujarati, syriac, kannada, marchen, kaithi, 
-  bassa-vah, buhid, meetei-mayek, phags-pa, devanagari, tirhuta, newa, 
-  old-permic, music, armenian, bengali, hanunoo, canadian-aboriginal, myanmar, 
-  elbasan, khojki, limbu, thaana, mandaic, gurmukhi, chakma, cham, kharoshthi, 
-  nko, oriya, sinhala, manichaean, khmer, syloti-nagri, tai-viet, wancho, 
-  zanabazar-square, tamil, telugu, tagalog, modi, tagbanwa, coptic, thai, 
-  warang-citi, new-tai-lue, malayalam, ahom, mongolian, pahawh-hmong, lepcha, 
-  siddham, hebrew, soyombo, rejang, sundanese, tibetan, yi, bhaiksuki, 
-  masaram-gondi, math
+[m•[m U+25CC DOTTED CIRCLE: try adding one of: sundanese, kaithi, bengali, 
+  mende-kikakui, javanese, ahom, cham, mongolian, armenian, mahajani, malayalam,
+  new-tai-lue, oriya, osage, tirhuta, warang-citi, buhid, miao, khojki, yi, 
+  hebrew, rejang, lepcha, balinese, psalter-pahlavi, tifinagh, tai-viet, dogra, 
+  syloti-nagri, brahmi, khudawadi, siddham, tamil, kharoshthi, devanagari, 
+  grantha, bhaiksuki, batak, old-permic, tibetan, lao, symbols, masaram-gondi, 
+  buginese, hanunoo, tai-tham, thai, gunjala-gondi, tagalog, nko, wancho, 
+  kayah-li, khmer, phags-pa, chakma, myanmar, meetei-mayek, tagbanwa, adlam, 
+  music, takri, hanifi-rohingya, bassa-vah, sharada, saurashtra, soyombo, 
+  syriac, newa, coptic, telugu, zanabazar-square, caucasian-albanian, gujarati, 
+  marchen, pahawh-hmong, gurmukhi, sinhala, kannada, limbu, modi, manichaean, 
+  mandaic, thaana, duployan, math, canadian-aboriginal, elbasan, sogdian, tai-le
 
 Or you can add the above codepoints to one of the subsets supported by the font:
 latin-ext, latin
 
 [1mWARN[0m: [unreachable-subsetting]: 
-output/nevlin-sprout-googlefonts/googlefonts/nevlinsprout/NevlinSprout-SemiBold.
-ttf: The following codepoints supported by the font are not covered by any 
-subsets defined in the font's metadata file, and will never be served. You can 
-solve this by either manually adding additional subset declarations to 
-METADATA.pb, or by editing the glyphset definitions.
+output/nevlin-font-sprout-upload/families/nevlin-sprout/googlefonts/nevlinsprout
+/NevlinSprout-SemiBold.ttf: The following codepoints supported by the font are 
+not covered by any subsets defined in the font's metadata file, and will never 
+be served. You can solve this by either manually adding additional subset 
+declarations to METADATA.pb, or by editing the glyphset definitions.
 
-[m•[m U+02D8 BREVE: try adding one of: yi, canadian-aboriginal
+[m•[m U+02D8 BREVE: try adding one of: canadian-aboriginal, yi
 [m•[m U+02D9 DOT ABOVE: try adding one of: yi, canadian-aboriginal
-[m•[m U+02DB OGONEK: try adding one of: yi, canadian-aboriginal
-[m•[m U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: coptic, tifinagh, 
-  cherokee, math
+[m•[m U+02DB OGONEK: try adding one of: canadian-aboriginal, yi
+[m•[m U+0302 COMBINING CIRCUMFLEX ACCENT: try adding one of: cherokee, tifinagh, 
+  coptic, math
 [m•[m U+0306 COMBINING BREVE: try adding one of: old-permic, tifinagh
-[m•[m U+0307 COMBINING DOT ABOVE: try adding one of: hebrew, old-permic, math, 
-  malayalam, tai-le, canadian-aboriginal, coptic, syriac, tifinagh, todhri, 
-  duployan
+[m•[m U+0307 COMBINING DOT ABOVE: try adding one of: canadian-aboriginal, malayalam,
+  coptic, syriac, tai-le, tifinagh, old-permic, math, todhri, hebrew, duployan
 [m•[m U+030A COMBINING RING ABOVE: try adding one of: duployan, syriac
 [m•[m U+030B COMBINING DOUBLE ACUTE ACCENT: try adding one of: osage, cherokee
-[m•[m U+030C COMBINING CARON: try adding one of: cherokee, tai-le
+[m•[m U+030C COMBINING CARON: try adding one of: tai-le, cherokee
 [m•[m U+0326 COMBINING COMMA BELOW: try adding math
 [m•[m U+0327 COMBINING CEDILLA: try adding math
 [m•[m U+1EBC LATIN CAPITAL LETTER E WITH TILDE: try adding vietnamese
@@ -162,24 +155,23 @@ METADATA.pb, or by editing the glyphset definitions.
 [m•[m U+2192 RIGHTWARDS ARROW: try adding one of: math, symbols
 [m•[m U+2264 LESS-THAN OR EQUAL TO: try adding math
 [m•[m U+2265 GREATER-THAN OR EQUAL TO: try adding math
-[m•[m U+25CC DOTTED CIRCLE: try adding one of: duployan, mahajani, buginese, 
-  saurashtra, takri, gunjala-gondi, lao, tifinagh, javanese, tai-le, balinese, 
-  caucasian-albanian, osage, tai-tham, adlam, symbols, sogdian, khudawadi, 
-  batak, dogra, kayah-li, grantha, mende-kikakui, miao, psalter-pahlavi, brahmi,
-  sharada, hanifi-rohingya, gujarati, syriac, kannada, marchen, kaithi, 
-  bassa-vah, buhid, meetei-mayek, phags-pa, devanagari, tirhuta, newa, 
-  old-permic, music, armenian, bengali, hanunoo, canadian-aboriginal, myanmar, 
-  elbasan, khojki, limbu, thaana, mandaic, gurmukhi, chakma, cham, kharoshthi, 
-  nko, oriya, sinhala, manichaean, khmer, syloti-nagri, tai-viet, wancho, 
-  zanabazar-square, tamil, telugu, tagalog, modi, tagbanwa, coptic, thai, 
-  warang-citi, new-tai-lue, malayalam, ahom, mongolian, pahawh-hmong, lepcha, 
-  siddham, hebrew, soyombo, rejang, sundanese, tibetan, yi, bhaiksuki, 
-  masaram-gondi, math
+[m•[m U+25CC DOTTED CIRCLE: try adding one of: sundanese, kaithi, bengali, 
+  mende-kikakui, javanese, ahom, cham, mongolian, armenian, mahajani, malayalam,
+  new-tai-lue, oriya, osage, tirhuta, warang-citi, buhid, miao, khojki, yi, 
+  hebrew, rejang, lepcha, balinese, psalter-pahlavi, tifinagh, tai-viet, dogra, 
+  syloti-nagri, brahmi, khudawadi, siddham, tamil, kharoshthi, devanagari, 
+  grantha, bhaiksuki, batak, old-permic, tibetan, lao, symbols, masaram-gondi, 
+  buginese, hanunoo, tai-tham, thai, gunjala-gondi, tagalog, nko, wancho, 
+  kayah-li, khmer, phags-pa, chakma, myanmar, meetei-mayek, tagbanwa, adlam, 
+  music, takri, hanifi-rohingya, bassa-vah, sharada, saurashtra, soyombo, 
+  syriac, newa, coptic, telugu, zanabazar-square, caucasian-albanian, gujarati, 
+  marchen, pahawh-hmong, gurmukhi, sinhala, kannada, limbu, modi, manichaean, 
+  mandaic, thaana, duployan, math, canadian-aboriginal, elbasan, sogdian, tai-le
 
 Or you can add the above codepoints to one of the subsets supported by the font:
 latin-ext, latin
 
-Testing: output/nevlin-sprout-googlefonts/googlefonts/nevlinsprout/NevlinSprout-Bold.ttf
+Testing: output/nevlin-font-sprout-upload/families/nevlin-sprout/googlefonts/nevlinsprout/NevlinSprout-Bold.ttf
   Section: Font File Checks
 
 >> googlefonts/vendor_id
@@ -188,7 +180,7 @@ If you registered it recently, then it's safe to ignore this warning message.
 Otherwise, you should set it to your own unique 4 character code, and register 
 it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
 
-Testing: output/nevlin-sprout-googlefonts/googlefonts/nevlinsprout/NevlinSprout-Medium.ttf
+Testing: output/nevlin-font-sprout-upload/families/nevlin-sprout/googlefonts/nevlinsprout/NevlinSprout-Medium.ttf
   Section: Font File Checks
 
 >> googlefonts/vendor_id
@@ -197,7 +189,7 @@ If you registered it recently, then it's safe to ignore this warning message.
 Otherwise, you should set it to your own unique 4 character code, and register 
 it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
 
-Testing: output/nevlin-sprout-googlefonts/googlefonts/nevlinsprout/NevlinSprout-Regular.ttf
+Testing: output/nevlin-font-sprout-upload/families/nevlin-sprout/googlefonts/nevlinsprout/NevlinSprout-Regular.ttf
   Section: Font File Checks
 
 >> googlefonts/vendor_id
@@ -206,7 +198,7 @@ If you registered it recently, then it's safe to ignore this warning message.
 Otherwise, you should set it to your own unique 4 character code, and register 
 it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
 
-Testing: output/nevlin-sprout-googlefonts/googlefonts/nevlinsprout/NevlinSprout-SemiBold.ttf
+Testing: output/nevlin-font-sprout-upload/families/nevlin-sprout/googlefonts/nevlinsprout/NevlinSprout-SemiBold.ttf
   Section: Font File Checks
 
 >> googlefonts/vendor_id
@@ -215,8 +207,8 @@ If you registered it recently, then it's safe to ignore this warning message.
 Otherwise, you should set it to your own unique 4 character code, and register 
 it with Microsoft at https://www.microsoft.com/typography/links/vendorlist.aspx
 
-Markdown report written to output/nevlin-sprout-googlefonts/qa/googlefonts.md
-Ran 682 checks in 5.532s
+Markdown report written to output/nevlin-font-sprout-upload/families/nevlin-sprout/qa/googlefonts.md
+Ran 682 checks in 5.912s
 
 Summary:
-  SKIP: 248 INFO: 26 PASS: 407 WARN: 8 FAIL: 0 FATAL: 0 ERROR: 0 
+  SKIP: 248 INFO: 22 PASS: 411 WARN: 8 FAIL: 0 FATAL: 0 ERROR: 0 

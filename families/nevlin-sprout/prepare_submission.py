@@ -49,8 +49,8 @@ AI-assisted code, editable UFO sources and Fontmake. This is an unreleased
 review candidate; its originality and suitability remain subject to editorial
 and independent type-design assessment.</p>
 <p>The working family name, designer attribution and publication metadata need
-confirmation during onboarding. Source hosting is planned in the Nevlin public
-font project. The current review package is prepared locally and is not a claim
-that this family is already available in Google Fonts.</p>''')
+confirmation during onboarding. Sources and candidate binaries are public in the Nevlin font repository,
+under families/nevlin-sprout. This review candidate is not yet available
+in the Google Fonts catalog.</p>''')
     print(out)
 if __name__=='__main__':main()

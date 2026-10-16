@@ -45,7 +45,7 @@ def build(style,weight,t):
     f=Font();i=f.info
     i.familyName='Nevlin Sprout';i.styleName=style;i.unitsPerEm=1000
     i.ascender=1000;i.descender=-300;i.capHeight=700+t/2;i.xHeight=500+t/2
-    i.versionMajor=1;i.versionMinor=0
+    i.versionMajor=1;i.versionMinor=1
     i.copyright='Copyright 2026 The Nevlin Sprout Project Authors (https://github.com/nevlin-ltd/nevlin-font)'
     i.openTypeNameDesigner='Nevlin Sprout Project Authors'
     i.openTypeNameDescription='Original geometric learning-interface typeface. Unreleased review candidate.'
@@ -119,12 +119,18 @@ def build(style,weight,t):
         g=write_glyph(f,name(ord(c)),0,p,ord(c));g.appendAnchor(dict(name='_bottom' if c in '\u0326\u0327\u0328' else '_top',x=0,y=0))
     # Preserve true base + dedicated side-caron components, not flattened paths.
     wedge=pathops.Path();parse_path('M0 0 L30 135 L80 135 L40 0 Z',wedge.getPen())
-    write_glyph(f,'caron.side',0,wedge)
+    write_glyph(f,'caroncomb.alt',0,wedge)
     for c,base,x,y,advance in [('Ľ','L',170,555,515),('ľ','l',185,555,335),('ď','d',570,555,705),('ť','t',230,555,375)]:
-        g=f[name(ord(c))];g.clearContours();g.components=[Component(name(ord(base))),Component('caron.side',(1,0,0,1,x,y))];g.width=advance
+        g=f[name(ord(c))];g.clearContours();g.components=[Component(name(ord(base))),Component('caroncomb.alt',(1,0,0,1,x,y))];g.width=advance
     ogonek=pathops.Path();ogonek.addPath(paths['ı']);ogonek.addPath(transformed(marks['\u0328'],widths['i']/2))
     g=write_glyph(f,'iogonek.dotless',widths['i'],ogonek)
     g.appendAnchor(dict(name='top',x=widths['i']/2,y=560));g.appendAnchor(dict(name='bottom',x=widths['i']/2,y=0))
+    # GF Latin Core also requires unencoded localized forms.
+    write_glyph(f,'periodcentered.loclCAT',180,dot(90,350,t))
+    write_glyph(f,'periodcentered.loclCAT.case',220,dot(110,350,t))
+    g=write_glyph(f,'idotaccent',widths['i'],paths['i'])
+    g.appendAnchor(dict(name='top',x=widths['i']/2,y=560))
+    g.appendAnchor(dict(name='bottom',x=widths['i']/2,y=0))
     write_glyph(f,'.notdef',600,stroke(['M80 0 L80 700 L520 700 L520 0 Z','M80 0 L520 700'],t*.6))
     # A slashed zero is opt-in; tabular figures never change letter spacing.
     p=pathops.Path();p.addPath(paths['0']);p.addPath(stroke(['M175 135 L435 565'],t*.7))
@@ -132,6 +138,19 @@ def build(style,weight,t):
     for c in '0123456789':write_glyph(f,name(ord(c))+'.tab',640,transformed(paths[c],(640-widths[c])/2))
     write_glyph(f,'zero.slash.tab',640,transformed(p,15))
     f.features.text='languagesystem DFLT dflt;\nlanguagesystem latn dflt;\nfeature zero { sub zero by zero.slash; sub zero.tab by zero.slash.tab; } zero;\nfeature tnum {\n'+''.join(f' sub {name(ord(c))} by {name(ord(c))}.tab;\n' for c in '0123456789')+' sub zero.slash by zero.slash.tab;\n} tnum;\n'
+    f.features.text += """
+feature locl {
+ script latn;
+ language CAT;
+ sub l periodcentered' l by periodcentered.loclCAT;
+ sub L periodcentered' L by periodcentered.loclCAT.case;
+ language TRK; sub i by idotaccent;
+ language AZE; sub i by idotaccent;
+ language CRT; sub i by idotaccent;
+ language KAZ; sub i by idotaccent;
+ language TAT; sub i by idotaccent;
+} locl;
+"""
     above=[name(ord(c)) for c in marks if c not in '\u0326\u0327\u0328']
     f.features.text+='@SproutAbove = ['+' '.join(above)+'];\nfeature ccmp { lookup SproutSoftDots { lookupflag UseMarkFilteringSet @SproutAbove; sub i\' @SproutAbove by dotlessi; sub j\' @SproutAbove by uni0237; sub iogonek\' @SproutAbove by iogonek.dotless; } SproutSoftDots; } ccmp;\n'
     for a,b,v in [('A','V',-38),('A','W',-25),('A','Y',-38),('T','a',-35),('T','o',-35),('T','e',-35),('V','a',-25),('W','a',-18),('Y','o',-40),('Y','a',-40),('L','T',-25),('L','Y',-25),('F','o',-15),('P','a',-18),('r','.',-20)]:f.kerning[(name(ord(a)),name(ord(b)))]=v

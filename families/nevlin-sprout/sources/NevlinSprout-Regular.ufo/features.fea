@@ -14,5 +14,17 @@ feature tnum {
  sub nine by nine.tab;
  sub zero.slash by zero.slash.tab;
 } tnum;
+
+feature locl {
+ script latn;
+ language CAT;
+ sub l periodcentered' l by periodcentered.loclCAT;
+ sub L periodcentered' L by periodcentered.loclCAT.case;
+ language TRK; sub i by idotaccent;
+ language AZE; sub i by idotaccent;
+ language CRT; sub i by idotaccent;
+ language KAZ; sub i by idotaccent;
+ language TAT; sub i by idotaccent;
+} locl;
 @SproutAbove = [gravecomb acutecomb uni0302 tildecomb uni0304 uni0306 uni0307 uni0308 uni030A uni030B uni030C];
 feature ccmp { lookup SproutSoftDots { lookupflag UseMarkFilteringSet @SproutAbove; sub i' @SproutAbove by dotlessi; sub j' @SproutAbove by uni0237; sub iogonek' @SproutAbove by iogonek.dotless; } SproutSoftDots; } ccmp;

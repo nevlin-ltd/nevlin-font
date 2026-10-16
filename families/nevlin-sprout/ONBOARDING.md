@@ -24,11 +24,11 @@ Still required or awaiting assessment:
 6. Obtain independent type-design and native-language review, particularly
    accents, joined forms, spacing/kerning and small-size readability. Run the
    candidate on Windows, Android, iOS and live Figma text.
-7. Submitted: Google design/eligibility review request #11129 includes
+7. Submitted: The original Google design/eligibility review request #11129 included
    AI-assistance disclosure and links the earlier Inter-derived family inquiry.
-   Await assessment: https://github.com/google/fonts/issues/11129
+   It was closed requesting Latin Core corrections and the official template: https://github.com/google/fonts/issues/11129
 
-The candidate is uploaded and review issue #11129 is open. No pull request
+The candidate is uploaded and review issue #11129 is closed; 1.001 corrects the identified coverage gap. No pull request
 or catalog publication has occurred.
 The previous issue https://github.com/google/fonts/issues/11128 is unchanged.
 

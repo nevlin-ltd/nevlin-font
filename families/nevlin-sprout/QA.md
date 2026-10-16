@@ -1,4 +1,4 @@
-# Nevlin Sprout 1.000 RC1 — quality report
+# Nevlin Sprout 1.001 RC2 — quality report
 
 ## Results
 
@@ -6,8 +6,8 @@ Fontspector 1.9.0, all four fonts:
 
 | Profile | PASS | WARN | FAIL / ERROR / FATAL | SKIP | INFO |
 |---|---:|---:|---:|---:|---:|
-| Universal (offline) | 291 | 0 | 0 | 162 | 8 |
-| Google Fonts (network enabled) | 407 | 8 | 0 | 248 | 26 |
+| Universal (network enabled) | 299 | 0 | 0 | 158 | 4 |
+| Google Fonts (network enabled) | 411 | 8 | 0 | 248 | 22 |
 
 The original prototype had 16 `alt_caron` warnings. All are resolved with
 proper base-plus-side-accent components, rather than hiding or downgrading
@@ -36,8 +36,9 @@ Neither category is waived. Google decides acceptable warning dispositions.
 
 All four weights pass `check.py`:
 
-- Every GF Latin Core codepoint is present.
-- All four side-caron glyphs have two components with `caron.side` as the accent.
+- All 324 named requirements in the pinned official Latin Core list are present, including unencoded forms. See `qa/latin-core-coverage.json`.
+- Catalan l·l/L·L and Turkish/Azeri dotted-i substitutions pass; English text does not receive Catalan substitutions.
+- All four side-caron glyphs have two components with `caroncomb.alt` as the accent.
 - No missing glyphs in NFD shaping of every encoded character.
 - Contextual dot removal works for i, j and į with above marks, including an
   intervening below mark; unaccented į retains its dot.
@@ -69,3 +70,12 @@ No prior font is read by the build. Generated drawings remain available as UFO,
 Python geometry and individual SVGs. Quantization adjustments are logged in
 `qa/alignment-*.json`; each is limited to three font units on an on-curve point.
 `reproducibility.json` records the repeated-build result and final file hashes.
+
+## 1.001 correction
+
+The earlier coverage assertion was incomplete: it tested codepoints only.
+The official list also requires unencoded glyphs. The corrected validator maps
+encoded names through Glyphs glyph data and explicitly checks unencoded names.
+`qa/latin-core-localization.png` was rendered from HarfBuzz-shaped final binaries
+and visually inspected. Older browser screenshots and baseline reports are
+historical evidence, not new cross-platform validation.

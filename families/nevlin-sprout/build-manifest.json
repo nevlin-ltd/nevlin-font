@@ -3,28 +3,28 @@
     "style": "Regular",
     "weight": 400,
     "encoded": 389,
-    "glyphs": 404,
-    "sha256": "e8e526605e09fd6be3e6bdc1cc1ae300123e35ca7e409f1b6699da6e63470b5e"
+    "glyphs": 407,
+    "sha256": "236685ce9cdf8b8f3bbe2e592da018a7848090529172ad98a9aaa012542bc2f0"
   },
   {
     "style": "Medium",
     "weight": 500,
     "encoded": 389,
-    "glyphs": 404,
-    "sha256": "5a339ba7f52fd67783442cb1d8d5dc1389627eb3710a8ede5d59f8450b486637"
+    "glyphs": 407,
+    "sha256": "a386a8991ea5a341f0d3b6cb5e8fc2444a700e59a31217f72d9de85851e72d1e"
   },
   {
     "style": "SemiBold",
     "weight": 600,
     "encoded": 389,
-    "glyphs": 404,
-    "sha256": "4f2e46e97ed72ce551dc67f290fef30a5a6d22381b26651acc8003f006d2f851"
+    "glyphs": 407,
+    "sha256": "3811cd5e0093feaee7753a917c9c5c88ac6da92a50340a174e1b627d3b2906cc"
   },
   {
     "style": "Bold",
     "weight": 700,
     "encoded": 389,
-    "glyphs": 404,
-    "sha256": "831e036e7eb1e7f84151485f01bece4c5984bdff73d6768ed797105236b6a9e5"
+    "glyphs": 407,
+    "sha256": "61a60be72fcfa6abcce985832ef4005e6d8f07e0f6178449a957b54ef9efebe9"
   }
 ]

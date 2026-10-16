@@ -1,6 +1,6 @@
 Running 461 checks on 4 files in 1 family
-Markdown report written to output/nevlin-sprout-googlefonts/fontspector.md
-Ran 461 checks in 0.029s
+Markdown report written to output/nevlin-font-sprout-upload/families/nevlin-sprout/fontspector.md
+Ran 461 checks in 3.861s
 
 Summary:
-  SKIP: 162 INFO: 8 PASS: 291 WARN: 0 FAIL: 0 FATAL: 0 ERROR: 0 
+  SKIP: 158 INFO: 4 PASS: 299 WARN: 0 FAIL: 0 FATAL: 0 ERROR: 0 
