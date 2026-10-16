@@ -7,7 +7,9 @@ ROOT=Path(__file__).resolve().parents[1]
 source=ROOT/'qa/GF_Latin_Core.txt'
 names=[n for n in source.read_text().splitlines() if n and not n.startswith('#')]
 report={'source':'https://github.com/googlefonts/glyphsets/blob/0ac0e515473e39247683ed473fd74728671e2364/data/results/txt/nice-names/GF_Latin_Core.txt','list_sha256':hashlib.sha256(source.read_bytes()).hexdigest(),'required_glyphs':len(names),'fonts':[]}
-for path in sorted((ROOT/'fonts').glob('*.ttf')):
+files=sorted((ROOT/'fonts'/'ttf').glob('*.ttf'))
+assert len(files)==4, 'Expected all four TTF weights'
+for path in files:
  f=TTFont(path);cm=f.getBestCmap();rows=[]
  for n in names:
   u=get_glyph(n).unicode; actual=cm.get(int(u,16)) if u else n if n in f.getGlyphOrder() else None

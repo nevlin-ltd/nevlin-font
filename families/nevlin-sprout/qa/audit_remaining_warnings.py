@@ -21,7 +21,7 @@ assert len(warnings) == report['summary']['WARN'] == 8
 assert counts == {'googlefonts/vendor_id': 4,
                   'googlefonts/metadata/unreachable_subsetting': 4}, counts
 hashes = {p.name: hashlib.sha256(p.read_bytes()).hexdigest()
-          for p in sorted((ROOT / 'fonts').glob('*.ttf'))}
+          for p in sorted((ROOT / 'fonts' / 'ttf').glob('*.ttf'))}
 audit = {'status': 'unresolved; external disposition required',
          'source_report': 'qa/googlefonts.json',
          'source_report_sha256': hashlib.sha256(report_path.read_bytes()).hexdigest(),

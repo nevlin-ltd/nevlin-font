@@ -1,0 +1,11 @@
+Pending confirmations; do not treat as signed declarations.
+
+1. Legal entity owning the human contributions and assignments/permissions.
+2. OFL release and the appropriate Google CLA; authorized human signer.
+3. Definitive unbranded family name, or explicit Google acceptance of current naming.
+4. Confirmation that there are no proprietary/private larger Sprout editions.
+5. Named maintainer and agreement to support onboarding and future issues.
+6. Independent typography/language review and platform testing.
+7. Microsoft vendor confirmation and Google disposition of serving-subset warnings.
+
+The sources and font builds are public; these pending decisions do not imply that publication has not already occurred.

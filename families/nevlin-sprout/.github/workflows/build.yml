@@ -1,21 +1,26 @@
-name: Build and validate font sources
+# Template: to activate, place at repository-root .github/workflows/sprout.yml.
+name: Build Nevlin Sprout
 on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: families/nevlin-sprout
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
       - run: python -m pip install -r environment-lock.txt
-      - run: python build.py
-      - run: python check.py
-      - run: python prepare_submission.py
+      - run: PYTHON_BIN=python bash sources/build.sh
       - uses: actions/upload-artifact@v4
         with:
           name: nevlinsprout-review-candidate
           path: |
-            fonts/
-            googlefonts/
-            structural-checks.json
+            families/nevlin-sprout/fonts/
+            families/nevlin-sprout/googlefonts/
+            families/nevlin-sprout/structural-checks.json
+            families/nevlin-sprout/qa/latin-core-coverage.json

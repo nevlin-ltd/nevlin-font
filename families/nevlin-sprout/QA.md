@@ -62,7 +62,7 @@ Czech/Slovak proofread or an independent type designer's approval.
 
 No live Figma, Safari, Windows, Android or iOS test of RC1 is claimed.
 No manual TrueType hinting is claimed; `gasp` defines unhinted rendering behavior.
-An independent clean-environment build and GitHub CI run remain outstanding.
+A fresh virtual-environment build on the same macOS host now passes; all eight binaries match. See `qa/clean-environment-build.json`. Independent hardware/platform validation and GitHub CI remain outstanding.
 
 ## Integrity
 

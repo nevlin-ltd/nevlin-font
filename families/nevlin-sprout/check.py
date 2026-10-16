@@ -12,7 +12,9 @@ def shape(data,text,features=None,language=None):
     hb.shape(font,buf,features or {})
     return buf.glyph_infos,buf.glyph_positions
 samples=['Small steps. Clearer thinking.','Make sense of your money.', 'Il1 O0 rn m', '$12,480.50 € £ ¥ ₸ ₹ ₽', 'café naïve Ångström', 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789']
-for file in sorted((ROOT/'fonts').glob('*.ttf')):
+files=sorted((ROOT/'fonts'/'ttf').glob('*.ttf'))
+assert len(files)==4, 'Expected all four TTF weights'
+for file in files:
     data=file.read_bytes();f=TTFont(file);cmap=f.getBestCmap()
     assert all(cp in cmap for cp in range(32,127)), 'Missing ASCII'
     assert set(json.loads((ROOT/'gf-latin-core.json').read_text())) <= set(cmap), 'Missing GF Latin Core'
@@ -48,7 +50,7 @@ for file in sorted((ROOT/'fonts').glob('*.ttf')):
     assert f['glyf']['iogonek'].numberOfContours>f['glyf']['iogonek.dotless'].numberOfContours,'iogonek lost its dot'
     for cp in cmap:
         assert all(g.codepoint!=0 for g in shape(data,unicodedata.normalize('NFD',chr(cp)))[0]),hex(cp)
-    woff=TTFont(file.with_suffix('.woff2'));assert woff.getBestCmap()==cmap
+    woff=TTFont(ROOT/'fonts'/'webfonts'/file.with_suffix('.woff2').name);assert woff.getBestCmap()==cmap
     badbounds=[]
     for n in f.getGlyphOrder():
         g=f['glyf'][n]

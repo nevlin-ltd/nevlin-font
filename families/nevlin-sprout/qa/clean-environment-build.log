@@ -1,0 +1,106 @@
+[
+  {
+    "style": "Regular",
+    "weight": 400,
+    "encoded": 389,
+    "glyphs": 407,
+    "sha256": "236685ce9cdf8b8f3bbe2e592da018a7848090529172ad98a9aaa012542bc2f0"
+  },
+  {
+    "style": "Medium",
+    "weight": 500,
+    "encoded": 389,
+    "glyphs": 407,
+    "sha256": "a386a8991ea5a341f0d3b6cb5e8fc2444a700e59a31217f72d9de85851e72d1e"
+  },
+  {
+    "style": "SemiBold",
+    "weight": 600,
+    "encoded": 389,
+    "glyphs": 407,
+    "sha256": "3811cd5e0093feaee7753a917c9c5c88ac6da92a50340a174e1b627d3b2906cc"
+  },
+  {
+    "style": "Bold",
+    "weight": 700,
+    "encoded": 389,
+    "glyphs": 407,
+    "sha256": "61a60be72fcfa6abcce985832ef4005e6d8f07e0f6178449a957b54ef9efebe9"
+  }
+]
+[
+  {
+    "font": "NevlinSprout-Bold.ttf",
+    "encoded": 389,
+    "gf_latin_core": true,
+    "official_unencoded_glyphs": true,
+    "localized_shaping": true,
+    "side_caron_components": true,
+    "soft_dot_removal": true,
+    "iogonek_dot_preserved": true,
+    "ascii": true,
+    "sample_shaping": true,
+    "nfd_all_encoded_characters": true,
+    "tabular_advance": 640,
+    "slashed_zero": true,
+    "mark_feature": true,
+    "woff2_cmap_matches": true,
+    "vertical_bounds": true
+  },
+  {
+    "font": "NevlinSprout-Medium.ttf",
+    "encoded": 389,
+    "gf_latin_core": true,
+    "official_unencoded_glyphs": true,
+    "localized_shaping": true,
+    "side_caron_components": true,
+    "soft_dot_removal": true,
+    "iogonek_dot_preserved": true,
+    "ascii": true,
+    "sample_shaping": true,
+    "nfd_all_encoded_characters": true,
+    "tabular_advance": 640,
+    "slashed_zero": true,
+    "mark_feature": true,
+    "woff2_cmap_matches": true,
+    "vertical_bounds": true
+  },
+  {
+    "font": "NevlinSprout-Regular.ttf",
+    "encoded": 389,
+    "gf_latin_core": true,
+    "official_unencoded_glyphs": true,
+    "localized_shaping": true,
+    "side_caron_components": true,
+    "soft_dot_removal": true,
+    "iogonek_dot_preserved": true,
+    "ascii": true,
+    "sample_shaping": true,
+    "nfd_all_encoded_characters": true,
+    "tabular_advance": 640,
+    "slashed_zero": true,
+    "mark_feature": true,
+    "woff2_cmap_matches": true,
+    "vertical_bounds": true
+  },
+  {
+    "font": "NevlinSprout-SemiBold.ttf",
+    "encoded": 389,
+    "gf_latin_core": true,
+    "official_unencoded_glyphs": true,
+    "localized_shaping": true,
+    "side_caron_components": true,
+    "soft_dot_removal": true,
+    "iogonek_dot_preserved": true,
+    "ascii": true,
+    "sample_shaping": true,
+    "nfd_all_encoded_characters": true,
+    "tabular_advance": 640,
+    "slashed_zero": true,
+    "mark_feature": true,
+    "woff2_cmap_matches": true,
+    "vertical_bounds": true
+  }
+]
+All 324 official named requirements covered in four weights.
+/private/tmp/nevlin-sprout-clean-build/googlefonts/nevlinsprout

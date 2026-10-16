@@ -1,0 +1,3 @@
+Project coordination: Zhanat Salimova <zhanat.salimova@nevlin.com>
+
+Drawing-code development, engineering, tests and documentation used AI assistance. This process disclosure does not establish copyright ownership. No independent type-design or language reviewer is credited as having completed a review.
