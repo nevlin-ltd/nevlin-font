@@ -1,0 +1,34 @@
+[
+  {
+    "file": "fonts/ttf/NevlinFont-Bold.ttf",
+    "sha256": "c3cad70a10e23ffb22e5a4d0ff9a26725b7c51bccb185f83912a6f0e4b53b41f"
+  },
+  {
+    "file": "fonts/woff2/NevlinFont-Bold.woff2",
+    "sha256": "647998226c16265e077072ea6bc8d4a1dc29eb975962427546802fba4791afee"
+  },
+  {
+    "file": "fonts/ttf/NevlinFont-Medium.ttf",
+    "sha256": "b2e7f948873ce6c930c0419ea5082c80cf943d39830e97127a572975c0ef654d"
+  },
+  {
+    "file": "fonts/woff2/NevlinFont-Medium.woff2",
+    "sha256": "2b7967584288a925894f1318b127a20b8ef44a73ead8a75d4c8c172ea1246812"
+  },
+  {
+    "file": "fonts/ttf/NevlinFont-Regular.ttf",
+    "sha256": "7ee78cd566d392f42877eb090fe65efd8eb2c24d68973006088927b7525245cb"
+  },
+  {
+    "file": "fonts/woff2/NevlinFont-Regular.woff2",
+    "sha256": "061fcd55907b5cb4d1f5502cb37bbb3a83cc843916c9fd0cc204255b3bb392da"
+  },
+  {
+    "file": "fonts/ttf/NevlinFont-SemiBold.ttf",
+    "sha256": "4207b6e9171b005065798175cd7a8187abf2ad207033f5aab7ca229afae017dd"
+  },
+  {
+    "file": "fonts/woff2/NevlinFont-SemiBold.woff2",
+    "sha256": "da6c56cf9f90cace0411ad38ef70ce964d89a91e6d0b6c60ed2760d1240f3cef"
+  }
+]

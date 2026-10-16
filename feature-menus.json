@@ -1,0 +1,240 @@
+{
+  "cv01": {
+    "type": "FeatureParamsCharacterVariants",
+    "values": {
+      "Format": 0,
+      "FeatUILabelNameID": 284,
+      "FeatUITooltipTextNameID": 0,
+      "SampleTextNameID": 0,
+      "NumNamedParameters": 0,
+      "FirstParamUILabelNameID": 0,
+      "CharCount": 0,
+      "Character": []
+    }
+  },
+  "cv02": {
+    "type": "FeatureParamsCharacterVariants",
+    "values": {
+      "Format": 0,
+      "FeatUILabelNameID": 285,
+      "FeatUITooltipTextNameID": 0,
+      "SampleTextNameID": 0,
+      "NumNamedParameters": 0,
+      "FirstParamUILabelNameID": 0,
+      "CharCount": 0,
+      "Character": []
+    }
+  },
+  "cv03": {
+    "type": "FeatureParamsCharacterVariants",
+    "values": {
+      "Format": 0,
+      "FeatUILabelNameID": 286,
+      "FeatUITooltipTextNameID": 0,
+      "SampleTextNameID": 0,
+      "NumNamedParameters": 0,
+      "FirstParamUILabelNameID": 0,
+      "CharCount": 0,
+      "Character": []
+    }
+  },
+  "cv04": {
+    "type": "FeatureParamsCharacterVariants",
+    "values": {
+      "Format": 0,
+      "FeatUILabelNameID": 287,
+      "FeatUITooltipTextNameID": 0,
+      "SampleTextNameID": 0,
+      "NumNamedParameters": 0,
+      "FirstParamUILabelNameID": 0,
+      "CharCount": 0,
+      "Character": []
+    }
+  },
+  "cv05": {
+    "type": "FeatureParamsCharacterVariants",
+    "values": {
+      "Format": 0,
+      "FeatUILabelNameID": 288,
+      "FeatUITooltipTextNameID": 0,
+      "SampleTextNameID": 0,
+      "NumNamedParameters": 0,
+      "FirstParamUILabelNameID": 0,
+      "CharCount": 0,
+      "Character": []
+    }
+  },
+  "cv06": {
+    "type": "FeatureParamsCharacterVariants",
+    "values": {
+      "Format": 0,
+      "FeatUILabelNameID": 289,
+      "FeatUITooltipTextNameID": 0,
+      "SampleTextNameID": 0,
+      "NumNamedParameters": 0,
+      "FirstParamUILabelNameID": 0,
+      "CharCount": 0,
+      "Character": []
+    }
+  },
+  "cv07": {
+    "type": "FeatureParamsCharacterVariants",
+    "values": {
+      "Format": 0,
+      "FeatUILabelNameID": 290,
+      "FeatUITooltipTextNameID": 0,
+      "SampleTextNameID": 0,
+      "NumNamedParameters": 0,
+      "FirstParamUILabelNameID": 0,
+      "CharCount": 0,
+      "Character": []
+    }
+  },
+  "cv08": {
+    "type": "FeatureParamsCharacterVariants",
+    "values": {
+      "Format": 0,
+      "FeatUILabelNameID": 291,
+      "FeatUITooltipTextNameID": 0,
+      "SampleTextNameID": 0,
+      "NumNamedParameters": 0,
+      "FirstParamUILabelNameID": 0,
+      "CharCount": 0,
+      "Character": []
+    }
+  },
+  "cv09": {
+    "type": "FeatureParamsCharacterVariants",
+    "values": {
+      "Format": 0,
+      "FeatUILabelNameID": 292,
+      "FeatUITooltipTextNameID": 0,
+      "SampleTextNameID": 0,
+      "NumNamedParameters": 0,
+      "FirstParamUILabelNameID": 0,
+      "CharCount": 0,
+      "Character": []
+    }
+  },
+  "cv10": {
+    "type": "FeatureParamsCharacterVariants",
+    "values": {
+      "Format": 0,
+      "FeatUILabelNameID": 293,
+      "FeatUITooltipTextNameID": 0,
+      "SampleTextNameID": 0,
+      "NumNamedParameters": 0,
+      "FirstParamUILabelNameID": 0,
+      "CharCount": 0,
+      "Character": []
+    }
+  },
+  "cv11": {
+    "type": "FeatureParamsCharacterVariants",
+    "values": {
+      "Format": 0,
+      "FeatUILabelNameID": 294,
+      "FeatUITooltipTextNameID": 0,
+      "SampleTextNameID": 0,
+      "NumNamedParameters": 0,
+      "FirstParamUILabelNameID": 0,
+      "CharCount": 0,
+      "Character": []
+    }
+  },
+  "cv12": {
+    "type": "FeatureParamsCharacterVariants",
+    "values": {
+      "Format": 0,
+      "FeatUILabelNameID": 295,
+      "FeatUITooltipTextNameID": 0,
+      "SampleTextNameID": 0,
+      "NumNamedParameters": 0,
+      "FirstParamUILabelNameID": 0,
+      "CharCount": 0,
+      "Character": []
+    }
+  },
+  "cv13": {
+    "type": "FeatureParamsCharacterVariants",
+    "values": {
+      "Format": 0,
+      "FeatUILabelNameID": 296,
+      "FeatUITooltipTextNameID": 0,
+      "SampleTextNameID": 0,
+      "NumNamedParameters": 0,
+      "FirstParamUILabelNameID": 0,
+      "CharCount": 0,
+      "Character": []
+    }
+  },
+  "cv14": {
+    "type": "FeatureParamsCharacterVariants",
+    "values": {
+      "Format": 0,
+      "FeatUILabelNameID": 297,
+      "FeatUITooltipTextNameID": 0,
+      "SampleTextNameID": 0,
+      "NumNamedParameters": 0,
+      "FirstParamUILabelNameID": 0,
+      "CharCount": 0,
+      "Character": []
+    }
+  },
+  "ss01": {
+    "type": "FeatureParamsStylisticSet",
+    "values": {
+      "Version": 0,
+      "UINameID": 276
+    }
+  },
+  "ss02": {
+    "type": "FeatureParamsStylisticSet",
+    "values": {
+      "Version": 0,
+      "UINameID": 277
+    }
+  },
+  "ss03": {
+    "type": "FeatureParamsStylisticSet",
+    "values": {
+      "Version": 0,
+      "UINameID": 278
+    }
+  },
+  "ss04": {
+    "type": "FeatureParamsStylisticSet",
+    "values": {
+      "Version": 0,
+      "UINameID": 279
+    }
+  },
+  "ss05": {
+    "type": "FeatureParamsStylisticSet",
+    "values": {
+      "Version": 0,
+      "UINameID": 280
+    }
+  },
+  "ss06": {
+    "type": "FeatureParamsStylisticSet",
+    "values": {
+      "Version": 0,
+      "UINameID": 281
+    }
+  },
+  "ss07": {
+    "type": "FeatureParamsStylisticSet",
+    "values": {
+      "Version": 0,
+      "UINameID": 282
+    }
+  },
+  "ss08": {
+    "type": "FeatureParamsStylisticSet",
+    "values": {
+      "Version": 0,
+      "UINameID": 283
+    }
+  }
+}
