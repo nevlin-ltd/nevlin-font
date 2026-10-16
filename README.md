@@ -4,7 +4,7 @@ An Inter-derived, SIL OFL-licensed font project by Nevlin. **Core Latin developm
 
 ## New original family: Nevlin Sprout
 
-[Nevlin Sprout](families/nevlin-sprout) is a separate original geometric family for financial-learning interfaces. Its 1.000 RC1 package includes four weights, editable UFOs, drawing sources, build instructions, specimens and full QA evidence. It is not derived from the Inter-based family below. Google Fonts design eligibility and eight external warnings remain under review.
+[Nevlin Sprout](families/nevlin-sprout) is a separate original geometric family for financial-learning interfaces. Its 1.000 RC1 package includes four weights, editable UFOs, drawing sources, build instructions, specimens and full QA evidence. It is not derived from the Inter-based family below. [Google Fonts review request #11129](https://github.com/google/fonts/issues/11129) covers its design eligibility and eight remaining warnings.
 
 ## Current candidate
 
@@ -49,8 +49,8 @@ Project: https://github.com/nevlin-ltd/nevlin-font
 Website: https://nevlin.com  
 Contact: zhanat.salimova@nevlin.com
 
-No Google Fonts submission or acceptance is claimed. This separate font project does not restore the canceled Nevlin website font page.
+Google Fonts review is requested; no acceptance is claimed. This separate font project does not restore the canceled Nevlin website font page.
 
 Current Google guidance uses Fontspector. Install the [official checker](https://github.com/fonttools/fontspector/blob/main/INSTALLATION.md) and run `fontspector -p googlefonts googlefonts/nevlinfont/*.ttf`. Both full reports are published in this repository.
 
-A [Google review request](GOOGLE-FONTS-REVIEW-DRAFT.md) is prepared but not submitted. Remaining warnings need external review, not fabricated registry entries or reduced required coverage.
+The earlier Inter-derived family has its own [Google review request #11128](https://github.com/google/fonts/issues/11128). Remaining warnings need external review, not fabricated registry entries or reduced required coverage.

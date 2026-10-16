@@ -4,7 +4,7 @@ Original geometric sans-serif family for Nevlin's financial-learning product.
 Four static upright weights: Regular 400, Medium 500, SemiBold 600 and Bold 700.
 389 encoded characters, 404 glyphs per weight; full GF Latin Core coverage.
 
-**Public review candidate. Not approved for the Google Fonts catalog.**
+**Public review candidate. [Google Fonts review request #11129](https://github.com/google/fonts/issues/11129) is open; this is not catalog acceptance.**
 The earlier 0.100 prototype is preserved locally; this directory contains 1.000 RC1.
 The existing Inter-derived Nevlin Font and its Google issue are unchanged.
 
@@ -87,7 +87,7 @@ adjust artifact paths; do not replace the existing family's root files.
 - `googlefonts/nevlinsprout/`: metadata, license, fonts and article/specimen.
 - `qa/`: full reports, accent proof, alignment logs and before/after evidence.
 - `check.py`: coverage, components, shaping and numeric-feature assertions.
-- `SUBMISSION-DRAFT.md`: preparation draft; the final public review request will be linked here.
+- `SUBMISSION-DRAFT.md`: historical preparation draft; the submitted request is [#11129](https://github.com/google/fonts/issues/11129).
 - `ONBOARDING.md`: remaining external and human-review steps.
 - `index.html`: interactive review specimen.
 - `OFL.txt`: SIL Open Font License 1.1, no Reserved Font Names.
