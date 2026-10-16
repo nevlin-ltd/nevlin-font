@@ -4,15 +4,16 @@ Prepared:
 - Original source drawings, editable UFOs, deterministic build recipe.
 - Four TTF/WOFF2 weights and a Google-layout review directory.
 - GF Latin Core and auxiliary European character coverage.
-- License, article, specimen, QA evidence and an unsent review-request draft.
+- License, article, specimen and QA evidence; review request #11130 is open.
 - Original 16 warnings resolved; no failures in the full Google profile.
 
 Still required or awaiting assessment:
 1. Completed: the new family and sources are public at
    https://github.com/nevlin-ltd/nevlin-font/tree/main/families/nevlin-sprout.
    The earlier family is preserved.
-2. Run the prepared build/check workflow in that public repository, adapting
-   its working directory if nested. Local repeatability is already checked.
+2. Fresh virtual-environment build completed on the same macOS host; all eight
+   binaries match the candidate and all structural checks pass. GitHub CI and
+   other-machine/platform validation remain outstanding.
 3. Confirm the family name. Google's naming rules restrict copyright-holder
    names and registered trademarks. “Nevlin Sprout” is a working name and its
    acceptance/uniqueness has not been established. Ask before treating it as final.
@@ -38,3 +39,6 @@ References:
 
 Version 1.001 RC2 is now resubmitted with the official New Font template:
 https://github.com/google/fonts/issues/11130. No acceptance is claimed.
+
+Repository layout and source build updated; see documentation/requirements-status.txt
+for verified work versus pending human and Google decisions.

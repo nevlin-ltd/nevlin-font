@@ -1,0 +1,1 @@
+The specimen.png image is rendered solely from the Nevlin Sprout fonts using the project proof script. It is distributed as part of the font project under the SIL Open Font License 1.1; see ../OFL.txt. No third-party photos or illustrations are included in this specimen.

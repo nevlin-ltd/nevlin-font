@@ -13,7 +13,7 @@ def proof(destination,lines,size=34):
     svg=[f'<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="{height}" viewBox="0 0 1400 {height}"><rect width="1400" height="{height}" fill="#f7f6fe"/>']
     y=50
     for style in ['Regular','Medium','SemiBold','Bold']:
-        file=ROOT/'fonts'/f'NevlinSprout-{style}.ttf';tt=TTFont(file);gs=tt.getGlyphSet();font=hb.Font(hb.Face(file.read_bytes()));scale=size/1000
+        file=ROOT/'fonts'/'ttf'/f'NevlinSprout-{style}.ttf';tt=TTFont(file);gs=tt.getGlyphSet();font=hb.Font(hb.Face(file.read_bytes()));scale=size/1000
         for line in lines:
             buf=hb.Buffer();buf.add_str(line);buf.guess_segment_properties();hb.shape(font,buf,{'tnum':1});x=45
             for g,p in zip(buf.glyph_infos,buf.glyph_positions):
@@ -28,9 +28,9 @@ def main():
     p.subsets.extend(['latin','latin-ext','menu'])
     p.source.repository_url='https://github.com/nevlin-ltd/nevlin-font'
     for style,weight in [('Regular',400),('Medium',500),('SemiBold',600),('Bold',700)]:
-        filename=f'NevlinSprout-{style}.ttf';tt=TTFont(ROOT/'fonts'/filename);f=p.fonts.add()
+        filename=f'NevlinSprout-{style}.ttf';tt=TTFont(ROOT/'fonts'/'ttf'/filename);f=p.fonts.add()
         f.name=p.name;f.style='normal';f.weight=weight;f.filename=filename;f.post_script_name=tt['name'].getDebugName(6);f.full_name=tt['name'].getDebugName(4);f.copyright=tt['name'].getDebugName(0)
-        shutil.copy(ROOT/'fonts'/filename,out/filename)
+        shutil.copy(ROOT/'fonts'/'ttf'/filename,out/filename)
     (out/'METADATA.pb').write_text(text_format.MessageToString(p));shutil.copy(ROOT/'OFL.txt',out/'OFL.txt')
     article=out/'article';article.mkdir(exist_ok=True)
     proof(article/'specimen.svg',['Small steps. Clearer thinking.','Make sense of your money.','$12,480.50  € £ ¥ ₸ ₹ ₽   0123456789'])

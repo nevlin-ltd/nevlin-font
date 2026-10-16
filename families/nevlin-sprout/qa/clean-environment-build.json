@@ -1,0 +1,20 @@
+{
+  "result": "PASS",
+  "scope": "Fresh Python 3.12 virtual environment on the same macOS host; not independent hardware or GitHub CI",
+  "installation": "python -m pip install -r environment-lock.txt",
+  "command": "PYTHON_BIN=<fresh-venv>/bin/python bash sources/build.sh",
+  "prebuilt_fonts_seeded": false,
+  "all_eight_binaries_match_submitted_candidate": true,
+  "official_latin_core_requirements": 324,
+  "structural_and_shaping_checks": "PASS across four weights",
+  "sha256": {
+    "fonts/ttf/NevlinSprout-Regular.ttf": "236685ce9cdf8b8f3bbe2e592da018a7848090529172ad98a9aaa012542bc2f0",
+    "fonts/ttf/NevlinSprout-SemiBold.ttf": "3811cd5e0093feaee7753a917c9c5c88ac6da92a50340a174e1b627d3b2906cc",
+    "fonts/ttf/NevlinSprout-Bold.ttf": "61a60be72fcfa6abcce985832ef4005e6d8f07e0f6178449a957b54ef9efebe9",
+    "fonts/ttf/NevlinSprout-Medium.ttf": "a386a8991ea5a341f0d3b6cb5e8fc2444a700e59a31217f72d9de85851e72d1e",
+    "fonts/webfonts/NevlinSprout-SemiBold.woff2": "6a52303c68bb1358a1e383a970291254a53832ab769b2acc2d3d344a310e2e0d",
+    "fonts/webfonts/NevlinSprout-Medium.woff2": "a00e082dbf88777224811a336e14e951c9c84b7c5b2933f2d6b9099ade25ceed",
+    "fonts/webfonts/NevlinSprout-Bold.woff2": "310581c7410a4606957ceb69a1d77c26e85320a5c9ea0ec61b808e73da028e78",
+    "fonts/webfonts/NevlinSprout-Regular.woff2": "bff9f43179f10460682e4c1acd80dcafaeba7b62da5f31fcbe158bfc2187d664"
+  }
+}

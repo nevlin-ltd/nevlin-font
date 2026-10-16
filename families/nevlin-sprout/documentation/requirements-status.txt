@@ -1,0 +1,26 @@
+Nevlin Sprout readiness audit — 16 October 2026
+
+Implemented and verified:
+- Public source, editable UFOs, OFL notice and four TTF/WOFF2 weights.
+- All 324 named Latin Core requirements and contextual language substitutions.
+- Full Google QA: 411 PASS, 8 WARN, no FAIL/ERROR/FATAL; binaries unchanged.
+- Format-separated fonts/ttf and fonts/webfonts directories.
+- Author/contributor records with unresolved legal identity clearly identified.
+- documentation/ specimen and image license; embedded README specimen.
+- Authoritative generator and build.sh in sources/; pinned dependencies.
+- Fresh-venv same-host source build, no prebuilt fonts seeded, all eight outputs
+  byte-identical to the tested candidate. This is not GitHub CI or a new OS test.
+
+Not completed or attested:
+- Copyright ownership/assignments and OFL authority; human/legal confirmation.
+- Google CLA applicability and signature; authorized signatory.
+- No proprietary or private larger family versions; owner confirmation.
+- Definitive family naming and name clearance; user/Google decision.
+- Long-term maintainer commitment; named human owner.
+- Independent type-design/language review and wider platform QA.
+- Vendor registration and Google serving-subset warning disposition.
+- Full Google compliance and editorial acceptance; cannot be self-certified.
+
+The nested workflow remains an inactive template, not a completed CI run.
+The existing Google issue is #11130. This audit does not tick any pending
+legal, naming or maintenance declarations and does not create a new submission.
