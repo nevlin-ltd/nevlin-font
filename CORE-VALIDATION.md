@@ -1,3 +1,17 @@
+# Core Latin validation — 19 October 2026, candidate 1.001
+
+Full Fontspector 1.9.0 Google profile with network checks: **418 PASS, 8 WARN, 0 FAIL/ERROR/FATAL**, 236 SKIP, 27 INFO. No excluded checks or severity overrides.
+
+The complete official Latin Core list (324 named requirements), including unencoded forms, now passes in all four weights. The list was compared with current upstream on 19 October and is unchanged from pinned commit 0ac0e515473e39247683ed473fd74728671e2364.
+
+Added periodcentered.loclCAT, periodcentered.loclCAT.case, idotaccent and caroncomb.alt through build_core.py. Catalan l·l/L·L now selects context-specific middle dots instead of the inherited ldot ligature; TRK/AZE select idotaccent. Side caron uses the inherited side-accent outline, also used in the composites. Generated editable UFOs include these forms and feature rules. Default English, existing soft-dot removal, tabular numerals and specimens pass. All 374 encoded characters and their advance widths are preserved.
+
+Evidence: [validator](check_latin_core.py), [coverage and hashes](qa/latin-core-coverage.json), [regressions](qa/latin-core-regressions.json), [full QA](qa/latin-core-googlefonts.md). Eight warnings remain: four vendor-ID and four serving-subset results. These require review, not hidden exclusions.
+
+The earlier Unicode-only assertion was incomplete. This correction does not certify visual quality, legal ownership, naming eligibility or acceptance. Formal request #11128 has pending checklist items; no signed CLA or Google approval is claimed.
+
+## Historical 1.000 results (not rerun against 1.001)
+
 # Core Latin validation — 16 October 2026
 
 | Checker (full Google Fonts profile, network enabled) | Pass | Fail | Error | Warn |

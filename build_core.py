@@ -117,6 +117,26 @@ def main():
             ufo.features.text=re.sub(r"pos base \[([^\]]*)\]",extend_mark_bases,ufo.features.text)
             above=[g.name for g in ufo if any(unicodedata.combining(chr(c))==230 for c in g.unicodes)]
             ufo.features.text += "\n@NevlinAbove = [" + " ".join(above) + "] ;\nfeature ccmp {\nlookup NevlinSoftDots {\nlookupflag UseMarkFilteringSet @NevlinAbove;\nsub i' @NevlinAbove by dotlessi;\nsub j' @NevlinAbove by uni0237;\nsub iogonek' @NevlinAbove by iogonek.dotless;\n} NevlinSoftDots;\n} ccmp;\n"
+            # Include unencoded GF Latin Core language forms in editable sources.
+            import copy
+            from fontTools.misc.transform import Transform
+            from fontTools.pens.transformPen import TransformPointPen
+            def duplicate(old, new, dy=0):
+                original=ufo[old];glyph=ufo.newGlyph(new);glyph.width=original.width
+                glyph.anchors=copy.deepcopy(original.anchors)
+                original.drawPoints(TransformPointPen(glyph.getPointPen(),Transform(1,0,0,1,0,dy)))
+            duplicate('commaaccentright.cn','caroncomb.alt')
+            for glyph in ufo:
+                for component in glyph.components:
+                    if component.baseGlyph=='commaaccentright.cn':component.baseGlyph='caroncomb.alt'
+            duplicate('i','idotaccent')
+            bounds=ufo['periodcentered'].getBounds(ufo)
+            center=(bounds.yMin+bounds.yMax)/2
+            duplicate('periodcentered','periodcentered.loclCAT',round(ufo.info.xHeight/2-center))
+            duplicate('periodcentered','periodcentered.loclCAT.case',round(ufo.info.capHeight/2-center))
+            ufo.features.text = re.sub(r'feature locl \{\s*script latn;\s*language CAT;.*?\} locl;', '', ufo.features.text, flags=re.S)
+            ufo.features.text += "\nfeature locl {\nscript latn;\nlanguage CAT;\nsub l periodcentered' l by periodcentered.loclCAT;\nsub L periodcentered' L by periodcentered.loclCAT.case;\nlanguage TRK exclude_dflt;\nsub i by idotaccent;\nlanguage AZE exclude_dflt;\nsub i by idotaccent;\n} locl;\n"
+            ufo.info.versionMajor=1;ufo.info.versionMinor=1
             target=generated/(source.stem+'.ufo')
             masters[0].save(str(target),overwrite=True)
             ufo_sources.append(target)
@@ -162,7 +182,7 @@ def main():
         options.notdef_outline = True
         options.recalc_timestamp = False
         sub = subset.Subsetter(options=options)
-        sub.populate(unicodes=json.loads((ROOT / 'repertoire.json').read_text()))
+        sub.populate(unicodes=json.loads((ROOT / 'repertoire.json').read_text()), glyphs=['caroncomb.alt','idotaccent','periodcentered.loclCAT','periodcentered.loclCAT.case'])
         sub.subset(f)
         # Normalize the final retained contours after component/subset processing.
         for name in f.getGlyphOrder():f["glyf"][name]

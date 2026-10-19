@@ -1,0 +1,26 @@
+[
+  {
+    "font": "NevlinFont-Bold.ttf",
+    "codepoints": 374,
+    "version": 1.001007080078125,
+    "all_previous_advance_widths_unchanged": true
+  },
+  {
+    "font": "NevlinFont-Medium.ttf",
+    "codepoints": 374,
+    "version": 1.001007080078125,
+    "all_previous_advance_widths_unchanged": true
+  },
+  {
+    "font": "NevlinFont-Regular.ttf",
+    "codepoints": 374,
+    "version": 1.001007080078125,
+    "all_previous_advance_widths_unchanged": true
+  },
+  {
+    "font": "NevlinFont-SemiBold.ttf",
+    "codepoints": 374,
+    "version": 1.001007080078125,
+    "all_previous_advance_widths_unchanged": true
+  }
+]

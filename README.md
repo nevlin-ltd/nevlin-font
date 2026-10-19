@@ -1,6 +1,6 @@
 # Nevlin Font
 
-An Inter-derived, SIL OFL-licensed font project by Nevlin. **Core Latin development candidate 1.000**, not a Google Fonts-approved release.
+An Inter-derived, SIL OFL-licensed font project by Nevlin. **Core Latin development candidate 1.001**, not a Google Fonts-approved release.
 
 ## New original family: Nevlin Sprout
 
@@ -15,7 +15,7 @@ An Inter-derived, SIL OFL-licensed font project by Nevlin. **Core Latin developm
 - View the [alphabet proof](core-character-proof.svg).
 - Read [validation and remaining warnings](CORE-VALIDATION.md).
 
-FontBakery Google Fonts profile: **613 PASS, 0 FAIL, 0 ERROR, 12 WARN**. Warnings have not been suppressed. Fontspector 1.9.0 also reports zero failures and errors, with 8 warnings. Outline warnings are repaired; catalog subsets and designer/vendor profiles remain unresolved. Microsoft vendor registration is requested and pending. Read [external onboarding notes](ONBOARDING-NOTES.md). Google admission and originality review are separate from these checks.
+Latest candidate 1.001: **Fontspector 1.9.0 Google profile: 418 PASS, 0 FAIL/ERROR/FATAL, 8 WARN** (19 October 2026, network checks enabled). All 324 official Latin Core named entries and Catalan/Turkish/Azeri shaping checks pass in four weights. The earlier FontBakery 613-pass report applies to 1.000, not this rebuilt candidate. Vendor registration and serving-subset warnings remain unresolved; no checks are suppressed. See [current evidence](qa/latin-core-googlefonts.md) and [coverage report](qa/latin-core-coverage.json). Google admission, naming, ownership/CLA and maintainer commitments remain pending.
 
 ## Editable sources and build
 
@@ -29,6 +29,7 @@ python3.12 -m venv .venv
 pip install -r requirements-lock.txt
 python build_core.py
 python check_core.py
+python check_latin_core.py
 python prepare_core_submission.py
 fontbakery check-googlefonts googlefonts/nevlinfont/*.ttf
 ```

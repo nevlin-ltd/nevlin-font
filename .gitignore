@@ -15,3 +15,7 @@ nevlin-ui-plus.css
 !/families/nevlin-sprout/glyphs/**
 !/families/nevlin-sprout/sources/**/glyphs/
 !/families/nevlin-sprout/sources/**/glyphs/**
+
+# Generated core build intermediates (UFO sources included in release ZIP).
+/build/
+/googlefonts/
