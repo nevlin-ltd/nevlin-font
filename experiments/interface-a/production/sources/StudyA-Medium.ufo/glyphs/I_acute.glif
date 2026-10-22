@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Iacute" format="2">
+  <advance width="310"/>
+  <unicode hex="00CD"/>
+  <anchor x="155.0" y="760" name="top"/>
+  <anchor x="155.0" y="0" name="bottom"/>
+  <anchor x="155.0" y="0" name="ogonek"/>
+  <outline>
+    <contour>
+      <point x="55.0" y="664.3099975585938" type="line"/>
+      <point x="112.0" y="664.3099975585938" type="line"/>
+      <point x="112.0" y="35.689998626708984" type="line"/>
+      <point x="55.0" y="35.689998626708984" type="line"/>
+      <point x="55.0" y="-35.689998626708984" type="line"/>
+      <point x="255.0" y="-35.689998626708984" type="line"/>
+      <point x="255.0" y="35.689998626708984" type="line"/>
+      <point x="198.0" y="35.689998626708984" type="line"/>
+      <point x="198.0" y="664.3099975585938" type="line"/>
+      <point x="255.0" y="664.3099975585938" type="line"/>
+      <point x="255.0" y="735.69" type="line"/>
+      <point x="55.0" y="735.69" type="line"/>
+    </contour>
+    <contour>
+      <point x="125.9990463256836" y="803.6776733398438" type="line"/>
+      <point x="250.99905395507812" y="908.6776733398438" type="line"/>
+      <point x="199.00094604492188" y="951.3223266601562" type="line"/>
+      <point x="74.0009536743164" y="846.3223266601562" type="line"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Thorn" format="2">
+  <advance width="605"/>
+  <unicode hex="00DE"/>
+  <anchor x="302.5" y="760" name="top"/>
+  <anchor x="302.5" y="0" name="bottom"/>
+  <anchor x="302.5" y="0" name="ogonek"/>
+  <outline>
+    <contour>
+      <point x="30.0" y="700.0" type="line"/>
+      <point x="30.0" y="0" type="line"/>
+      <point x="140.0" y="0" type="line"/>
+      <point x="140.0" y="114.35000610351562" type="line"/>
+      <point x="315.0" y="114.35000610351562" type="line" smooth="yes"/>
+      <point x="453.9501037597656" y="114.35000610351562"/>
+      <point x="522.62744140625" y="181.77865600585938" type="qcurve" smooth="yes"/>
+      <point x="585.0" y="243.01715087890625"/>
+      <point x="585.0" y="476.9828186035156"/>
+      <point x="522.62744140625" y="538.2213134765625" type="qcurve" smooth="yes"/>
+      <point x="453.9500732421875" y="605.6500244140625"/>
+      <point x="315.0" y="605.6500244140625" type="qcurve" smooth="yes"/>
+      <point x="140.0" y="605.6500244140625" type="line"/>
+      <point x="140.0" y="700.0" type="line"/>
+    </contour>
+    <contour>
+      <point x="140.0" y="205.65000915527344" type="line"/>
+      <point x="140.0" y="514.3499755859375" type="line"/>
+      <point x="315.0" y="514.3499755859375" type="line" smooth="yes"/>
+      <point x="402.9017028808594" y="514.3499755859375"/>
+      <point x="438.6225280761719" y="479.2786560058594" type="qcurve" smooth="yes"/>
+      <point x="475.0" y="443.56256103515625"/>
+      <point x="475.0" y="276.4373779296875"/>
+      <point x="438.6225280761719" y="240.72132873535156" type="qcurve" smooth="yes"/>
+      <point x="402.9017333984375" y="205.65000915527344"/>
+      <point x="315.0" y="205.65000915527344" type="qcurve" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>

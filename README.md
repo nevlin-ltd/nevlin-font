@@ -1,3 +1,5 @@
+> **22 October 2026 development update:** Direction A is being revised after Google’s design-quality feedback. See [the preliminary review candidate](experiments/interface-a/production/README.md). Its name and governance confirmations are pending; no new Google submission is implied.
+
 # Nevlin Font
 
 An Inter-derived, SIL OFL-licensed font project by Nevlin. **Core Latin development candidate 1.001**, not a Google Fonts-approved release.

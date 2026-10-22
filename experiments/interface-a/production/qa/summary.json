@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-22",
+  "fontbakery": {
+    "(not finished)": 0,
+    "INFO": 29,
+    "PASS": 613,
+    "SKIP": 239,
+    "WARN": 12
+  },
+  "warnings_by_check": {
+    "vendorspecific.googlefonts.metadata.designer_profiles": [
+      "StudyA-Bold.ttf",
+      "StudyA-Medium.ttf",
+      "StudyA-Regular.ttf",
+      "StudyA-SemiBold.ttf"
+    ],
+    "vendorspecific.googlefonts.metadata.unreachable_subsetting": [
+      "StudyA-Bold.ttf",
+      "StudyA-Medium.ttf",
+      "StudyA-Regular.ttf",
+      "StudyA-SemiBold.ttf"
+    ],
+    "vendorspecific.googlefonts.vendor_id": [
+      "StudyA-Bold.ttf",
+      "StudyA-Medium.ttf",
+      "StudyA-Regular.ttf",
+      "StudyA-SemiBold.ttf"
+    ]
+  },
+  "latin_core": "324/324 named requirements in all four weights",
+  "reproducibility": "All eight binaries match a clean-environment build",
+  "browser_review": "Not completed: automation denied local-file URL",
+  "independent_design_review": "Pending",
+  "legal_and_final_name": "Pending",
+  "submission_readiness": "Preliminary critique package only, not fully cleared onboarding"
+}

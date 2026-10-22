@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="icircumflex" format="2">
+  <advance width="230"/>
+  <unicode hex="00EE"/>
+  <anchor x="115.0" y="560" name="top"/>
+  <anchor x="115.0" y="0" name="bottom"/>
+  <anchor x="115.0" y="0" name="ogonek"/>
+  <outline>
+    <contour>
+      <point x="72.0" y="535.69" type="line"/>
+      <point x="72.0" y="0" type="line"/>
+      <point x="158.0" y="0" type="line"/>
+      <point x="158.0" y="535.69" type="line"/>
+    </contour>
+    <contour>
+      <point x="30.958961486816406" y="606.2653198242188" type="line"/>
+      <point x="115.0" y="686.4862670898438" type="line"/>
+      <point x="199.04104614257812" y="606.2653198242188" type="line"/>
+      <point x="250.95896911621094" y="643.7347412109375" type="line"/>
+      <point x="140.95896911621094" y="748.7347412109375" type="line" smooth="yes"/>
+      <point x="139.38363647460938" y="750.2384033203125"/>
+      <point x="137.57192993164062" y="751.5459594726562" type="qcurve" smooth="yes"/>
+      <point x="135.01519775390625" y="753.39111328125"/>
+      <point x="129.13255310058594" y="756.1826171875"/>
+      <point x="122.7068099975586" y="757.9679565429688"/>
+      <point x="115.98489379882812" y="758.678466796875"/>
+      <point x="109.22512817382812" y="758.2869262695312"/>
+      <point x="102.68728637695312" y="756.8082885742188"/>
+      <point x="96.62261962890625" y="754.2994384765625"/>
+      <point x="91.26417541503906" y="750.8568115234375"/>
+      <point x="89.0410385131836" y="748.7346801757812" type="qcurve" smooth="yes"/>
+      <point x="-20.958969116210938" y="643.7347412109375" type="line"/>
+    </contour>
+  </outline>
+</glyph>

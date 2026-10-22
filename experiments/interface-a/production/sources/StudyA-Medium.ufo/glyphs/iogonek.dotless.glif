@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="iogonek.dotless" format="2">
+  <advance width="230"/>
+  <anchor x="115.0" y="560" name="top"/>
+  <anchor x="115.0" y="0" name="bottom"/>
+  <outline>
+    <contour>
+      <point x="72.0" y="535.69" type="line"/>
+      <point x="72.0" y="0" type="line"/>
+      <point x="81.61547088623047" y="0" type="line"/>
+      <point x="41.52342987060547" y="-27.677268981933594"/>
+      <point x="19.29071044921875" y="-60.596435546875" type="qcurve" smooth="yes"/>
+      <point x="-6.387001037597656" y="-98.6164779663086"/>
+      <point x="-1.7888603210449219" y="-132.77410888671875" type="qcurve" smooth="yes"/>
+      <point x="0.6894950866699219" y="-151.1847381591797"/>
+      <point x="12.069881439208984" y="-165.18423461914062" type="qcurve" smooth="yes"/>
+      <point x="24.35028076171875" y="-180.29087829589844"/>
+      <point x="44.657997131347656" y="-187.6055145263672" type="qcurve" smooth="yes"/>
+      <point x="83.39663696289062" y="-201.5587615966797"/>
+      <point x="136.63369750976562" y="-183.04153442382812" type="qcurve"/>
+      <point x="113.3663101196289" y="-136.9584503173828" type="line"/>
+      <point x="83.80905151367188" y="-147.23924255371094"/>
+      <point x="68.62325286865234" y="-141.76947021484375" type="qcurve" smooth="yes"/>
+      <point x="59.55705642700195" y="-138.50390625"/>
+      <point x="58.03886032104492" y="-127.22589111328125" type="qcurve" smooth="yes"/>
+      <point x="55.59002685546875" y="-109.03456115722656"/>
+      <point x="71.80303955078125" y="-85.028564453125" type="qcurve" smooth="yes"/>
+      <point x="91.84872436523438" y="-55.34764862060547"/>
+      <point x="132.92706298828125" y="-30.068675994873047" type="qcurve"/>
+      <point x="106.06714630126953" y="0" type="line"/>
+      <point x="158.0" y="0" type="line"/>
+      <point x="158.0" y="535.69" type="line"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="uni0037.tab" format="2">
+  <advance width="610"/>
+  <outline>
+    <contour>
+      <point x="107.0" y="669.2899780273438" type="line"/>
+      <point x="452.8182678222656" y="669.2899780273438" type="line"/>
+      <point x="206.65390014648438" y="9.079044342041016" type="line"/>
+      <point x="277.3460998535156" y="-9.079044342041016" type="line"/>
+      <point x="538.3460998535156" y="690.9209594726562" type="line" smooth="yes"/>
+      <point x="540.0" y="695.356689453125"/>
+      <point x="540.0" y="700.0" type="qcurve" smooth="yes"/>
+      <point x="539.9999389648438" y="706.1085205078125"/>
+      <point x="534.3670349121094" y="717.3956909179688"/>
+      <point x="523.958740234375" y="726.0346069335938"/>
+      <point x="510.3597106933594" y="730.7099609375"/>
+      <point x="503.0" y="730.7099609375" type="qcurve" smooth="yes"/>
+      <point x="107.0" y="730.7099609375" type="line"/>
+    </contour>
+  </outline>
+</glyph>

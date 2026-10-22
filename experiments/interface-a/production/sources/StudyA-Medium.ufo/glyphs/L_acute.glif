@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Lacute" format="2">
+  <advance width="515"/>
+  <unicode hex="0139"/>
+  <anchor x="257.5" y="760" name="top"/>
+  <anchor x="257.5" y="0" name="bottom"/>
+  <anchor x="257.5" y="0" name="ogonek"/>
+  <outline>
+    <contour>
+      <point x="42.0" y="700.0" type="line"/>
+      <point x="42.0" y="35.689998626708984" type="line" smooth="yes"/>
+      <point x="42.0" y="32.174842834472656"/>
+      <point x="43.6524658203125" y="25.27960968017578"/>
+      <point x="46.893890380859375" y="18.784446716308594"/>
+      <point x="51.59971618652344" y="12.93895149230957"/>
+      <point x="57.58909225463867" y="7.967765808105469"/>
+      <point x="64.63185119628906" y="4.061931610107422"/>
+      <point x="72.45735168457031" y="1.3715465068817139"/>
+      <point x="80.76486206054688" y="0.0"/>
+      <point x="85.0" y="0" type="qcurve" smooth="yes"/>
+      <point x="455.0" y="0" type="line"/>
+      <point x="455.0" y="71.37999725341797" type="line"/>
+      <point x="128.0" y="71.37999725341797" type="line"/>
+      <point x="128.0" y="700.0" type="line"/>
+    </contour>
+    <contour>
+      <point x="228.49905395507812" y="803.6776733398438" type="line"/>
+      <point x="353.4990539550781" y="908.6776733398438" type="line"/>
+      <point x="301.5009460449219" y="951.3223266601562" type="line"/>
+      <point x="176.50094604492188" y="846.3223266601562" type="line"/>
+    </contour>
+  </outline>
+</glyph>

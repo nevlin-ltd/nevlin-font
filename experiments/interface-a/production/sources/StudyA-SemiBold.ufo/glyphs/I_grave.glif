@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Igrave" format="2">
+  <advance width="310"/>
+  <unicode hex="00CC"/>
+  <anchor x="155.0" y="760" name="top"/>
+  <anchor x="155.0" y="0" name="bottom"/>
+  <anchor x="155.0" y="0" name="ogonek"/>
+  <outline>
+    <contour>
+      <point x="55.0" y="659.3299560546875" type="line"/>
+      <point x="106.0" y="659.3299560546875" type="line"/>
+      <point x="106.0" y="40.66999816894531" type="line"/>
+      <point x="55.0" y="40.66999816894531" type="line"/>
+      <point x="55.0" y="-40.66999816894531" type="line"/>
+      <point x="255.0" y="-40.66999816894531" type="line"/>
+      <point x="255.0" y="40.66999816894531" type="line"/>
+      <point x="204.0" y="40.66999816894531" type="line"/>
+      <point x="204.0" y="659.3299560546875" type="line"/>
+      <point x="255.0" y="659.3299560546875" type="line"/>
+      <point x="255.0" y="740.67" type="line"/>
+      <point x="55.0" y="740.67" type="line"/>
+    </contour>
+    <contour>
+      <point x="55.37317657470703" y="905.7024536132812" type="line"/>
+      <point x="180.37318420410156" y="800.7024536132812" type="line"/>
+      <point x="239.6268310546875" y="849.2974853515625" type="line"/>
+      <point x="114.62682342529297" y="954.2974853515625" type="line"/>
+    </contour>
+  </outline>
+</glyph>

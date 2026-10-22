@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Yacute" format="2">
+  <advance width="610"/>
+  <unicode hex="00DD"/>
+  <anchor x="305.0" y="760" name="top"/>
+  <anchor x="305.0" y="0" name="bottom"/>
+  <anchor x="305.0" y="0" name="ogonek"/>
+  <outline>
+    <contour>
+      <point x="7.348781585693359" y="677.2034912109375" type="line"/>
+      <point x="250.0" y="327.7857666015625" type="line"/>
+      <point x="250.0" y="0" type="line"/>
+      <point x="360.0" y="0" type="line"/>
+      <point x="360.0" y="327.7857666015625" type="line"/>
+      <point x="602.6512451171875" y="677.2034912109375" type="line"/>
+      <point x="507.3487854003906" y="722.7964477539062" type="line"/>
+      <point x="305.0" y="431.4142150878906" type="line"/>
+      <point x="102.65121459960938" y="722.7964477539062" type="line"/>
+    </contour>
+    <contour>
+      <point x="283.25457763671875" y="797.727294921875" type="line"/>
+      <point x="408.25457763671875" y="902.727294921875" type="line"/>
+      <point x="341.74542236328125" y="957.272705078125" type="line"/>
+      <point x="216.7454071044922" y="852.272705078125" type="line"/>
+    </contour>
+  </outline>
+</glyph>

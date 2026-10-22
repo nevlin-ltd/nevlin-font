@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Umacron" format="2">
+  <advance width="650"/>
+  <unicode hex="016A"/>
+  <anchor x="325.0" y="760" name="top"/>
+  <anchor x="325.0" y="0" name="bottom"/>
+  <anchor x="325.0" y="0" name="ogonek"/>
+  <outline>
+    <contour>
+      <point x="36.0" y="740.67" type="line"/>
+      <point x="36.0" y="243.0" type="line" smooth="yes"/>
+      <point x="36.0" y="108.92930603027344"/>
+      <point x="115.0631103515625" y="45.47340774536133" type="qcurve" smooth="yes"/>
+      <point x="186.67227172851562" y="-11.999975204467773"/>
+      <point x="463.32769775390625" y="-12.000000953674316"/>
+      <point x="534.9368896484375" y="45.47340393066406" type="qcurve" smooth="yes"/>
+      <point x="614.0" y="108.9293212890625"/>
+      <point x="614.0" y="243.0" type="qcurve" smooth="yes"/>
+      <point x="614.0" y="740.67" type="line"/>
+      <point x="516.0" y="740.67" type="line"/>
+      <point x="516.0" y="243.0" type="line" smooth="yes"/>
+      <point x="516.0" y="143.42391967773438"/>
+      <point x="466.8131103515625" y="103.94659423828125" type="qcurve" smooth="yes"/>
+      <point x="423.69488525390625" y="69.33999633789062"/>
+      <point x="226.30508422851562" y="69.34001922607422"/>
+      <point x="183.1868896484375" y="103.94660186767578" type="qcurve" smooth="yes"/>
+      <point x="134.0" y="143.42391967773438"/>
+      <point x="134.0" y="243.0" type="qcurve" smooth="yes"/>
+      <point x="134.0" y="740.67" type="line"/>
+    </contour>
+    <contour>
+      <point x="210.0" y="832.4639892578125" type="line"/>
+      <point x="440.0" y="832.4639892578125" type="line"/>
+      <point x="440.0" y="897.5360107421875" type="line"/>
+      <point x="210.0" y="897.5360107421875" type="line"/>
+    </contour>
+  </outline>
+</glyph>

@@ -1,0 +1,30 @@
+[
+  {
+    "style": "Regular",
+    "weight": 400,
+    "encoded": 389,
+    "glyphs": 407,
+    "sha256": "7bc76522df6c83554e1ae6b5797d4033be20cb087f173638ff1e898737053854"
+  },
+  {
+    "style": "Medium",
+    "weight": 500,
+    "encoded": 389,
+    "glyphs": 407,
+    "sha256": "2d6bb66564b38b96b3ca00ae52401d6972f43cecd081b84a4e40218ee8e86d58"
+  },
+  {
+    "style": "SemiBold",
+    "weight": 600,
+    "encoded": 389,
+    "glyphs": 407,
+    "sha256": "351f519e35cd93c0727895ad8c3be9bc68f263f6a39ca6c37f1fe3d711e24d30"
+  },
+  {
+    "style": "Bold",
+    "weight": 700,
+    "encoded": 389,
+    "glyphs": 407,
+    "sha256": "74772c8149c4fb9c20bc4a980d2b24b19a0ddb9eb6baf5c9ed8028f927089ecd"
+  }
+]

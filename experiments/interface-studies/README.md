@@ -4,7 +4,7 @@ Local design revisions following the Google Fonts design-quality rejection of Ne
 
 ## Review
 
-Open `B-reworked.html` for the current B2 comparison, text tester, complete character sheet and before/after proofs. `index.html` retains the A/B directions. B2 is the current working direction; A and B are comparisons.
+Open `B-reworked.html` for the current B2 comparison, text tester, complete character sheet and before/after proofs. `index.html` retains the A/B directions. A was selected for continued development on 22 October 2026. See `../interface-a/production/` for the four-weight review candidate. B and B2 remain comparison studies.
 
 Each study contains one Regular style: 101 encoded characters and 112 glyphs including tabular alternates. Sources are editable UFOs and Python drawings. TTF, WOFF2 and per-glyph SVG exports are included.
 

@@ -1,0 +1,58 @@
+[
+  {
+    "font": "StudyA-Bold.ttf",
+    "status": "pass",
+    "checks": [
+      "no missing sample glyphs",
+      "canonical-equivalent advances",
+      "equal tabular advances",
+      "slashed zero",
+      "Catalan locl",
+      "accented kerning",
+      "stacked mark attachment",
+      "TTF/WOFF2 cmap match"
+    ]
+  },
+  {
+    "font": "StudyA-Medium.ttf",
+    "status": "pass",
+    "checks": [
+      "no missing sample glyphs",
+      "canonical-equivalent advances",
+      "equal tabular advances",
+      "slashed zero",
+      "Catalan locl",
+      "accented kerning",
+      "stacked mark attachment",
+      "TTF/WOFF2 cmap match"
+    ]
+  },
+  {
+    "font": "StudyA-Regular.ttf",
+    "status": "pass",
+    "checks": [
+      "no missing sample glyphs",
+      "canonical-equivalent advances",
+      "equal tabular advances",
+      "slashed zero",
+      "Catalan locl",
+      "accented kerning",
+      "stacked mark attachment",
+      "TTF/WOFF2 cmap match"
+    ]
+  },
+  {
+    "font": "StudyA-SemiBold.ttf",
+    "status": "pass",
+    "checks": [
+      "no missing sample glyphs",
+      "canonical-equivalent advances",
+      "equal tabular advances",
+      "slashed zero",
+      "Catalan locl",
+      "accented kerning",
+      "stacked mark attachment",
+      "TTF/WOFF2 cmap match"
+    ]
+  }
+]

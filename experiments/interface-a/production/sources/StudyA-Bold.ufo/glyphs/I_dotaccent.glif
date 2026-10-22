@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<glyph name="Idotaccent" format="2">
+  <advance width="310"/>
+  <unicode hex="0130"/>
+  <anchor x="155.0" y="760" name="top"/>
+  <anchor x="155.0" y="0" name="bottom"/>
+  <anchor x="155.0" y="0" name="ogonek"/>
+  <outline>
+    <contour>
+      <point x="55.0" y="654.3499755859375" type="line"/>
+      <point x="100.0" y="654.3499755859375" type="line"/>
+      <point x="100.0" y="45.650001525878906" type="line"/>
+      <point x="55.0" y="45.650001525878906" type="line"/>
+      <point x="55.0" y="-45.650001525878906" type="line"/>
+      <point x="255.0" y="-45.650001525878906" type="line"/>
+      <point x="255.0" y="45.650001525878906" type="line"/>
+      <point x="210.0" y="45.650001525878906" type="line"/>
+      <point x="210.0" y="654.3499755859375" type="line"/>
+      <point x="255.0" y="654.3499755859375" type="line"/>
+      <point x="255.0" y="745.65" type="line"/>
+      <point x="55.0" y="745.65" type="line"/>
+    </contour>
+    <contour>
+      <point x="226.5" y="875.0" type="curve" smooth="yes"/>
+      <point x="226.5" y="914.4883422851562"/>
+      <point x="194.4883575439453" y="946.5"/>
+      <point x="155.0" y="946.5" type="curve" smooth="yes"/>
+      <point x="115.51164245605469" y="946.5"/>
+      <point x="83.5" y="914.4883422851562"/>
+      <point x="83.5" y="875.0" type="curve" smooth="yes"/>
+      <point x="83.5" y="835.5116577148438"/>
+      <point x="115.51164245605469" y="803.5"/>
+      <point x="155.0" y="803.5" type="curve" smooth="yes"/>
+      <point x="194.4883575439453" y="803.5"/>
+      <point x="226.5" y="835.5116577148438"/>
+    </contour>
+  </outline>
+</glyph>

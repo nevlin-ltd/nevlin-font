@@ -1,0 +1,21 @@
+feature tnum {
+sub uni0030 by uni0030.tab;
+sub uni0031 by uni0031.tab;
+sub uni0032 by uni0032.tab;
+sub uni0033 by uni0033.tab;
+sub uni0034 by uni0034.tab;
+sub uni0035 by uni0035.tab;
+sub uni0036 by uni0036.tab;
+sub uni0037 by uni0037.tab;
+sub uni0038 by uni0038.tab;
+sub uni0039 by uni0039.tab;
+} tnum;
+feature kern {
+pos uni0041 uni0056 -30;
+pos uni0041 uni0057 -20;
+pos uni0054 uni006F -28;
+pos uni0054 uni0061 -24;
+pos uni0059 uni006F -32;
+pos uni0056 uni0061 -22;
+pos uni004C uni0054 -24;
+} kern;
