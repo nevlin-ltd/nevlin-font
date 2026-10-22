@@ -1,6 +1,6 @@
 # Direction A — active design study
 
-The latest four-weight, Latin Core candidate is in [production/](production/README.md). Open [production/index.html](production/index.html) for the current specimen. The original 101-character study below is retained as a baseline; its limited audit is not the current coverage report.
+The latest four-weight, Latin Core candidate is in [production/](../../README.md). Open [production/index.html](production/index.html) for the current specimen. The original 101-character study below is retained as a baseline; its limited audit is not the current coverage report.
 
 Selected by the user on 22 October 2026. First refinement revises D/P/R/U/S and 3/5/6/8/9 to reduce the contrast between boxier inherited forms and A's oval lowercase. This does not establish that Google's design-quality concerns are resolved.
 

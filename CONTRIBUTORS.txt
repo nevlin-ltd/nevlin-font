@@ -1,0 +1,6 @@
+Project coordination and submissions: Zhanat Salimova (@zhanatsalimova)
+Contact: https://github.com/zhanatsalimova
+
+AI tools assisted drawing, code, QA and documentation.
+This participation record does not determine copyright ownership or CLA authority.
+Further human design attribution awaits confirmation.

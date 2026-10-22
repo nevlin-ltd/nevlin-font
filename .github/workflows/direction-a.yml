@@ -2,7 +2,14 @@ name: Direction A font checks
 on:
   push:
     paths:
-      - 'experiments/interface-a/production/**'
+      - 'sources/**'
+      - 'qa/**'
+      - 'fonts/**'
+      - 'build.py'
+      - 'prepare_submission.py'
+      - 'requirements.txt'
+      - 'Makefile'
+      - 'OFL.txt'
       - '.github/workflows/direction-a.yml'
   workflow_dispatch:
 permissions:
@@ -10,16 +17,13 @@ permissions:
 jobs:
   validate:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: experiments/interface-a/production
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           cache: pip
-          cache-dependency-path: experiments/interface-a/production/requirements.txt
+          cache-dependency-path: requirements.txt
       - run: python -m pip install -r requirements.txt
       - run: make build qa
       - uses: actions/upload-artifact@v4
@@ -27,6 +31,6 @@ jobs:
         with:
           name: direction-a-review
           path: |
-            experiments/interface-a/production/qa/*.json
-            experiments/interface-a/production/qa/*.md
-            experiments/interface-a/production/fonts/
+            qa/*.json
+            qa/*.md
+            fonts/

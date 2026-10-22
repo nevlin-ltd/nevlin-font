@@ -1,59 +1,70 @@
-> **22 October 2026 development update:** Direction A is being revised after Google’s design-quality feedback. See [the preliminary review candidate](experiments/interface-a/production/README.md). Its name and governance confirmations are pending; no new Google submission is implied.
+# Direction A — preliminary quality-review candidate
 
-# Nevlin Font
+Working family name: **Study A**. Publisher: Nevlin. A permanent family name is pending. This package is a revision of the separately drawn Sprout project following the design-quality rejection of Google Fonts issue #11142; it is not a new independent third origin and is not a fork of Inter.
 
-An Inter-derived, SIL OFL-licensed font project by Nevlin. **Core Latin development candidate 1.001**, not a Google Fonts-approved release.
+## What changed
 
-## New original family: Nevlin Sprout
+The oval lowercase direction is paired with redrawn D/P/R/U/S and figures 3/5/6/8/9. G and B retain continuous repaired joins. Weight-dependent optical adjustments align flat terminals and rounded baseline overshoots; lowercase ascenders are differentiated from capitals. Ogonek attachment follows the stem/foot of the base. Kerning propagates to accented letters, and mark-to-mark attachment supports stacked accents.
 
-[Nevlin Sprout](families/nevlin-sprout) is a separate original geometric family for financial-learning interfaces. Its 1.001 RC2 package includes four weights, editable UFOs, drawing sources, build instructions, specimens and full QA evidence. It is not derived from the Inter-based family below. [The initial Google review #11129](https://github.com/google/fonts/issues/11129) identified incomplete Latin Core validation. RC2 corrects the missing unencoded forms and tests all 324 official glyph requirements. Eight vendor/subset warnings remain disclosed. [Official-template resubmission #11130](https://github.com/google/fonts/issues/11130) includes the correction evidence.
+Four static weights: Regular 400, Medium 500, SemiBold 600, Bold 700. Each has 389 encoded characters and 407 glyphs, optional tabular figures and slashed zero, and localized forms. Full pinned Latin Core coverage is verified in all weights.
 
-## Current candidate
+## Latest validation
 
-374 encoded characters across Regular 400, Medium 500, SemiBold 600 and Bold 700. The installed family name is **Nevlin Font**.
+FontBakery 1.1.0, network-enabled Google Fonts profile: **613 PASS, 0 FAIL, 0 ERROR, 12 WARN, 239 SKIP, 29 INFO**. The warnings are designer-profile onboarding, serving-subset coverage and unregistered vendor ID, repeated across four fonts. They remain visible and unresolved. All eight binaries matched a clean-environment rebuild. See `qa/summary.json`.
 
-- Download [the complete editable source and font package](NevlinFont-core-latin-candidate.zip).
-- Individual desktop files: [Regular](NevlinFont-Regular.ttf), [Medium](NevlinFont-Medium.ttf), [SemiBold](NevlinFont-SemiBold.ttf), [Bold](NevlinFont-Bold.ttf). Matching WOFF2 files are included for websites.
-- View the [alphabet proof](core-character-proof.svg).
-- Read [validation and remaining warnings](CORE-VALIDATION.md).
+## Rebuild and check
 
-Latest candidate 1.001: **Fontspector 1.9.0 Google profile: 418 PASS, 0 FAIL/ERROR/FATAL, 8 WARN** (19 October 2026, network checks enabled). All 324 official Latin Core named entries and Catalan/Turkish/Azeri shaping checks pass in four weights. The earlier FontBakery 613-pass report applies to 1.000, not this rebuilt candidate. Vendor registration and serving-subset warnings remain unresolved; no checks are suppressed. See [current evidence](qa/latin-core-googlefonts.md) and [coverage report](qa/latin-core-coverage.json). Google admission, naming, ownership/CLA and maintainer commitments remain pending.
-
-## Editable sources and build
-
-The four `NevlinFont-*.glyphs` files are editable text sources. The source archive also includes UFO 3 files. The sources retain the full design inventory; `repertoire.json` selects the core distribution. The build compiles with Fontmake and adds the documented i/j/į accent rules, exposed in generated UFO features. The `repair_joins.py` source helper trims needle-like junctions after overlap removal and logs each repair. No binary font is a build input.
-
-Use Python 3.12:
+Use Python 3.12 in a fresh virtual environment:
 
 ```sh
 python3.12 -m venv .venv
-. .venv/bin/activate
-pip install -r requirements-lock.txt
-python build_core.py
-python check_core.py
-python check_latin_core.py
-python prepare_core_submission.py
-fontbakery check-googlefonts googlefonts/nevlinfont/*.ttf
+.venv/bin/python -m pip install -r requirements.txt
+make PYTHON=.venv/bin/python build qa proof
 ```
 
-Outputs: `fonts/ttf/`, `fonts/woff2/`, `build/ufos/`, and `googlefonts/nevlinfont/`. The ZIP has the same workflow with the original script names `build.py` and `prepare_submission.py`.
+Authoritative geometry is in `sources/design.py`, `sources/extended.py` and the optical/mark logic in `sources/build_font.py`. Editable UFOs are regenerated by `make build`; preserve any manual UFO edits separately. Fontmake compiles the UFOs into TTF. WOFF2, per-glyph SVGs, review metadata and an article are generated from the same sources. A GitHub Actions workflow rebuilds and checks this directory.
 
-## Preserved full beta
+`qa/shaping.json` exercises accent equivalence, accented kerning, tabular widths, slashed-zero combinations, Catalan forms and stacked marks. `qa/latin-core-coverage.json` identifies the pinned glyphset and every requirement. `qa/fontbakery-network.json` is the full network-enabled check; skips and warnings are not hidden. `qa/reproducibility.json` records repeat-build results. `qa/shaped-*.png` uses HarfBuzz positioning and SVG rendering; Pillow atlas images are for individual glyph inspection, not proof of shaping or OS rasterization.
 
-The older `NevlinUIPlus-*.ttf` and `.woff2` files remain unchanged: v0.400, 2,852 encoded characters, broader Latin/Greek/Cyrillic coverage. Its original `build.py`, `redraw.py`, `InterVariable.ttf`, `requirements.txt`, `QA.json` and beta validation files remain historical materials. Use `build_core.py` for the current candidate; the old `build.py` rebuilds the full beta.
+The existing OFL copyright notice is retained. No reserved font name is declared. The 1.000 binary version is a candidate-format version, not a claim of release approval or independent quality certification. Smart-dropout instructions are included; full grid-fitting/hinting is not claimed.
 
-## Design and license
+## Remaining gates
 
-Most letterforms, spacing and layout functionality are inherited from Inter 4.001 by the Inter Project Authors. Nevlin modifications include a, e, g, r, t, 1, 4, 7, dots, Q tail and tenge bars. This is not an independently drawn full family and contains no Apple font software.
+- Independent type-design critique, particularly text colour, optical spacing, complex Latin forms and small-size readability. Automated passes cannot establish that Google's earlier design concerns are resolved.
+- Actual browser/OS rendering review. The local-file browser automation was blocked; shaped PNG proofs are available, but a browser pass is not claimed.
+- User/Legal confirmation of the final name, copyright owner, OFL/CLA authorization and named ongoing maintainer. The existing notice does not answer these governance questions.
+- Google serving-subset guidance, designer-profile onboarding and Microsoft vendor registration. Do not add unsupported script subsets or use another foundry's vendor ID to silence warnings.
 
-SIL Open Font License 1.1; preserve copyright notices and OFL.txt when redistributing. Inter-OFL.txt preserves the upstream license. Using the font in a design does not require an attribution link.
+Submitted as Google Fonts issue #11158; no acceptance is implied. This directory is public development work for preliminary review, not an accepted or fully cleared Google Fonts submission.
 
-Project: https://github.com/nevlin-ltd/nevlin-font  
-Website: https://nevlin.com  
-Contact: zhanat.salimova@nevlin.com
+## Current submission and technical audit
 
-Google Fonts review is requested; no acceptance is claimed. This separate font project does not restore the canceled Nevlin website font page.
+Proposed name **Nevlin Font**, subject to clearance; the binaries still use **Study A**.
+See [Google Fonts #11158](https://github.com/google/fonts/issues/11158).
+This is distinct from the older Inter-derived family using the same proposed name.
 
-Current Google guidance uses Fontspector. Install the [official checker](https://github.com/fonttools/fontspector/blob/main/INSTALLATION.md) and run `fontspector -p googlefonts googlefonts/nevlinfont/*.ttf`. Both full reports are published in this repository.
+![Regular shaped specimen](qa/shaped-Regular.png)
 
-The earlier Inter-derived family has its own [Google review request #11128](https://github.com/google/fonts/issues/11128). Remaining warnings need external review, not fabricated registry entries or reduced required coverage.
+The package now provides `sources/build.sh` as a one-command entry point. See
+[the technical audit](documentation/REVIEW-STATUS.md) for the remaining external
+checks and why warnings are not suppressed. The Google guide now recommends
+Fontspector; the historical FontBakery report remains available for comparison.
+
+## Repository Layout
+
+- `sources/`: authoritative Python drawings, editable UFO packages and `build.sh`.
+- `fonts/ttf/` and `fonts/webfonts/`: compiled desktop and web fonts.
+- `documentation/`: review guidance and technical status.
+- `qa/`: coverage, shaping, reproducibility and checker reports.
+- `googlefonts/studya/`: staging metadata, OFL and article.
+- `requirements.txt`: pinned build and QA dependencies.
+- `Makefile` and `.github/workflows/direction-a.yml`: local commands and CI.
+- `OFL.txt`: preserved Sprout license notice.
+- `AUTHORS.txt`: pending Legal confirmation, not a verified ownership declaration.
+- `CONTRIBUTORS.txt`: participation record, distinct from ownership.
+- `archive/inter-derived/`: historical Inter-derived project with its own licenses.
+- `families/` and `experiments/`: historical designs; not current build inputs.
+
+The root is now the canonical submitted candidate. Historical commit-pinned links
+continue to identify exactly the files previously reviewed. No stable release is
+claimed while final naming, governance and design review remain pending.

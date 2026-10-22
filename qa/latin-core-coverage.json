@@ -4,9 +4,9 @@
   "required_glyphs": 324,
   "fonts": [
     {
-      "file": "NevlinFont-Bold.ttf",
-      "version": 1.001007080078125,
-      "sha256": "42e0329c4ca0d5b31b85d70eb50e4d9322ef8491a7740036a0b68c57dd86b008",
+      "file": "StudyA-Bold.ttf",
+      "version": 1.0,
+      "sha256": "74772c8149c4fb9c20bc4a980d2b24b19a0ddb9eb6baf5c9ed8028f927089ecd",
       "missing": [],
       "requirements": [
         {
@@ -612,7 +612,7 @@
         {
           "required_name": "commaaccentcomb",
           "unicode": "0326",
-          "actual_glyph": "commabelowcmb",
+          "actual_glyph": "uni0326",
           "present": true
         },
         {
@@ -1878,7 +1878,7 @@
         {
           "required_name": "Tcommaaccent",
           "unicode": "021A",
-          "actual_glyph": "Tcommaaccent",
+          "actual_glyph": "uni021A",
           "present": true
         },
         {
@@ -1956,9 +1956,9 @@
       ]
     },
     {
-      "file": "NevlinFont-Medium.ttf",
-      "version": 1.001007080078125,
-      "sha256": "152f01b3eee81aa3d61298c0ee3c9075a466e04a5f2c06318ca1c788384c359b",
+      "file": "StudyA-Medium.ttf",
+      "version": 1.0,
+      "sha256": "2d6bb66564b38b96b3ca00ae52401d6972f43cecd081b84a4e40218ee8e86d58",
       "missing": [],
       "requirements": [
         {
@@ -2564,7 +2564,7 @@
         {
           "required_name": "commaaccentcomb",
           "unicode": "0326",
-          "actual_glyph": "commabelowcmb",
+          "actual_glyph": "uni0326",
           "present": true
         },
         {
@@ -3830,7 +3830,7 @@
         {
           "required_name": "Tcommaaccent",
           "unicode": "021A",
-          "actual_glyph": "Tcommaaccent",
+          "actual_glyph": "uni021A",
           "present": true
         },
         {
@@ -3908,9 +3908,9 @@
       ]
     },
     {
-      "file": "NevlinFont-Regular.ttf",
-      "version": 1.001007080078125,
-      "sha256": "5f9d94ad9af537090e64ba393e3cce6112c05ac3194f2c9155ea8780bf44abb5",
+      "file": "StudyA-Regular.ttf",
+      "version": 1.0,
+      "sha256": "7bc76522df6c83554e1ae6b5797d4033be20cb087f173638ff1e898737053854",
       "missing": [],
       "requirements": [
         {
@@ -4516,7 +4516,7 @@
         {
           "required_name": "commaaccentcomb",
           "unicode": "0326",
-          "actual_glyph": "commabelowcmb",
+          "actual_glyph": "uni0326",
           "present": true
         },
         {
@@ -5782,7 +5782,7 @@
         {
           "required_name": "Tcommaaccent",
           "unicode": "021A",
-          "actual_glyph": "Tcommaaccent",
+          "actual_glyph": "uni021A",
           "present": true
         },
         {
@@ -5860,9 +5860,9 @@
       ]
     },
     {
-      "file": "NevlinFont-SemiBold.ttf",
-      "version": 1.001007080078125,
-      "sha256": "8898859014c6ca5bf284e19be15547580418a9a842ba5c3aae0451c104a1a022",
+      "file": "StudyA-SemiBold.ttf",
+      "version": 1.0,
+      "sha256": "351f519e35cd93c0727895ad8c3be9bc68f263f6a39ca6c37f1fe3d711e24d30",
       "missing": [],
       "requirements": [
         {
@@ -6468,7 +6468,7 @@
         {
           "required_name": "commaaccentcomb",
           "unicode": "0326",
-          "actual_glyph": "commabelowcmb",
+          "actual_glyph": "uni0326",
           "present": true
         },
         {
@@ -7734,7 +7734,7 @@
         {
           "required_name": "Tcommaaccent",
           "unicode": "021A",
-          "actual_glyph": "Tcommaaccent",
+          "actual_glyph": "uni021A",
           "present": true
         },
         {
@@ -7811,6 +7811,5 @@
         }
       ]
     }
-  ],
-  "shaping_checks": "Catalan lower/upper, Turkish/Azeri dotted i, default English negative controls: all four weights pass"
+  ]
 }

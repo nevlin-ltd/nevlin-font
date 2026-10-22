@@ -1,21 +1,10 @@
 .venv/
+venv/
 __pycache__/
 .DS_Store
-fonts/
-glyphs/
-source/
-validation.json
-glyph-manifest.json
-nevlin-ui-plus.css
-
-# Preserve the separate Sprout review candidate binaries and SVG exports.
-!/families/nevlin-sprout/fonts/
-!/families/nevlin-sprout/fonts/**
-!/families/nevlin-sprout/glyphs/
-!/families/nevlin-sprout/glyphs/**
-!/families/nevlin-sprout/sources/**/glyphs/
-!/families/nevlin-sprout/sources/**/glyphs/**
-
-# Generated core build intermediates (UFO sources included in release ZIP).
+*.log
+/glyphs/
+/archive/inter-derived/build/
+/archive/inter-derived/googlefonts/
 /build/
-/googlefonts/
+/archive/inter-derived/fonts/
