@@ -32,5 +32,18 @@
   "browser_review": "Not completed: automation denied local-file URL",
   "independent_design_review": "Pending",
   "legal_and_final_name": "Pending",
-  "submission_readiness": "Preliminary critique package only, not fully cleared onboarding"
+  "submission_readiness": "Preliminary critique package only, not fully cleared onboarding",
+  "fontspector": {
+    "version": "1.9.0",
+    "profile": "googlefonts",
+    "network_enabled": true,
+    "summary": {
+      "SKIP": 236,
+      "PASS": 415,
+      "INFO": 30,
+      "WARN": 8
+    },
+    "report": "fontspector-network.json"
+  },
+  "build_entry_point": "sources/build.sh tested from outside the package; tracked binaries unchanged"
 }

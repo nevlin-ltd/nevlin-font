@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -euo pipefail
+cd "$(dirname "$0")/.."
+"${PYTHON:-python3}" build.py
+"${PYTHON:-python3}" prepare_submission.py

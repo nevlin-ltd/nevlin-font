@@ -1,5 +1,5 @@
 PYTHON ?= python3
-.PHONY: build qa proof
+.PHONY: build qa proof qa-fontspector
 build:
 	$(PYTHON) build.py
 	$(PYTHON) prepare_submission.py
@@ -10,3 +10,7 @@ qa:
 proof:
 	$(PYTHON) qa/render_review.py
 	$(PYTHON) qa/render_shaped.py
+
+FONTSPECTOR ?= fontspector
+qa-fontspector:
+	$(FONTSPECTOR) -p googlefonts --timeout 15 --json qa/fontspector-network.json --ghmarkdown qa/fontspector-network.md googlefonts/studya/*.ttf

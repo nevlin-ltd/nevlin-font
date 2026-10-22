@@ -1,6 +1,6 @@
 # Naming decision pending
 
-The user prefers Nevlin. It remains the publisher credit. Google’s onboarding guide excludes copyright-holder names/acronyms and registered trademarks in family names: https://googlefonts.github.io/gf-guide/onboarding.html
+The user proposes Nevlin Font in Google Fonts issue #11158. It remains the publisher credit. Google’s onboarding guide excludes copyright-holder names/acronyms and registered trademarks in family names: https://googlefonts.github.io/gf-guide/onboarding.html
 
 Working name: Study A. No permanent family name has been selected or cleared.
 

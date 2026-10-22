@@ -1,4 +1,6 @@
-# Draft only — not sent
+# Historical critique draft — superseded by submission #11158
+
+The revised candidate was submitted on 22 October 2026: https://github.com/google/fonts/issues/11158. This text is retained only as development history; see the issue for the submitted wording.
 
 We have revised the Direction A branch of our separately drawn Sprout family after the design-quality feedback on #11142. Before asking for another onboarding decision, we would appreciate a focused type-design critique.
 

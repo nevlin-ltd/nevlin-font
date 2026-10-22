@@ -36,3 +36,16 @@ The existing OFL copyright notice is retained. No reserved font name is declared
 - Google serving-subset guidance, designer-profile onboarding and Microsoft vendor registration. Do not add unsupported script subsets or use another foundry's vendor ID to silence warnings.
 
 No Google issue has been opened or reopened for this revision. This directory is public development work for preliminary review, not an accepted or fully cleared Google Fonts submission.
+
+## Current submission and technical audit
+
+Proposed name **Nevlin Font**, subject to clearance; the binaries still use **Study A**.
+See [Google Fonts #11158](https://github.com/google/fonts/issues/11158).
+This is distinct from the older Inter-derived family using the same proposed name.
+
+![Regular shaped specimen](qa/shaped-Regular.png)
+
+The package now provides `sources/build.sh` as a one-command entry point. See
+[the technical audit](documentation/REVIEW-STATUS.md) for the remaining external
+checks and why warnings are not suppressed. The Google guide now recommends
+Fontspector; the historical FontBakery report remains available for comparison.
