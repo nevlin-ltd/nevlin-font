@@ -1,0 +1,18 @@
+{
+  "A": {
+    "cmap_characters": 101,
+    "glyphs": 112,
+    "tabular_width": 610,
+    "ttf_woff2_cmaps_match": true,
+    "lowercase_and_digits_within_advance": true,
+    "release_validation": "Not performed; limited design study"
+  },
+  "B": {
+    "cmap_characters": 101,
+    "glyphs": 112,
+    "tabular_width": 555,
+    "ttf_woff2_cmaps_match": true,
+    "lowercase_and_digits_within_advance": true,
+    "release_validation": "Not performed; limited design study"
+  }
+}

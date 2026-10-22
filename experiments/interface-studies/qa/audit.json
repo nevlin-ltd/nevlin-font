@@ -1,0 +1,30 @@
+{
+  "A": {
+    "glyphs_checked": 112,
+    "encoded_characters": 101,
+    "issues": [],
+    "ttf_woff2_cmap_match": true,
+    "G_continuous": true,
+    "B_outer_and_two_counters": true,
+    "tabular_widths_equal": true
+  },
+  "B": {
+    "glyphs_checked": 112,
+    "encoded_characters": 101,
+    "issues": [],
+    "ttf_woff2_cmap_match": true,
+    "G_continuous": true,
+    "B_outer_and_two_counters": true,
+    "tabular_widths_equal": true
+  },
+  "B2": {
+    "glyphs_checked": 112,
+    "encoded_characters": 101,
+    "issues": [],
+    "ttf_woff2_cmap_match": true,
+    "G_continuous": true,
+    "B_outer_and_two_counters": true,
+    "tabular_widths_equal": true
+  },
+  "scope": "101 encoded characters per study; no complete Latin Core, hinting, language or cross-platform certification. Visual review remains necessary."
+}
